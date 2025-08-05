@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dreame_sobot_activity_def_theme" parent="sobot_activity_def_theme">
+        <item name="android:supportsRtl">false</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+
+    <style name="dreame_Theme.ZendeskMessaging" parent="Theme.ZendeskMessaging">
+        <item name="android:supportsRtl">false</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+</resources>

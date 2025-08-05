@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:orientation="horizontal">
+    <!--                电量-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_widget_battery" />
+
+    <TextView
+        android:id="@id/tv_battery_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="80"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textGray"
+        android:textSize="@dimen/common_textSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="1dp"
+        android:gravity="center"
+        android:text="%"
+        android:textColor="@color/common_textGray"
+        android:textSize="@dimen/common_textSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/common_textGray" />
+
+    <!--                清扫时间-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_widget_clean_time" />
+
+    <TextView
+        android:id="@id/tv_clean_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="52"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textGray"
+        android:textSize="@dimen/common_textSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/tv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="1dp"
+        android:gravity="center"
+        android:text="min"
+        android:textColor="@color/common_textGray"
+        android:textSize="@dimen/common_textSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/common_textGray" />
+
+    <!--                清扫面积-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_widget_clean_area" />
+
+    <TextView
+        android:id="@id/tv_clean_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="89"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textGray"
+        android:textSize="@dimen/common_textSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/tv_square_meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="2px"
+        android:gravity="center"
+        android:text="㎡"
+        android:textColor="@color/common_textGray"
+        android:textSize="@dimen/common_textSmall"
+        android:textStyle="bold" />
+</LinearLayout>

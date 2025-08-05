@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.dreame.module.view.CommonTitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/text_reset_hotspot"
+        app:titleMarginStart="20dp"
+        app:titleShowPosition="center"
+        tools:layout_height="45dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintDimensionRatio="350:240"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_placeholder_device_ap" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/common_textMain"
+                android:textSize="@dimen/common_textLarge"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <CheckBox
+        android:id="@+id/ctv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="14dp"
+        android:button="@drawable/selector_confirm_checkbox"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingHorizontal="12dp"
+        android:text="@string/text_has_heard_checkbox"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next"
+        android:textAlignment="gravity" />
+
+    <com.dreame.feature.connect.views.ConnectIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp" />
+
+</LinearLayout>

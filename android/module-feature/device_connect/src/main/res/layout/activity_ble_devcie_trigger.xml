@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.dreame.module.view.CommonTitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        title:rightIcon="@drawable/icon_help"
+        title:showRightImage="true"
+        title:title="@string/text_ble_pairing_title"
+        title:titleMarginStart="20dp"
+        title:titleShowPosition="center"
+        tools:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="@string/text_ble_pairing_desc"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleView" />
+
+    <ImageView
+        android:id="@+id/iv_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        tools:src="@drawable/ic_mower_power_on" />
+
+
+    <CheckBox
+        android:id="@+id/ctv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="14dp"
+        android:button="@drawable/selector_confirm_checkbox"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingHorizontal="12dp"
+        android:text="@string/text_ble_pairing_checkbox"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge"
+        app:layout_constraintBottom_toTopOf="@id/tv_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_max="wrap" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/text_ble_pairing_start"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

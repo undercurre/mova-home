@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="48dp"
+    android:id="@+id/ll_root"
+    android:background="@drawable/common_shape_white_r20"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/iv_icon_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textSizeLarge1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="start"
+        android:minLines="3"
+        android:textColor="@color/common_textNormal"
+        android:textSize="@dimen/common_textNormal"
+        app:layout_constraintBottom_toTopOf="@id/tv_negative"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="content" />
+
+    <TextView
+        android:id="@+id/tv_negative"
+        style="@style/common_style_button2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:autoSizeMaxTextSize="@dimen/common_textLarge"
+        android:autoSizeMinTextSize="@dimen/common_textSmall"
+
+        android:autoSizeStepGranularity="1dp"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingHorizontal="10dp"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_positive"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="cancel" />
+
+
+    <TextView
+        android:id="@+id/tv_positive"
+        style="@style/common_style_button"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:autoSizeMaxTextSize="@dimen/common_textLarge"
+        android:autoSizeMinTextSize="@dimen/common_textSmall"
+
+        android:autoSizeStepGranularity="1dp"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingHorizontal="10dp"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="@id/tv_negative"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_negative"
+        tools:text="下一步" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

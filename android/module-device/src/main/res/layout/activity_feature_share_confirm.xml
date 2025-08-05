@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_layoutBg"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <android.dreame.module.view.CommonTitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/device_share"
+        app:titleShowPosition="center"
+        tools:layout_height="60dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/common_shape_white_r8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_avatar"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|start"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/common_textMain"
+                        android:textSize="@dimen/common_textSizeLarge2"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        tools:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_textSecond"
+                        android:textSize="@dimen/common_textSmall"
+                        tools:text="哈哈哈哈哈哈哈哈" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="40dp"
+                android:ellipsize="end"
+                android:lineHeight="34dp"
+                android:singleLine="true"
+                android:text="@string/text_share_permissions"
+                android:textColor="@color/common_textMain"
+                android:textSize="@dimen/common_textNormal"
+                android:textStyle="bold"
+                tools:text="哈哈哈哈哈哈哈哈" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_feature_share_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/text_share_permissions_description"
+                android:textColor="@color/common_textSecond"
+                android:textSize="@dimen/common_textSmall" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_feature_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_device_feature" />
+
+            <TextView
+                android:id="@+id/btn_share"
+                style="@style/common_style_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginVertical="40dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textAlignment="gravity"
+                android:textSize="@dimen/common_textLarge" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

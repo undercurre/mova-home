@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dreame.smartlife.widget">
+
+    <application android:supportsRtl="true">
+        <service
+            android:name="com.dreame.module.widget.provider.large.WidgetRemoteViewsServiceImpl"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS">
+
+        </service>
+
+        <receiver
+            android:name="com.dreame.module.widget.provider.small.DeviceAppWidgetSmallProvider"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/device_appwidget_small" />
+        </receiver>
+
+        <receiver
+            android:name="com.dreame.module.widget.provider.small.single1.DeviceAppWidgetSmallSingle1Provider"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/device_appwidget_small_single1" />
+        </receiver>
+        <receiver
+            android:name="com.dreame.module.widget.provider.small.single2.DeviceAppWidgetSmallSingle2Provider"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/device_appwidget_small_single2" />
+        </receiver>
+        <receiver
+            android:name="com.dreame.module.widget.provider.medium.DeviceAppWidgetMediumProvider"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/device_appwidget_medium" />
+        </receiver>
+        <receiver
+            android:name="com.dreame.module.widget.provider.large.DeviceAppWidgetLargeProvider"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/device_appwidget_large" />
+        </receiver>
+
+
+        <activity
+            android:name="com.dreame.module.widget.select.AppWidgetDeviceSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dreame.module.widget.select.widget.AppWidgetSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.mova.module.widget.DeviceUpdateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.dreame.movahome.action.appwidget.action_clean" />
+                <action android:name="com.dreame.movahome.action.appwidget.action_charging" />
+                <action android:name="com.dreame.movahome.action.appwidget.action_flush" />
+                <action android:name="com.dreame.movahome.action.appwidget.action_flush_token" />
+                <action android:name="com.dreame.movahome.action.appwidget.action_add" />
+                <action android:name="com.dreame.movahome.action.appwidget.action_click_list" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="com.dreame.module.widget.AppWidgetPinnedReceiver"
+            android:exported="false" />
+
+    </application>
+</manifest>

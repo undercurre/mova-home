@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_height_title">60dp</dimen>
+    <dimen name="common_height_divider">1dp</dimen>
+    <dimen name="common_height_btn">44dp</dimen>
+
+
+
+    <dimen name="common_textMini">10sp</dimen>
+    <dimen name="common_textSmall">12sp</dimen>
+    <dimen name="common_textNormal">14sp</dimen>
+    <dimen name="common_textLarge">16sp</dimen>
+    <dimen name="common_textSizeLarge1">18sp</dimen>
+    <dimen name="common_textSizeLarge2">20sp</dimen>
+    <dimen name="common_textSizeLarge3">22sp</dimen>
+    <dimen name="common_textSizeLarge4">24sp</dimen>
+    <dimen name="common_textSizeLarge5">26sp</dimen>
+    <dimen name="common_textSizeLarge6">28sp</dimen>
+
+</resources>

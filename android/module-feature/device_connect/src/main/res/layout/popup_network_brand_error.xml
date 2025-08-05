@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="35dp"
+    android:background="@drawable/common_shape_white_r20"
+    android:minHeight="290dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/text_net_band_error"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_current_band_error"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/icon_tips_warning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/text_limit_band"
+        android:textColor="@color/common_warn1"
+        android:textSize="@dimen/common_textSmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon" />
+
+    <LinearLayout
+        android:id="@+id/ll_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tips">
+
+        <TextView
+            android:id="@+id/tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_connect_guide"
+            android:textColor="@color/common_text_second"
+            android:textSize="@dimen/common_textNormal" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/icon_arrow_right" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/common_style_button2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:autoSizeMaxTextSize="@dimen/common_textLarge"
+        android:autoSizeMinTextSize="@dimen/common_textSmall"
+
+        android:autoSizeStepGranularity="1dp"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/text_contiune_to_connect"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_link" />
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        style="@style/common_style_button"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:autoSizeMaxTextSize="@dimen/common_textLarge"
+        android:autoSizeMinTextSize="@dimen/common_textSmall"
+
+        android:autoSizeStepGranularity="1dp"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/text_switch_other_wifi"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_cancel"
+        app:layout_constraintTop_toTopOf="@id/btn_cancel"
+        tools:text="为哈师傅白咖啡吧随便开放啦不发烧不浪费八十多为哈师傅白咖啡吧随便开放啦不发烧不浪费八十多" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_layoutBg"
+    android:orientation="vertical">
+
+
+    <android.dreame.module.view.CommonTitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showCenterSubtitle="true"
+        app:subtitle="@string/my_feedback_device"
+        app:titleShowPosition="center"
+        tools:layout_height="60dp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:srlEnableLoadMore="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/common_shape_white_r12"
+            tools:itemCount="150"
+            tools:listitem="@layout/item_share_user_new" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_empty_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/device_share_user_list"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textSecond"
+        android:textSize="@dimen/common_textNormal" />
+
+    <TextView
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginVertical="40dp"
+        style="@style/common_style_button"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/text_add_user_to_share"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/common_textLarge" />
+
+</LinearLayout>

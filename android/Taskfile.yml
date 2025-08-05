@@ -1,0 +1,170 @@
+version: '3'
+env:
+  TASK_X_MAP_VARIABLES: 1
+  NVM_DIR: /Users/mova/.nvm
+  PUB_HOSTED_URL: https://pub.flutter-io.cn
+  FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+  package_dir: /Users/mova/cicd/app/android/Movahome/python-tools/app/android/packages
+  gitlab_main_url: https://git.dreame.tech/smarthome_app/mova-group/mova-home
+  gitlab_sub_url: https://git.dreame.tech/smarthome_app/mova-group/mova-android
+  api_key: '859277ced681b60618b796f956352495'
+  uat_cn: movahome-uat
+  prod_cn: movahome-release
+  plugindev: movahome-rn
+  feature-cn: feature-cn
+  feature-rn: feature-rn
+  alpha-cn: alpha-cn
+  hotfix-cn: hotfix-cn
+vars:
+  PREFIX_ANDROID: PATH="$PATH:/Users/mova/fvm/versions/3.19.5/bin"
+  paths:
+    {
+      uat-cn: ' /Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk',
+      uat-gp: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/bundle/gpUat',
+      prod-cn: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk/cn',
+      prod-gp: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/bundle/gpRelease',
+      PluginDev: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk/pluginDev',
+      feature-cn: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk/cn',
+      feature-rn: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk/pluginDev',
+      alpha-cn: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk/cn',
+      hotfix-cn: '/Users/mova/cicd/app/android/Movahome/mova-home/android/app/build/outputs/apk/cn',
+    }
+tasks:
+  build:
+    cmds:
+      - task: replace-versions
+      - task: install_npm
+      - task: build-flutter-plugin-source
+      - task: build-android-source
+      - task: upload-bugly-symbols
+      - task: create_tag
+  replace-versions:
+    cmds:
+      - |
+        sed -i '' "s/-Xmx4096M/-Xmx8192M/g" ${mainspace}/mova-home/android/gradle.properties
+      - |
+        if [ -n "${appVersionName}" ]; then
+          # 判断appVersionName是否符合1.0.8.1 或1.0.8.100的格式，如果是，则将appVersionName的值 按照"."分割，然后转成int数字赋值给appVersionCode，
+          # 转换规则：1.0.8.1 转成 10008001，1.0.8.11 转成 10008011，1.0.8.100 转成 10008100
+          if [[ "${appVersionName}" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            major=$(echo "${appVersionName}" | cut -d. -f1)
+            minor=$(echo "${appVersionName}" | cut -d. -f2)
+            patch=$(echo "${appVersionName}" | cut -d. -f3)
+            build=$(echo "${appVersionName}" | cut -d. -f4)
+            maybeAppVersionCode=$((major * 10000000 + minor * 100000 + patch * 1000 + build))
+            # 如果提供了 appVersionCode，则进行验证
+            if [ -n "${appVersionCode}" ]; then
+              if [ "${maybeAppVersionCode}" != "${appVersionCode}" ]; then
+                echo "Error: appVersionCode 不符合规则"
+                echo "Expected: ${maybeAppVersionCode} (根据 ${appVersionName} 计算得出)"
+                echo "Actual: ${appVersionCode}"
+                exit 1
+              fi
+            else
+              # 如果没有提供 appVersionCode，使用计算得出的值
+              appVersionCode="${maybeAppVersionCode}"
+            fi
+          else
+            echo "Error: appVersionName 格式不正确"
+            echo "Required format: x.y.z.a (例如: 1.0.8.1)"
+            echo "Actual: ${appVersionName}"
+            exit 1
+          fi
+          sed -i '' "s#versions.appVersionName.*#versions.appVersionName = '${appVersionName}'#g" ${mainspace}/mova-home/android/version.gradle
+        fi
+      - |
+        if [ -n "${appVersionCode}" ]; then
+          sed -i '' "s#versions.appVersionCode.*#versions.appVersionCode = ${appVersionCode}#g" ${mainspace}/mova-home/android/version.gradle
+        fi
+      - |
+        if [ -n "${pluginAppVersion}" ]; then
+            sed -i '' "s#versions.pluginAppVersion.*#versions.pluginAppVersion = '${pluginAppVersion}'#g" ${mainspace}/mova-home/android/version.gradle
+            sed -i '' "s/appVersion = '[^']*'/appVersion = '${pluginAppVersion}'/" ${mainspace}/mova-home/flutter_plugin/lib/utils/constant.dart
+        fi
+      - |
+        if [ -n "${splitEnable}" ]; then
+            sed -i '' "s#versions.splitEnable.*#versions.splitEnable = ${splitEnable}#g" ${mainspace}/mova-home/android/version.gradle
+        fi
+  install_npm:
+    dir: ..
+    cmds:
+      - bash -c " [ -s \"${NVM_DIR}/nvm.sh\" ] && . \"${NVM_DIR}/nvm.sh\" && nvm use 14.21.3 &&  npm install --registry=https://registry.npmmirror.com/ && npm i --registry=https://registry.npmmirror.com/ jetifier && npx jetify"
+
+  build-flutter-plugin-source:
+    dir: ../flutter_plugin
+    cmds:
+      - '{{.PREFIX_ANDROID}} flutter --version'
+      - '{{.PREFIX_ANDROID}} flutter pub get'
+      - '{{.PREFIX_ANDROID}} dart run build_runner build -d'
+
+  build-android-source:
+    cmds:
+      - '{{.PREFIX_ANDROID}} ./gradlew clean ${build_cmds}'
+
+  upload-bugly-symbols:
+    cmds:
+      - '/Users/mova/cicd/utils/flutter-symbols/bugly_android.sh 60d644f829 37884d59-fa4f-4027-b814-f089230a1c6b com.dreame.movahome {{.appVersionName}}-${BUILD_NUMBER}'
+
+  create_tag:
+    cmds:
+      - |
+        if [ -z "${tag_prefix}" ]; then
+          export tag_prefix="mova-android"
+        fi
+        if [ -z "${tag_branch_flutter}" ]; then
+          export tag_branch_flutter=${code_branch_f}
+        fi
+        if [ -z "${tag_branch_android}" ]; then
+          export tag_branch_android=${code_branch_a}
+        fi
+      - python3 ${mainspace}/python-tools/create_a_new_tag_for_url.py --gitlab_full_url ${gitlab_main_url}  --gitlab_branch ${tag_branch_flutter} --tag ${tag_prefix}-${appVersionName}-${BUILD_NUMBER}
+      - python3 ${mainspace}/python-tools/create_a_new_tag_for_url.py --gitlab_full_url ${gitlab_sub_url}  --gitlab_branch ${tag_branch_android} --tag ${tag_prefix}-${appVersionName}-${BUILD_NUMBER}
+
+  upload:
+    cmds:
+      - task: upload-jfrog
+      - task: upload-multi-pgy
+
+  upload-jfrog:
+    cmds:
+      - rm -rf ${package_dir}
+      - mkdir -p ${package_dir}
+      - cp -r ${mainspace}/mova-home/android/app/build/outputs/* ${package_dir}
+      - cd ${package_dir} && rm -rf logs sdk-dependencies && pwd
+      - ls ${package_dir}
+      - tar --exclude='*._*' -czvf ${mainspace}/mova-home/${appVersionName}-${BUILD_NUMBER}.tar.gz -C ${package_dir} .
+      - python3 ${mainspace}/python-tools/uploading-jfrog.py --username ${usernameVariable} --password ${passwordVariable} --file_path ${mainspace}/mova-home/${appVersionName}-${BUILD_NUMBER}.tar.gz  --remote_path mova-android/${code_branch}/${appVersionName}-${BUILD_NUMBER}.tar.gz
+      - rm -rf ${mainspace}/mova-home/${appVersionName}-${BUILD_NUMBER}.tar.gz
+  upload-multi-pgy:
+    vars:
+      env_list: '{{.android_release_env}}'
+    cmds:
+      - for:
+          var: env_list
+          split: " "
+        cmd: |
+          if [ -n "{{.ITEM}}" ]; then
+            task upload-pgy target_env="{{.ITEM}}" remark="{{.remark}}"
+          fi
+
+  upload-pgy:
+    vars:
+      current_env: '{{.target_env}}'
+    cmds:
+      - for:
+          var: paths
+        cmd: |
+          if [ "{{.KEY}}" = "{{.current_env}}" ]; then
+            echo "{{.KEY}}={{.ITEM}}"
+            export package_path="{{.ITEM}}"
+            bash -x "${mainspace}/python-tools/app/android/upload-new.sh" "{{.current_env}}" "$package_path" ${api_key} "${remark}" ${mainspace}
+          fi
+    #      - |
+    #        # 如果没有找到匹配的环境，使用 prod-cn 的路径
+    #        export package_path="{{index .paths "prod-cn"}}"
+    #        bash -x "${mainspace}/python-tools/app/android/upload-new.sh" "{{.current_env}}" "$package_path" ${api_key} "${remark}" ${mainspace}
+   
+
+
+
+

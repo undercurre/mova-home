@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/drawable/splash_background.xml -->
+<!-- res/drawable/splash_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+    <item>
+        <shape>
+            <gradient
+                android:angle="120"
+                android:endColor="@color/common_bgGradientEnd"
+                android:startColor="@color/common_bgGradientStart"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>
+
+

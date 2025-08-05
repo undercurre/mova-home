@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_shape_white_r8">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_envi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="DEV环境(cn-dev.iot.mova-tech.com:30080)"
+            android:textColor="@color/common_textMain" />
+
+        <RadioButton
+            android:id="@+id/rb_uat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:text="UAT环境(uat.cn.iot.mova-tech.com)"
+            android:textColor="@color/common_textMain" />
+
+        <RadioButton
+            android:id="@+id/rb_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="预发布环境(cn-pre.iot.mova-tech.com:13267)"
+            android:textColor="@color/common_textMain" />
+
+        <RadioButton
+            android:id="@+id/rb_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:text="生产环境(cn.iot.mova-tech.com:13267)"
+            android:textColor="@color/common_textMain" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/common_selector_btn_r24"
+        android:text="保存"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_envi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

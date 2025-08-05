@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dreame.smartlife">
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!--    快捷方式-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher2.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher3.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher3.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES"
+        tools:node="remove" />
+
+    <uses-sdk
+        android:targetSdkVersion="17"
+        tools:overrideLibrary="tv.danmaku.ijk.media.player_arm64,tv.danmaku.ijk.media.player_x86_64,com.facebook.react" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!--  Android11需要声明软件包可见性  -->
+    <queries>
+        <package android:name="com.baidu.duer.superapp" />
+        <package android:name="com.baidu.duer.superapp.oversea" />
+        <package android:name="com.alibaba.ailabs.tg" />
+        <package android:name="com.amazon.dee.app" />
+        <package android:name="com.google.android.apps.chromecast.app" />
+        <package android:name="com.xiaomi.smarthome" />
+
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.dreame.movahome.MainApplication"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:multiArch="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:resizeableActivity,android:usesCleartextTraffic"
+        tools:targetApi="m">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
+        <!--        <meta-data-->
+        <!--            android:name="com.amap.api.v2.apikey"-->
+        <!--            android:value="5740116cd357cfb9c7e6b76b7b31216a" />-->
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="a970c993cb968970091796d1addd0764"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="105748972"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.vivo.push.app_secret"
+            android:value="460f1e55-ad3e-4969-9d90-366eeeac082d"
+            tools:replace="android:value" />
+
+        <meta-data
+            android:name="UMENG_APP_KEY"
+            android:value="mixpush-662e1b4d940d5a4c494a4a59"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="UMENG_APP_SECRET"
+            android:value="mixpush-781fcd3502707c74a82a29f5ec55a8da"
+            tools:replace="android:value" />
+
+        <meta-data
+            android:name="XIAO_MI_APP_ID"
+            android:value="mixpush-2882303761520312491"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="XIAO_MI_APP_KEY"
+            android:value="mixpush-5552031260491"
+            tools:replace="android:value" />
+
+        <meta-data
+            android:name="MEI_ZU_APP_ID"
+            android:value="mixpush-153449"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="MEI_ZU_APP_KEY"
+            android:value="mixpush-a67baeeb66194b018fe657ab195f00b3"
+            tools:replace="android:value" />
+
+        <meta-data
+            android:name="OPPO_APP_KEY"
+            android:value="mixpush-1f36a9412d4541de81334bf4913a92c8"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="OPPO_APP_SECRET"
+            android:value="mixpush-88c2f007e9bc4aa5a52771eb1634a722"
+            tools:replace="android:value" />
+
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="104442700"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.dreame.movahome.ui.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dreame.smartlife.ui.activity.WifiSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.PluginAddWifiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dreame.smartlife.PluginAddWifiActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="android.dreame.module.rn.RNDebugActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/PluginActivityStyle" />
+        <activity
+            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VoiceHelpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VoiceHelpWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.dreame.smartlife.WebViewActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.PrivacyPolicyWebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.aliqin.mytel.protocolWeb" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.ConnectGuideWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui2.voicecontrol.AlexaAppToAppActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui2.voicecontrol.AlexaAppToAppAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui2.home.call.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.dreame.movahome.flutter.FlutterPluginActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/PluginActivityStyle"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.dreame.movahome.action.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dreame.movahome.flutter.FlutterPluginSubActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/PluginActivityStyle"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.dreame.movahome.action.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--service-->
+        <service
+            android:name="android.dreame.module.rn.RNPluginService"
+            android:exported="false"
+            android:process=":plugin">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="com.dreame.movahome.action.plugin.clearcache"/>-->
+            <!--                <action android:name="com.dreame.movahome.action.plugin.changeCurrentCountry"/>-->
+            <!--                <action android:name="com.dreame.movahome.action.plugin.deleteCache"/>-->
+            <!--                <action android:name="com.dreame.movahome.action.plugin.onDestroy"/>-->
+            <!--            </intent-filter>-->
+        </service>
+
+        <service
+            android:name=".ui2.home.call.VideoCallService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <!--provider-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="remove" />
+
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
+
+        <!-- facebook begin -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!-- facebook end -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:targetActivity=".wxapi.WXEntryActivity"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:node="replace" />
+
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:targetActivity=".wxapi.WXEntryActivity"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:node="replace" />
+
+        <!--    &lt;!&ndash;        防止facebook login 自动初始化&ndash;&gt;
+            <provider
+                android:name="com.facebook.internal.FacebookInitProvider"
+                android:authorities="${applicationId}.FacebookInitProvider"
+                android:exported="false"
+                tools:node="remove" />
+    -->
+        <!--        <meta-data android:name="dclode_appkey" android:value="95ac8f7d800d3ea1b6aedffdf46a9958"/>-->
+
+        <service
+            android:name="io.agora.rtc.ss.impl.LocalScreenSharingService"
+            android:exported="true"
+            tools:node="merge" />
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:exported="true"
+            tools:node="remove">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="zendesk.messaging.MessagingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ZendeskChatTheme" />
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@style/authsdk_activity_dialog_dreame"
+            tools:replace="android:theme" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@android:color/black" />
+    </application>
+
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+    </queries>
+
+    <!--    facebook   -->
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
+    </queries>
+</manifest>

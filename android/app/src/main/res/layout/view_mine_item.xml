@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|start"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/icon_mine_device_share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="start"
+        android:maxLines="2"
+        android:text="@string/Me_AccountSetting_3rdPardBundle"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_title"
+        app:layout_constraintEnd_toStartOf="@id/gl_center"
+        app:layout_constraintStart_toEndOf="@id/iv_title"
+        app:layout_constraintTop_toTopOf="@id/iv_title"
+        app:layout_goneMarginStart="16dp"
+        tool:text="我得天我我得天我得天我得天我得天我得天我得天我得天我得天我得天" />
+
+    <!--    apple-->
+    <ImageView
+        android:id="@+id/iv_apple"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="8dp"
+        android:src="@drawable/icon_apple_binded"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_title"
+        app:layout_constraintEnd_toStartOf="@id/iv_google"
+        app:layout_constraintTop_toTopOf="@id/iv_title"
+        tool:visibility="visible" />
+
+    <!--    Google-->
+    <ImageView
+        android:id="@+id/iv_google"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="8dp"
+        android:src="@drawable/googleg_standard_color_18"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_title"
+        app:layout_constraintEnd_toStartOf="@id/iv_facebook"
+        app:layout_constraintTop_toTopOf="@id/iv_title"
+        tool:visibility="visible" />
+    <!--    facebook-->
+    <ImageView
+        android:id="@+id/iv_facebook"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="8dp"
+        android:src="@drawable/com_facebook_button_icon"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_title"
+        app:layout_constraintEnd_toStartOf="@id/iv_wechat"
+        app:layout_constraintTop_toTopOf="@id/iv_title"
+        app:tint="@color/com_facebook_blue"
+        tool:visibility="visible" />
+    <!--    wechat-->
+    <ImageView
+        android:id="@+id/iv_wechat"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="8dp"
+        android:src="@drawable/icon_wechat_binded"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_title"
+        app:layout_constraintEnd_toStartOf="@id/iv_right"
+        app:layout_constraintTop_toTopOf="@id/iv_title"
+        tool:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:textAlignment="viewEnd"
+        android:maxLines="2"
+        android:textColor="@color/common_textSecond"
+        android:textSize="@dimen/common_textNormal"
+        app:layout_constraintBottom_toBottomOf="@id/iv_title"
+        app:layout_constraintEnd_toStartOf="@id/iv_right"
+        app:layout_constraintStart_toEndOf="@id/gl_center"
+        app:layout_constraintTop_toTopOf="@id/iv_title"
+        tool:text="我得天我得天我得天我得天我得天我得天我得天我得天我得天我得天我得天我得天我得天我得天" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_height_divider"
+        android:background="@color/common_color_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/iv_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/shape_background_small</item>
+    </style>
+
+    <style name="Widget.MyTest.AppWidget.ItemView" parent="android:Widget">
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/bg_item_select_fast_cmd</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.AppWidget.ContainerDefault" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/shape_background_default</item>
+    </style>
+
+</resources>

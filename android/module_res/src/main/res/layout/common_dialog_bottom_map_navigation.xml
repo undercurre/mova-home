@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_dialogBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/common_shape_white_top_r20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:lines="1"
+            android:textColor="@color/common_textSecond"
+            android:textSize="@dimen/common_textSizeLarge1"
+            tools:text="学习心得撒旦撒旦撒旦撒大萨达撒阿达是的撒的撒" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_dialogBg" />
+
+        <TextView
+            android:id="@+id/tv_amap"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:lines="1"
+            android:paddingHorizontal="20dp"
+            android:text="高德地图"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textSizeLarge1" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_dialogBg" />
+
+        <TextView
+            android:id="@+id/tv_baidu_map"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:lines="1"
+            android:paddingHorizontal="20dp"
+            android:text="百度地图"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textSizeLarge1" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/common_dialogBg" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:lines="1"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textSizeLarge1" />
+    </LinearLayout>
+</RelativeLayout>

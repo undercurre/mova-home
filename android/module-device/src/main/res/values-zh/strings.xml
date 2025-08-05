@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="share_from">来自%s的共享</string>
+    <string name="device_share">设备共享</string>
+
+    <string name="message_setting_share">共享</string>
+    <string name="accept">接受</string>
+    <string name="text_no_device_to_share">您还没有已配网的设备，无法共享给好友</string>
+    <string name="text_no_device_from_others">还没有好友给您共享设备</string>
+    <string name="shared">已共享</string>
+    <string name="not_share">未共享</string>
+    <string name="my_feedback_device">我的设备</string>
+    <string name="text_add_user_to_share">新增共享用户</string>
+    <string name="device_share_user_list">您还没有共享好友</string>
+    <string name="already_accept">已接受</string>
+    <string name="waiting_receive">待接受</string>
+    <string name="text_share_permissions">功能权限</string>
+    <string name="text_share_permissions_description">开启后，你的好友可使用该功能</string>
+    <string name="share_input_id">请输入手机号/邮箱/MOVA ID</string>
+    <string name="share_recent_contact">最近联系人</string>
+    <string name="invalid_account_to_retry">账号未注册，请重新输入</string>
+
+    <string name="share_device_over_times">次数已达上限，分享失败</string>
+    <string name="share_wait_deal">设备已经分享，待对方确认</string>
+    <string name="share_already_share">对方已接受分享</string>
+    <string name="share_device_not_exist">设备不存在</string>
+    <string name="share_reject_with_yourself">不能分享给自己</string>
+    <string name="Toast_DeviceShare_UserOutOfService">跨区分享！当前所选用户无法共享您的设备，请确保对方账号跟您同属一个注册地区。</string>
+    <string name="share_device_to_user_error">共享失败</string>
+    <string name="share_device_success">共享成功</string>
+    <string name="share">分享</string>
+    <string name="text_permission_update">权限更新</string>
+    <string name="text_permission_has_updated">权限已更新</string>
+    <string name="text_permission_update_confirm_msg">是否保存当前操作？</string>
+    <string name="save">保存</string>
+    <string name="know">知道了</string>
+    <string name="text_permission_enable">已开启</string>
+    <string name="text_permission_disable">未开启</string>
+    <string name="cancel_receive">删除设备</string>
+    <string name="device_share_from">%s邀请你共享%s</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="cancel_share">取消共享</string>
+    <string name="text_be_shared_permission_desc">若需变更请联系共享该设备的好友</string>
+</resources>

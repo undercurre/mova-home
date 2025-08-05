@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_item_scan_device"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_device"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/icon_robot_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/icon_arrow_right"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:lines="2"
+            android:textAlignment="viewStart"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textLarge"
+            tools:text="S20 Pro PlusS20 Pro PlusS20 Pro Plus" />
+    </LinearLayout>
+</FrameLayout>

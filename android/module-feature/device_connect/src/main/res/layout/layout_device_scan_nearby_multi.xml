@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="20dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/tv_confirm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:spanCount="2"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_device_nearby_scan" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toTopOf="@id/indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.dreame.feature.connect.views.ConnectIndicatorView
+        android:id="@+id/indicator"
+        layout="@layout/layout_connect_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

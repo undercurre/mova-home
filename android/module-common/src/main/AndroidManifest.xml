@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.dreame.module">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI" />
+    <uses-permission android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI" />
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE" />
+
+    <!-- 支持相机才能运行 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application android:supportsRtl="true">
+        <activity
+            android:name=".ui.preview.ImageAndVideoPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.JSExceptionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".rn.load.RnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/PluginActivityStyle" />
+
+        <activity
+            android:name="android.mova.module.rn.load.RnShortcutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/ThemeTranslucent" />
+
+        <provider
+            android:name="android.dreame.module.provider.StorageProvider"
+            android:authorities="${applicationId}.storage_provider" />
+
+        <activity
+            android:name="android.mova.module.ui.SchemeHandleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:taskAffinity="android.dreame.smartlife.shortcut"
+            android:theme="@style/ThemeTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app.dreame.tech"
+                    android:scheme="dreame" />
+                <data
+                    android:host="smartlife"
+                    android:scheme="dreame" />
+
+                <data
+                    android:host="app.mova-tech.com"
+                    android:scheme="mova" />
+                <data
+                    android:host="smartlife"
+                    android:scheme="mova" />
+            </intent-filter>
+
+
+            <!--Amazon Alexa App-->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app.mova-tech.com"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://app.mova-tech.com  mova://app?code= & state= /-->
+                <data
+                    android:host="app"
+                    android:pathPattern=".*"
+                    android:scheme="mova" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.AppWidgetHandleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

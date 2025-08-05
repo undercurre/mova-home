@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="82dp"
+        android:text="@string/alexa_auth_request_title"
+        android:textAlignment="center"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textSizeLarge1" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="119dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_alexa_bind_logo" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="20dp"
+        android:text="@string/alexa_auth_content_title"
+        android:textAlignment="center"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/icon_alexa_large" />
+
+    <Button
+        android:id="@+id/btn_bind"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/text_alexa_bind_agree"
+        android:textSize="@dimen/common_textLarge" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/common_shape_btn_second_r24"
+        android:text="@string/text_alexa_bind_reject"
+        android:textColor="@color/common_textMain"
+        android:textSize="@dimen/common_textLarge" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+</LinearLayout>

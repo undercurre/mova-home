@@ -1,0 +1,6 @@
+User defaults from command line:
+Command line invocation:
+    IDEPackageSupportUseBuiltinSCM = YES
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace Dreame_Smarthome.xcworkspace -scheme Dreame_Smarthome build
+
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sl_container"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    app:drag_edge="left">
+
+    <RelativeLayout
+        android:background="@color/common_red1"
+        android:id="@+id/rl_cancel_share"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="@dimen/common_textNormal"
+            android:text="@string/cancel_share"
+            android:textColor="@color/common_color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textNormal"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_user_id"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toEndOf="@id/civ_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="哈哈哈" />
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/common_textSecond"
+            android:textSize="@dimen/common_textSmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/tv_nickname"
+            app:layout_constraintTop_toBottomOf="@id/tv_nickname"
+            tools:text="哈哈哈" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/icon_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_share_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizePresetSizes="14sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:maxLines="2"
+            android:textColor="#55E53C"
+            android:textSize="@dimen/common_textNormal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Спільний доступ ще не надано" />
+
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_height_divider"
+            android:background="@color/common_color_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_nickname" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.daimajia.swipe.SwipeLayout>

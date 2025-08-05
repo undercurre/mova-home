@@ -1,0 +1,52 @@
+version: "3"
+
+env:
+  PUB_HOSTED_URL: https://pub.flutter-io.cn
+  FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+
+vars:
+  PREFIX_ANDROID: PATH="$PATH:/Users/admin/fvm/versions/3.19.5/bin"
+  PREFIX_IOS: PATH="$PATH:/Users/admin/fvm/versions/3.19.5/bin"
+
+tasks:
+  build-android:
+    cmds:
+      - npm install --registry=http://registry.npm.taobao.org
+      - npm i --registry=http://registry.npm.taobao.org jetifier && npx jetify
+      - task: build-flutter-plugin-source
+      - task: build-android-source
+      - task: upload-bugly-symbols
+
+  build-flutter-plugin-source:
+    dir: flutter_plugin
+    cmds:
+      - java --version
+      - '{{.PREFIX_ANDROID}} flutter --version'
+      - '{{.PREFIX_ANDROID}} flutter pub get'
+
+  build-android-source:
+    dir: android
+    cmds:
+      - '{{.PREFIX_ANDROID}} ./gradlew clean {{.build_cmds}}'
+  
+  upload-bugly-symbols:
+    dir: android
+    cmds:
+      - '/Users/admin/cicd/utils/flutter-symbols/bugly_android.sh 3e41df8066 22be9156-ad48-4b43-99a6-39e9414cd1f1 com.dreame.movahome {{.appVersionName}}'
+
+  build-ios:
+    dir: ios
+    cmds:
+      - '{{.PREFIX_IOS}} flutter --version'
+      - '{{.PREFIX_IOS}} fastlane {{.release_env}}'
+      - task: upload-bugly-symbols-ios
+
+  upload-ios:
+      dir: ios
+      cmds:
+        - '{{.PREFIX_IOS}} fastlane upload_to_connect'
+
+  upload-bugly-symbols-ios:
+    dir: ios
+    cmds:
+      - '/Users/admin/cicd/utils/flutter-symbols/bugly_ios.sh 9099c39c16 28ba3173-754c-4e43-9ba5-8eb3bb11756f com.mova.smarthome {{.appVersionName}}'

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_selected_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_selected_item_bg_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_unit_text" format="string" />
+        <attr name="wheel_unit_text_size" format="dimension" />
+        <attr name="wheel_unit_text_color" format="color" />
+        <attr name="wheel_unit_text_space" format="dimension" />
+        <attr name="wheel_unit_offset_Y" format="dimension" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="wheel_font_path" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressButton">
+        <attr name="inner_background_color" format="color" />
+        <attr name="outer_background_color" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="enable_take" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LetterSideBarView">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="letterSpace" format="dimension" />
+        <attr name="highlightColor" format="color" />
+        <attr name="highlightBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_reached_bar_radius" format="dimension"/>
+        <attr name="progress_unreached_bar_radius" format="dimension"/>
+
+        <attr name="progress_text_margin" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+        <attr name="progress_show_thumb" format="boolean" />
+        <attr name="progress_thumb" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MineItemView">
+        <attr name="mineItemTitle" format="string" />
+        <attr name="mineItemTitleMargin" format="dimension|reference" />
+        <attr name="mineItemImage" format="reference" />
+        <attr name="mineItemShowArrow" format="boolean" />
+        <attr name="mineItemShowArrowImage" format="reference" />
+        <attr name="mineItemShowImage" format="boolean" />
+        <attr name="mineItemShowType" format="integer">
+            <enum name="none" value="0" />
+            <enum name="title" value="1" />
+            <enum name="content" value="2" />
+        </attr>
+        <attr name="mineItemShowDivider" format="boolean" />
+        <attr name="mineItemTitleTextColor" format="color" />
+        <attr name="mineItemContentTextColor" format="color" />
+        <attr name="mineItemLines" format="integer" />
+        <attr name="mineItemMaxLines" format="integer" />
+        <attr name="mineItemTitleLines" format="integer" />
+        <attr name="mineItemTitleMaxLines" format="integer" />
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MaxHeightView">
+        <attr name="mhv_HeightRatio" format="reference|float" />
+        <attr name="mhv_HeightDimen" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonTitleView">
+        <attr name="rightIcon" format="reference" />
+        <attr name="showRightImage" format="boolean" />
+        <attr name="showRightText" format="boolean" />
+        <attr name="showCenterSubtitle" format="boolean" />
+        <attr name="useStatusBar" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="titleMarginStart" format="dimension" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="titleShowPosition" format="integer">
+            <enum name="none" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

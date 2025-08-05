@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application android:supportsRtl="true">
+        <activity
+            android:name="com.sobot.chat.conversation.SobotChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@style/dreame_sobot_activity_def_theme"
+            android:windowSoftInputMode="adjustResize"
+            tools:replace="android:theme" />
+        <activity
+            android:name="com.sobot.chat.activity.SobotPostMsgActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/dreame_sobot_activity_def_theme"
+            android:windowSoftInputMode="adjustResize"
+            tools:replace="android:theme" />
+        <activity
+            android:name="zendesk.messaging.android.internal.conversationscreen.ConversationActivity"
+            android:theme="@style/dreame_Theme.ZendeskMessaging"
+            tools:replace="android:theme" />
+
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <!--脸书-->
+        <package android:name="com.facebook.katana"/>
+        <!--WhatsApp-->
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.ss.android.ugc.trill"/>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+        </intent>
+    </queries>
+</manifest>

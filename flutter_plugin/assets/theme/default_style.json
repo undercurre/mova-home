@@ -1,0 +1,37 @@
+{
+    "color": {
+        "brand_normal": "#E8DEC1",
+        "brand_click": "#CBB794",
+        "brand_btn_text": "#8c6533",
+        "brand_gradient": "#cbb794",
+        "primary": "#121212",
+        "regular": "#404040",
+        "secondary": "#777777",
+        "disable": "#A6A6A6",
+        "white": "#ffffff",
+        "fillDark": "#E2E2E2",
+        "fillLight": "#EEEEEE",
+        "bg_gray": "#F4F4F4",
+        "bg_whire": "#FFFFFF",
+        "divider": "#E2E2E2",
+        "link": "#0A84FF",
+        "success1": "#32D74B",
+        "success2": "#1BAC3B",
+        "success3": "#E1F9E1",
+        "warning1": "#FF9F0A",
+        "warning2": "#BF6E12",
+        "warning3": "#FFF3E5",
+        "danger1": "#EE3C2F",
+        "danger2": "#C54242",
+        "danger3": "#FFE5DE"
+    },
+    "text_size": {
+        "large": 24,
+        "head": 20,
+        "secondary": 18,
+        "large_text": 16,
+        "middle_text": 14,
+        "small_text": 12,
+        "mini_text": 10
+    }
+}

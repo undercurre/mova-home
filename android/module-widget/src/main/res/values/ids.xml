@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    切换设备 -->
+    <item name="fl_change_device" type="id" />
+    <item name="iv_change_device" type="id" />
+
+    <item name="iv_goto" type="id" />
+
+    <!--   默认状态文案 -->
+    <item name="tv_desc" type="id" />
+    <!--   设备名 -->
+    <item name="tv_device_name" type="id" />
+    <!--   设备状态 -->
+    <item name="tv_device_status" type="id" />
+
+    <!-- 电池 -->
+    <item name="tv_battery_value" type="id" />
+
+    <!--   清洁时间 -->
+    <item name="tv_clean_time" type="id" />
+    <!--   清洁区域 -->
+    <item name="tv_clean_area" type="id" />
+
+    <!--  清洁按钮-->
+    <item name="iv_device_clean" type="id" />
+    <item name="fl_device_clean" type="id" />
+    <!--    <item name="tv_device_clean" type="id" />-->
+    <!--  回充按钮-->
+    <item name="iv_device_charging" type="id" />
+    <item name="fl_device_charging" type="id" />
+    <!--    <item name="tv_charging_clean" type="id" />-->
+
+    <!--  视频监控按钮-->
+    <item name="iv_device_monitor" type="id" />
+    <item name="fl_device_monitor" type="id" />
+    <!--    <item name="tv_camera_monitor" type="id" />-->
+
+    <!--  快捷指令按钮-->
+    <item name="iv_device_fast_command" type="id" />
+    <item name="lv_fast_command" type="id" />
+    <item name="fl_device_fast_command" type="id" />
+
+    <item name="tv_fast_command" type="id" />
+    <item name="iv_fast_command" type="id" />
+    <item name="ll_item_fast_command" type="id" />
+
+    <item name="fl_device_empty" type="id" />
+
+    <!--  机器Icon-->
+    <item name="iv_device" type="id" />
+
+
+    <!--    时间-->
+    <item name="tv_min" type="id" />
+    <!--    平方米-->
+    <item name="tv_square_meter" type="id" />
+    <!--    百分比-->
+    <item name="tv_percent" type="id" />
+</resources>

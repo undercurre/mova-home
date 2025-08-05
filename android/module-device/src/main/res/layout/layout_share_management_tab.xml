@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:orientation="vertical"
+        android:paddingVertical="4dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/guideline_tab"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="0dp">
+
+        <TextView
+            android:id="@+id/tv_tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:minHeight="22dp"
+            android:text="@string/message_setting_share"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textSizeLarge1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tab1_underline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/icon_device_indicator"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="vertical"
+        android:paddingVertical="4dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/ll_tab1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="0dp">
+
+        <TextView
+            android:id="@+id/tv_tab2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:minHeight="22dp"
+            android:text="@string/accept"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textSizeLarge1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tab2_underline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/icon_device_indicator"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/common_fillDark"
+        app:layout_constraintTop_toBottomOf="@id/ll_tab1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

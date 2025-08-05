@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhite">@color/common_color_white</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorRed">@color/common_red1</color>
+    <color name="colorGreen">#31BC92</color>
+
+</resources>

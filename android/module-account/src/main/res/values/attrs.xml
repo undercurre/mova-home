@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputTextField">
+        <attr name="showCountryCode" format="boolean" />
+        <attr name="showVerifCode" format="boolean" />
+        <attr name="showClear" format="boolean" />
+        <attr name="showCiphertext" format="boolean" />
+        <attr name="defaultCipher" format="boolean" />
+        <attr name="android:hint" format="string" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="android:id" format="reference" />
+        <attr name="defaultCountryCode" format="string" />
+        <attr name="defaultVerifText" format="string" />
+        <attr name="android:digits" format="string" />
+        <attr name="showUnderline" format="boolean" />
+    </declare-styleable>
+
+</resources>

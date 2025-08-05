@@ -1,0 +1,60 @@
+rootProject.name = 'MOVAhome'
+include ':react-native-community_netinfo'
+project(':react-native-community_netinfo').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/netinfo/android')
+
+include ':react-native-agora'
+project(':react-native-agora').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-agora/android')
+
+include ':react-native-view-shot'
+project(':react-native-view-shot').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-view-shot/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
+include ':app'
+include ':module_base', ':module_res'
+include ':module_service'
+
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+
+include ':react-native-orientation'
+project(':react-native-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation/android')
+
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
+
+include ':react-native-video'
+project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')
+
+include ':react-native-audio-record'
+project(':react-native-audio-record').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio-record/android')
+
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
+
+include ':@react-native-community_viewpager'
+project(':@react-native-community_viewpager').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/viewpager/android')
+
+
+include ':react-native-dental-module'
+project(':react-native-dental-module').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-dental-module/android')
+
+project(':react-native-community_cameraroll').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/cameraroll/android')
+include ':module-account'
+include ':module-common'
+include ':module-widget'
+include ':module_help'
+include ':module-feature:device_connect'
+
+//*************** flutter module start ***************//
+setBinding(new Binding([gradle: this]))
+evaluate(new File(settingsDir.parentFile, './flutter_plugin/.android/include_flutter.groovy'))
+//*************** flutter module end ***************//
+
+include ':flutter_plugin'
+project(':flutter_plugin').projectDir = new File('../flutter_plugin')

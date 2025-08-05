@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">11sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">11sp</dimen>
+    <dimen name="design_bottom_navigation_height">65dp</dimen>
+    <dimen name="design_bottom_navigation_shadow_height">0dp</dimen>//阴影高度-->
+    <dimen name="design_bottom_navigation_elevation">0dp</dimen>//阴影的大小-->
+    <dimen name="design_bottom_navigation_margin">12dp</dimen>
+</resources>

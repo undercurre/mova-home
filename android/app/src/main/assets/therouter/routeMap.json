@@ -1,0 +1,240 @@
+[
+  {
+    "path": "/app/voiceControlAlexaAuth",
+    "className": "com.dreame.smartlife.ui2.voicecontrol.AlexaAppToAppAuthActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/voiceControlAlexa",
+    "className": "com.dreame.smartlife.ui2.voicecontrol.AlexaAppToAppActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/message/share/device",
+    "className": "com.dreame.smartlife.ui2.share.dialog.DeviceShareServiceImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/WebViewActivity",
+    "className": "com.dreame.smartlife.ui.activity.WebViewActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/voiceControl",
+    "className": "com.dreame.smartlife.ui.activity.VoiceHelpActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/PrivacyPolicyWebView",
+    "className": "com.dreame.smartlife.ui.activity.PrivacyPolicyWebView",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/ConnectGuideWebView",
+    "className": "com.dreame.smartlife.ui.activity.ConnectGuideWebViewActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/LogoutClearService",
+    "className": "com.dreame.smartlife.service.LogoutClearService",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/homeInteractionService",
+    "className": "com.dreame.smartlife.service.HomeInteractionService",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/appWidgetClickHandleService",
+    "className": "com.dreame.smartlife.service.AppWidgetClickHandleService",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/help/service",
+    "className": "com.dreame.smartlife.help.HelpServiceImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/flutterBridgeService",
+    "className": "com.dreame.smartlife.flutter.service.FlutterBridgeService",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/account/setPassword",
+    "className": "com.dreame.smartlife.account.account.password.setting.SetPasswordActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/account/modifyPassword",
+    "className": "com.dreame.smartlife.account.account.password.modify.ModifyPasswordActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/app/splash",
+    "className": "com.dreame.movahome.ui.activity.SplashActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/widget/appwidget/service",
+    "className": "com.dreame.module.widget.service.AppWidgetDeviceService",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/widget/appwidget/addWidgetAndBind",
+    "className": "com.dreame.module.widget.select.widget.AppWidgetSelectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/widget/appwidget/select",
+    "className": "com.dreame.module.widget.select.AppWidgetDeviceSelectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/routerTips",
+    "className": "com.dreame.feature.connect.router.tips.RouterConnectTipsActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/routerPassword",
+    "className": "com.dreame.feature.connect.router.password.RouterConnectPasswordActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/productQR",
+    "className": "com.dreame.feature.connect.qr.QRDeviceScanActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/productList",
+    "className": "com.dreame.feature.connect.product.ProductSelectListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/triggerAp",
+    "className": "com.dreame.feature.connect.device.trigger.DeviceTriggerAPActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/scanNearBy",
+    "className": "com.dreame.feature.connect.device.scan.DevcieScanNearbyActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/qrConnectTips",
+    "className": "com.dreame.feature.connect.device.qrtips.DeviceScanQRTipsActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/qrNet",
+    "className": "com.dreame.feature.connect.device.qrnet.DeviceQrNetActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/triggerBle",
+    "className": "com.dreame.feature.connect.device.mower.trigger.BleDeviceTriggerActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/connectBleSolution",
+    "className": "com.dreame.feature.connect.device.mower.solution.BleSolutionActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/prepare/mowerConnect",
+    "className": "com.dreame.feature.connect.device.mower.prepare.MowerPrepareConnectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/connectBle",
+    "className": "com.dreame.feature.connect.device.mower.connect.DeviceConnectBleActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/stepFailInfo",
+    "className": "com.dreame.feature.connect.device.connect.StepFailInfoActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/connect",
+    "className": "com.dreame.feature.connect.device.connect.DeviceConnectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/connect/device/bootUp",
+    "className": "com.dreame.feature.connect.device.boot.DeviceBootUpActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/rn/service",
+    "className": "android.dreame.module.rn.load.RnPluginServiceImpl",
+    "action": "",
+    "description": "",
+    "params": {}
+  }
+]

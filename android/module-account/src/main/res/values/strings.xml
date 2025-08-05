@@ -1,0 +1,143 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="enter_mobile">Mobile number</string>
+    <string name="input_verify_code">Verification code</string>
+    <string name="user_agreement2">@string/user_agreement</string>
+    <string name="user_privacy2">@string/user_privacy</string>
+    <string name="user_agreement">User Agreement</string>
+    <string name="user_privacy">Privacy Policy</string>
+    <string name="text_signIn_or_signUp">Log in / Sign up</string>
+    <string name="text_other_login_methods">Other login methods</string>
+    <string name="text_signIn_create_account_tip">The mobile number that has not been signed up will create a new MOVAhome account automatically after being verified.</string>
+    <string name="send_sms_code">Get code</string>
+    <string name="send_sms_code_error">Failed to send you a code.</string>
+    <string name="send_sms_too_frequent">Too many attempts, please try again later...</string>
+    <string name="send_sms_too_much">Exceeded number of verification code requests. Please try again in 2 hours.</string>
+    <string name="sms_code_invalid_expired">Verification code is invalid or expired.</string>
+    <string name="sms_code_invalid">Incorrect verification code</string>
+    <string name="login_failed">Login failed</string>
+    <string name="login_success">Welcome back</string>
+    <string name="user_not_exist">The requested user does NOT exist.</string>
+    <string name="user_password_not_match">Invalid password</string>
+    <string name="login_request_too_much">Too many attempts, please try again later.</string>
+    <string name="password_error_exceeded_the_maximum">Too many attempts, the account has been locked. Please try again later or retrieve your password?</string>
+    <string name="text_retrieve_password">Reset password</string>
+    <string name="register_success">Succeeded. Welcome to join in MOVAhome App.</string>
+    <string name="register_failed">Failed to sign up</string>
+    <string name="mail_error">Invalid email</string>
+    <string name="pwd_error">Invalid password</string>
+    <string name="pwd_invalid">@string/pwd_error</string>
+    <string name="email_has_registered">The email has been signed up. Log in now?</string>
+    <string name="login_now">Log in now</string>
+    <string name="send_success">A code has been sent to you.</string>
+    <string name="phone_not_registered">The requested user does NOT exist.</string>
+    <string name="reset_password_success">Your password has been reset. Log in now?</string>
+    <string name="reset_original_password_duplicate">Failed to change password. New password shall be different from the previous one.</string>
+    <string name="account_has_registered">The mobile number has been signed up. Log in now?</string>
+    <string name="Toast_3rdPartyBundle_NoWeChat_Tip">Unable to log in with WeChat due to no WeChat app installed. Please download and install WeChat first.</string>
+    <string name="Toast_3rdPartyBundle_BundleProcess_TimeOut_Tip">Failed to link due to timeout. Please try again.</string>
+    <string name="terms_uncheck">I have read and agreed User Agreement and Privacy Policy</string>
+    <string name="get_sms_code">Please get code sent first.</string>
+    <string name="login_user_hint">Mobile number/email/MOVA ID</string>
+    <string name="enter_pwd">Password</string>
+    <string name="register">Sign Up</string>
+    <string name="forgot_pwd">Forgot password?</string>
+    <string name="login">Log In</string>
+    <string name="text_new_password_tips">The password must have at least 8 characters and contain at least two of the following: uppercase letters, lowercase letters, numbers and special symbols.</string>
+    <string name="reg_by_mail">Sign up with email</string>
+    <string name="mail_address">Email address</string>
+    <string name="please_set_your_pwd">Please set your password</string>
+    <string name="please_input_mobile">Mobile number</string>
+    <string name="Input_3rdPartyBundle_Account">Mobile number/email</string>
+    <string name="Text_3rdPartyBundle_BundlePage_Title">Third Party Login</string>
+    <string name="Text_3rdPartyBundle_CreateDreameBundled_Now">Link Now</string>
+    <string name="use_phone_reset_password">Reset password with mobile number</string>
+    <string name="next">Next</string>
+    <string name="use_email_reset_password">Reset password with email</string>
+    <string name="enter_new_pwd">New password</string>
+    <string name="confirm_new_pwd">Confirm password</string>
+    <string name="bind">Add</string>
+
+
+    <string name="already_send" tools:ignore="MissingTranslation">%ds</string>
+    <string name="text_account_unregister">This account has not been signed up yet. Sign it up now?</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="bind_signin_phone_code">For the security of your account and better after-sales service support, please link your account to your mobile number.</string>
+    <string name="bind_signin_phone_code_or_email">For the security of your account and better after-sales service support, please link your account to your mobile number or email address.</string>
+
+    <string name="Me_AccountSetting_3rdPardBundle">Third Party Login</string>
+    <string name="Toast_3rdPartyBundle_Unbundle">Are you sure you want to delete %s?</string>
+    <string name="Toast_3rdPartyBundle_DoubleBundle">The %s has already linked to another MOVAhome account %s! If you continue linking, the previous account %s information will be cleared. Continue?</string>
+    <string name="Toast_3rdPartyBundle_ResultFailed">Failed to link</string>
+    <string name="Toast_3rdPartyBundle_ResultSuccess">Linked</string>
+
+    <string name="share_weixin">WeChat</string>
+    <string name="Text_3rdPartyBundle_LinkPage_DoubleBundle_Tip">Your MOVAhome account has been linked to the other %s account. That link will be expired once you link to this current %s account. Please confirm whether you want to link this new %s account.</string>
+
+    <string name="text_bind_skip">Bind Later</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="reg_now">Sign Up</string>
+    <string name="reg_by_phone">Sign up with mobile number</string>
+    <string name="pwd_different">Passwords do NOT match. Please try again.</string>
+
+
+    <string name="reset_input_original_password">Current password</string>
+
+    <string name="input_psw_empty_cant">Please enter the current password.</string>
+    <string name="input_new_password_empty">Please enter a new password.</string>
+    <string name="input_confirm_password_empty">Please confirm the new password.</string>
+
+    <string name="set_password">Set password</string>
+    <string name="reset_password">Change Password</string>
+
+    <string name="pwd_modify_success">Password has been changed. Please log in again.</string>
+    <string name="reset_original_password_error">Incorrect password, please try again.</string>
+    <string name="reset_original_password_too_much">Too many attempts, please try again later.</string>
+
+    <string name="digst" tools:ignore="ExtraTranslation">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="reset_psw">Reset password</string>
+    <string name="mine_phone_number">Mobile Number</string>
+
+    <string name="phone_has_register">The mobile number has been occupied by another account.</string>
+    <string name="can_not_change_original_phone">This mobile number is the same as the current one.</string>
+    <string name="change_phone_has_registered">Invalid user name</string>
+    <string name="text_signIn_input_email_phone">Please enter your mobile number or email address.</string>
+    <string name="not_allow_unbind_phone">Either a mobile number or email must be added.</string>
+    <string name="current_phone">Current mobile number: %s</string>
+    <string name="change_phone">Change mobile number</string>
+    <string name="unbind">Delete</string>
+    <string name="set_new_phone">Change moible number</string>
+    <string name="bind_success">Added</string>
+    <string name="bind_failure">Failed to add</string>
+    <string name="text_error_phone_format">Please enter a valid phone number.</string>
+    <string name="email_too_long">Email address must be less than 45 characters in length.</string>
+    <string name="setting_success">Changed</string>
+    <string name="setting_failure">Failed to change</string>
+    <string name="please_input_email">Enter email address</string>
+
+    <string name="text_already_read_agree">I have read and agree to </string>
+    <string name="text_login_agree_2">User Agreement and Privacy Policy.</string>
+    <string name="text_login_agree">I have read and agree to User Agreement and Privacy Policy.</string>
+
+    <string name="text_error_toomuch">Exceeded number of verification code requests</string>
+    <string name="reset_success">Changed</string>
+    <string name="continue_bind">Continue to link</string>
+    <string name="text_mine_phone_bind_cover">The mobile number has been linked to another account. Unlink the original account, and then link to this one?</string>
+    <string name="text_mine_phone_email_cover">The email address has been linked to another account. Unlink the original account, and then link to this one?</string>
+
+    <string name="unbind_success">Deleted</string>
+    <string name="unbind_failed">Failed to delete</string>
+    <string name="dialog_delete_current_phone">Are you sure you want to delele the current mobile number?</string>
+    <string name="dialog_delete_current_email">Are you sure you want to delete the current email?</string>
+    <string name="confirm_unbind">Confirm</string>
+
+    <string name="change_email">Change email</string>
+    <string name="mine_email">Email</string>
+    <string name="email_code_not_verify">邮箱验证码未验证</string>
+    <string name="send_email_code_error">Failed to send you a verification code with email.</string>
+    <string name="change_email_has_registered">The email has been occupied by another account.</string>
+    <string name="can_not_change_original_email">This email is the same as the current one.</string>
+    <string name="current_email">Current email: %s</string>
+    <string name="unbind_email_password_error">Incorrect password.</string>
+    <string name="not_allow_unbind_email">Either a mobile number or email must be added.</string>
+</resources>

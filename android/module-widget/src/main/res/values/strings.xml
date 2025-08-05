@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">MOVAhome</string>
+
+    <string name="text_widget_notLogin">点击登录MOVAhome启用此功能</string>
+    <string name="widget_linked_desc">点击小组件选择要关联的设备</string>
+
+    <string name="widget_linked_device">选择关联设备</string>
+    <string name="widget_linked_confirm">确认关联</string>
+    <string name="widget_linked_tips">成功添加设备后可选择要关联的设备</string>
+    <string name="select_device">添加设备</string>
+    <string name="text_goto_open">去开启</string>
+    <string name="message_setting_share">共享</string>
+    <!--    设备状态-->
+    <string name="text_Mopdrying">拖布烘干中</string>
+    <string name="text_Mopcleaning">拖布清洗中</string>
+    <string name="text_Backwashing">正在回洗</string>
+    <string name="text_Createmap">正在建图</string>
+    <string name="text_clean">正在清洁</string>
+    <string name="text_Chargingcomplete">充电完成</string>
+    <string name="text_upgrade">正在升级</string>
+    <string name="text_monitor">视频任务中</string>
+    <string name="text_monitor_pause">视频任务暂停</string>
+    <string name="home_device_video">实时视频</string>
+    <string name="home_device_clean_start_new">开始清洁</string>
+    <string name="home_device_clean_pause">暂停清扫</string>
+    <string name="home_device_charge_start">开始回充</string>
+    <string name="home_device_charge_pause">暂停回充</string>
+
+    <string name="text_dock_self_test">基站修复中</string>
+    <string name="text_back_remove_mop">正在返回拆卸拖布</string>
+    <string name="text_back_install_mop">正在返回安装拖布</string>
+    <string name="text_shortcut_running">快捷指令任务中</string>
+    <string name="text_dock_self_test_tip">基站修复中，请稍后再试</string>`
+
+    <string name="text_summon_clean">召唤清洁</string>
+    <string name="device_offline">离线</string>
+    <string name="cleaning">正在清扫</string>
+    <string name="text_mopping">正在拖地</string>
+
+    <string name="standby">待机</string>
+    <string name="pause">暂停</string>
+    <string name="goto_charging">正在回充</string>
+    <string name="charging">正在充电</string>
+
+    <string name="text_water_checking_status">上下水自检中</string>
+    <string name="text_wash_mop_and_replenish">清洗拖布并补水中</string>
+    <string name="text_wash_mop_pause">暂停清洗</string>
+    <string name="text_station_dust">正在集尘</string>
+    <string name="text_remote_clean">遥控清扫</string>
+    <string name="text_smart_charging">正在智能补电</string>
+    <string name="text_second_clean_mop">正在二次清洁</string>
+    <string name="text_human_follow">正在跟随</string>
+
+    <string name="text_home_fast_command">快捷指令</string>
+
+    <string name="widget">小组件</string>
+    <string name="text_select_appwidget">选择想要添加的小组件</string>
+    <string name="desktop_shortcut_tip">请确保手机系统“创建桌面快捷方式”的权限为开启状态</string>
+    <string name="text_home_fast_command_setting">设置快捷指令</string>
+    <string name="text_appwidget_add_tips">若未开启手机系统“创建桌面快捷方式”的权限，可能会导致添加小组件失败，立即开启</string>
+    <string name="text_appwidget_add_tips_open_index">立即开启</string>
+    <string name="text_appwidget_add_tips_2">由于系统限制可能会导致在应用内添加小组件失败,可尝试在手机桌面添加小组件。</string>
+</resources>

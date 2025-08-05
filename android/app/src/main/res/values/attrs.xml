@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonTitleBar">
+        <attr name="commonTitleBarShowRight" format="boolean" />
+        <attr name="commonTitleBarLeftIcon" format="reference" />
+        <attr name="commonTitleBarRightIcon" format="reference" />
+        <attr name="commonTitleBarTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PromptEditLayout">
+        <attr name="promptEditLayoutShowLeft" format="boolean" />
+        <attr name="promptEditLayoutShowRight" format="boolean" />
+        <attr name="promptEditLayoutShowDelete" format="boolean" />
+        <attr name="android:hint" format="string" />
+        <attr name="android:inputType" />
+        <attr name="android:id" format="reference" />
+        <attr name="limitType" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DeviceOperationView">
+        <attr name="operationImage" format="reference" />
+        <attr name="operationImageOffLine" format="reference" />
+        <attr name="operationImageWork" format="reference" />
+
+        <attr name="operationBg" format="reference" />
+        <attr name="operationBgWork" format="reference" />
+
+        <attr name="operationOnline" format="boolean" />
+        <attr name="operationText" format="string" />
+        <attr name="operationTextWork" format="string" />
+        <attr name="operationWorking" format="boolean" />
+
+        <attr name="operationTextColor" format="color" />
+        <attr name="operationTextColorOffline" format="color" />
+        <attr name="operationTextColorWork" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="MyWheelView">
+        <attr name="wheel_unitHeight" format="dimension" />
+        <attr name="wheel_itemNumber" format="integer" />
+        <attr name="wheel_scale" format="boolean" />
+        <attr name="wheel_normalTextColor" format="color" />
+        <attr name="wheel_normalTextSize" format="dimension" />
+        <attr name="wheel_selectedTextColor" format="color" />
+        <attr name="wheel_selectedTextSize" format="dimension" />
+        <attr name="wheel_isCyclic" format="boolean" />
+        <attr name="wheel_lineColor" format="color" />
+        <attr name="wheel_lineHeight" format="dimension" />
+        <attr name="wheel_noEmpty" format="boolean" />
+        <attr name="wheel_isEnable" format="boolean" />
+        <attr name="wheel_suffix" format="string" />
+        <attr name="wheel_suffixTextSize" format="dimension" />
+        <attr name="wheel_suffixTextColor" format="color" />
+        <attr name="wheel_suffixPadding" format="dimension" />
+        <attr name="wheel_maxWidthText" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/common_shape_btn_disable_r24" android:state_enabled="false" />
+    <item android:drawable="@drawable/common_shape_btn_enable_r24" android:state_enabled="true" />
+    <item android:drawable="@drawable/common_shape_btn_enable_r24" />
+</selector>

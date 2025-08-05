@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_manual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_wifi_no_found"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/iv_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:layout_constraintCircleRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/maunal_connect_en" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/icon_play"
+                app:layout_constraintBottom_toBottomOf="@id/iv_device"
+                app:layout_constraintEnd_toEndOf="@id/iv_device" />
+
+            <TextView
+                android:id="@+id/tv_wifi_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:maxLines="2"
+                android:text="@string/text_current_wifi_prefix"
+                android:textColor="@color/common_textMain"
+                android:textSize="@dimen/common_textLarge"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_device"
+                tools:text="当前Wi-Fi为：dreame-vacuume-r2228_miapasfaosfjaosjfaojsfjajsfasdfasfasdf" />
+
+            <TextView
+                android:id="@+id/tv_tip_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/device_wifi_tips_1"
+                android:textColor="@color/common_textSecond"
+                android:textSize="@dimen/common_textNormal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_wifi_name" />
+
+            <TextView
+                android:id="@+id/tv_tip_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/text_manual_connect_1"
+                android:textColor="@color/common_textDisable"
+                android:textSize="@dimen/common_textNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tip_1" />
+
+            <TextView
+                android:id="@+id/tv_tip_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_manual_connect_2"
+                android:textColor="@color/common_textDisable"
+                android:textSize="@dimen/common_textNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tip_2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_wifi_no_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:autoSizeMaxTextSize="@dimen/common_textNormal"
+        android:autoSizeMinTextSize="@dimen/common_textSmall"
+        android:autoSizePresetSizes="1dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/text_not_found"
+        android:textAlignment="center"
+        android:textColor="@color/common_text_second"
+        android:textSize="@dimen/common_textNormal"
+        app:layout_constraintBottom_toTopOf="@id/btn_setting_wifi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_setting_wifi"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="14dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/text_connect_device_hotspot"
+        android:textAlignment="gravity"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/tv_change_qrnet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tv_change_qrnet"
+        style="@style/common_style_button2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingHorizontal="20dp"
+        android:text="@string/text_to_qrcode_pair"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toTopOf="@id/indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="ネットワーク設定コードに切り替えてネットワークを設定してください" />
+
+    <com.dreame.feature.connect.views.ConnectIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

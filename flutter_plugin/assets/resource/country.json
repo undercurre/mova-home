@@ -1,0 +1,2442 @@
+[
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Afghanistan",
+        "iso_code": "AFG",
+        "name": "阿富汗",
+        "pinyin": "afh",
+        "short": "AF",
+        "tel": "93"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Albania",
+        "iso_code": "ALB",
+        "name": "阿尔巴尼亚",
+        "pinyin": "aebny",
+        "short": "AL",
+        "tel": "355"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Algeria",
+        "iso_code": "DZA",
+        "name": "阿尔及利亚",
+        "pinyin": "aejly",
+        "short": "DZ",
+        "tel": "213"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "American Samoa",
+        "iso_code": "SGP",
+        "name": "美属萨摩亚",
+        "pinyin": "mssmy",
+        "short": "AS",
+        "tel": "1684"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Andorra",
+        "iso_code": "AND",
+        "name": "安道尔",
+        "pinyin": "ade",
+        "short": "AD",
+        "tel": "376"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Angola",
+        "iso_code": "AGO",
+        "name": "安哥拉",
+        "pinyin": "agl",
+        "short": "AO",
+        "tel": "244"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Anguilla",
+        "iso_code": "USA",
+        "name": "安圭拉",
+        "pinyin": "agl",
+        "short": "AI",
+        "tel": "1264"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Antigua and Barbuda",
+        "iso_code": "USA",
+        "name": "安提瓜和巴布达",
+        "pinyin": "atghbbd",
+        "short": "AG",
+        "tel": "1268"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Argentina",
+        "iso_code": "ARG",
+        "name": "阿根廷",
+        "pinyin": "agt",
+        "short": "AR",
+        "tel": "54"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Armenia",
+        "iso_code": "ARM",
+        "name": "亚美尼亚",
+        "pinyin": "ymny",
+        "short": "AM",
+        "tel": "374"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Aruba",
+        "iso_code": "USA",
+        "name": "阿鲁巴",
+        "pinyin": "alb",
+        "short": "AW",
+        "tel": "297"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Ascension Island",
+        "iso_code": "SGP",
+        "name": "阿森松岛",
+        "pinyin": "assd",
+        "short": "AC",
+        "tel": "247"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Australia",
+        "iso_code": "AUS",
+        "name": "澳大利亚",
+        "pinyin": "adly",
+        "short": "AU",
+        "tel": "61"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Austria",
+        "iso_code": "AUT",
+        "name": "奥地利",
+        "pinyin": "adl",
+        "short": "AT",
+        "tel": "43"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Azerbaijan",
+        "iso_code": "AZE",
+        "name": "阿塞拜疆",
+        "pinyin": "asbj",
+        "short": "AZ",
+        "tel": "994"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Bahamas",
+        "iso_code": "BHS",
+        "name": "巴哈马",
+        "pinyin": "bhm",
+        "short": "BS",
+        "tel": "1242"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Bahrain",
+        "iso_code": "BHR",
+        "name": "巴林",
+        "pinyin": "bl",
+        "short": "BH",
+        "tel": "973"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Bangladesh",
+        "iso_code": "BGD",
+        "name": "孟加拉国",
+        "pinyin": "mjlg",
+        "short": "BD",
+        "tel": "880"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Barbados",
+        "iso_code": "USA",
+        "name": "巴巴多斯",
+        "pinyin": "bbds",
+        "short": "BB",
+        "tel": "1246"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Belgium",
+        "iso_code": "BEL",
+        "name": "比利时",
+        "pinyin": "bls",
+        "short": "BE",
+        "tel": "32"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Belize",
+        "iso_code": "BLZ",
+        "name": "伯利兹",
+        "pinyin": "blz",
+        "short": "BZ",
+        "tel": "501"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Benin",
+        "iso_code": "BEN",
+        "name": "贝宁",
+        "pinyin": "bn",
+        "short": "BJ",
+        "tel": "229"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Bermuda",
+        "iso_code": "USA",
+        "name": "百慕大",
+        "pinyin": "bmd",
+        "short": "BM",
+        "tel": "1441"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Bhutan",
+        "iso_code": "SGP",
+        "name": "不丹",
+        "pinyin": "bd",
+        "short": "BT",
+        "tel": "975"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Bolivia",
+        "iso_code": "BOL",
+        "name": "玻利维亚",
+        "pinyin": "blwy",
+        "short": "BO",
+        "tel": "591"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Bosnia and Herzegovina",
+        "iso_code": "BIH",
+        "name": "波黑",
+        "pinyin": "bh",
+        "short": "BA",
+        "tel": "387"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Botswana",
+        "iso_code": "BWA",
+        "name": "博茨瓦纳",
+        "pinyin": "bcwn",
+        "short": "BW",
+        "tel": "267"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Bouvet Island",
+        "iso_code": "NOR",
+        "name": "布韦岛",
+        "pinyin": "bwd",
+        "short": "BV",
+        "tel": "47"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Brazil",
+        "iso_code": "BRA",
+        "name": "巴西",
+        "pinyin": "bx",
+        "short": "BR",
+        "tel": "55"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "British Indian Ocean Territory",
+        "iso_code": "SGP",
+        "name": "英属印度洋领地",
+        "pinyin": "ysydyld",
+        "short": "IO",
+        "tel": "246"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "British Virgin Islands",
+        "iso_code": "VGB",
+        "name": "英属维尔京群岛",
+        "pinyin": "yswejqd",
+        "short": "VG",
+        "tel": "1284"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Brunei Darussalam",
+        "iso_code": "BRN",
+        "name": "文莱",
+        "pinyin": "wl",
+        "short": "BN",
+        "tel": "673"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Bulgaria",
+        "iso_code": "BGR",
+        "name": "保加利亚",
+        "pinyin": "bjly",
+        "short": "BG",
+        "tel": "359"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Burkina Faso",
+        "iso_code": "BFA",
+        "name": "布基纳法索",
+        "pinyin": "bjnfs",
+        "short": "BF",
+        "tel": "226"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Burundi",
+        "iso_code": "BDI",
+        "name": "布隆迪",
+        "pinyin": "bld",
+        "short": "BI",
+        "tel": "257"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Cambodia",
+        "iso_code": "KHM",
+        "name": "柬埔寨",
+        "pinyin": "jpz",
+        "short": "KH",
+        "tel": "855"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Cameroon",
+        "iso_code": "CMR",
+        "name": "喀麦隆",
+        "pinyin": "kml",
+        "short": "CM",
+        "tel": "237"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Canada",
+        "iso_code": "USA",
+        "name": "加拿大",
+        "pinyin": "jnd",
+        "short": "CA",
+        "tel": "1"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Canary Islands",
+        "iso_code": "ESP",
+        "name": "加那利群岛",
+        "pinyin": "jnlqd",
+        "short": "IC",
+        "tel": "34"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Cape Verde",
+        "iso_code": "CPV",
+        "name": "佛得角",
+        "pinyin": "fdj",
+        "short": "CV",
+        "tel": "238"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Caribbean Netherlands",
+        "iso_code": "CUW",
+        "name": "荷兰加勒比区",
+        "pinyin": "hljlbq",
+        "short": "BQ",
+        "tel": "599"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Cayman Islands",
+        "iso_code": "CYM",
+        "name": "开曼群岛",
+        "pinyin": "kmqd",
+        "short": "KY",
+        "tel": "1345"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Central African Republic",
+        "iso_code": "CAF",
+        "name": "中非共和国",
+        "pinyin": "zfghg",
+        "short": "CF",
+        "tel": "236"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Ceuta and Melilla",
+        "iso_code": "ESP",
+        "name": "休达及梅利利亚",
+        "pinyin": "xdjmlly",
+        "short": "EA",
+        "tel": "34"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Chad",
+        "iso_code": "TCD",
+        "name": "乍得",
+        "pinyin": "zd",
+        "short": "TD",
+        "tel": "235"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Chile",
+        "iso_code": "CHL",
+        "name": "智利",
+        "pinyin": "zl",
+        "short": "CL",
+        "tel": "56"
+    },
+    {
+        "domain": "cn.iot.mova-tech.com",
+        "domain_abbreviation": "CN",
+        "en": "Chinese mainland",
+        "iso_code": "CHN",
+        "name": "中国大陆",
+        "pinyin": "zg",
+        "short": "CN",
+        "tel": "86"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Christmas Island",
+        "iso_code": "SGP",
+        "name": "圣诞岛",
+        "pinyin": "sdd",
+        "short": "CX",
+        "tel": "6189164"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Cocos (Keeling) Islands",
+        "iso_code": "SGP",
+        "name": "科科斯（基林）群岛",
+        "pinyin": "kks（jl）qd",
+        "short": "CC",
+        "tel": "6189162"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Colombia",
+        "iso_code": "COL",
+        "name": "哥伦比亚",
+        "pinyin": "glby",
+        "short": "CO",
+        "tel": "57"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Comoros",
+        "iso_code": "COM",
+        "name": "科摩罗",
+        "pinyin": "kml",
+        "short": "KM",
+        "tel": "269"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Congo - Brazzaville",
+        "iso_code": "COG",
+        "name": "刚果（布）",
+        "pinyin": "gg（b）",
+        "short": "CG",
+        "tel": "242"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Congo - Kinshasa",
+        "iso_code": "COD",
+        "name": "刚果（金）",
+        "pinyin": "gg（j）",
+        "short": "CD",
+        "tel": "243"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Cook Islands",
+        "iso_code": "SGP",
+        "name": "库克群岛",
+        "pinyin": "kkqd",
+        "short": "CK",
+        "tel": "682"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Costa Rica",
+        "iso_code": "CRI",
+        "name": "哥斯达黎加",
+        "pinyin": "gsdlj",
+        "short": "CR",
+        "tel": "506"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Croatia",
+        "iso_code": "HRV",
+        "name": "克罗地亚",
+        "pinyin": "kldy",
+        "short": "HR",
+        "tel": "385"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Curaçao",
+        "iso_code": "USA",
+        "name": "库拉索",
+        "pinyin": "kls",
+        "short": "CW",
+        "tel": "5999"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Cyprus",
+        "iso_code": "CYP",
+        "name": "塞浦路斯",
+        "pinyin": "spls",
+        "short": "CY",
+        "tel": "357"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Czech Republic",
+        "iso_code": "CZE",
+        "name": "捷克",
+        "pinyin": "jk",
+        "short": "CZ",
+        "tel": "420"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Denmark",
+        "iso_code": "DNK",
+        "name": "丹麦",
+        "pinyin": "dm",
+        "short": "DK",
+        "tel": "45"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Diego Garcia",
+        "iso_code": "SGP",
+        "name": "迪戈加西亚岛",
+        "pinyin": "dgjxyd",
+        "short": "DG",
+        "tel": "246"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Djibouti",
+        "iso_code": "DJI",
+        "name": "吉布提",
+        "pinyin": "jbt",
+        "short": "DJ",
+        "tel": "253"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Dominica",
+        "iso_code": "USA",
+        "name": "多米尼克",
+        "pinyin": "dmnk",
+        "short": "DM",
+        "tel": "1767"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Dominican Republic",
+        "iso_code": "DOM",
+        "name": "多米尼加共和国",
+        "pinyin": "dmnjghg",
+        "short": "DO",
+        "tel": "1809"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "East Timor (Timor-Leste)",
+        "iso_code": "SGP",
+        "name": "东帝汶",
+        "pinyin": "ddw",
+        "short": "TL",
+        "tel": "670"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Ecuador",
+        "iso_code": "ECU",
+        "name": "厄瓜多尔",
+        "pinyin": "egde",
+        "short": "EC",
+        "tel": "593"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Egypt",
+        "iso_code": "EGY",
+        "name": "埃及",
+        "pinyin": "aj",
+        "short": "EG",
+        "tel": "20"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "El Salvador",
+        "iso_code": "SLV",
+        "name": "萨尔瓦多",
+        "pinyin": "sewd",
+        "short": "SV",
+        "tel": "503"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Equatorial Guinea",
+        "iso_code": "GNQ",
+        "name": "赤道几内亚",
+        "pinyin": "cdjny",
+        "short": "GQ",
+        "tel": "240"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Eritrea",
+        "iso_code": "SGP",
+        "name": "厄立特里亚",
+        "pinyin": "eltly",
+        "short": "ER",
+        "tel": "291"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Estonia",
+        "iso_code": "EST",
+        "name": "爱沙尼亚",
+        "pinyin": "asny",
+        "short": "EE",
+        "tel": "372"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Ethiopia",
+        "iso_code": "SGP",
+        "name": "埃塞俄比亚",
+        "pinyin": "aseby",
+        "short": "ET",
+        "tel": "251"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Falkland Islands",
+        "iso_code": "USA",
+        "name": "福克兰群岛",
+        "pinyin": "fklqd",
+        "short": "FK",
+        "tel": "500"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Faroe Islands",
+        "iso_code": "DEU",
+        "name": "法罗群岛",
+        "pinyin": "flqd",
+        "short": "FO",
+        "tel": "298"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Fiji",
+        "iso_code": "SGP",
+        "name": "斐济",
+        "pinyin": "fj",
+        "short": "FJ",
+        "tel": "679"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Finland",
+        "iso_code": "FIN",
+        "name": "芬兰",
+        "pinyin": "fl",
+        "short": "FI",
+        "tel": "358"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "France",
+        "iso_code": "FRA",
+        "name": "法国",
+        "pinyin": "fg",
+        "short": "FR",
+        "tel": "33"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "French Guiana",
+        "iso_code": "DEU",
+        "name": "法属圭亚那",
+        "pinyin": "fsgyn",
+        "short": "GF",
+        "tel": "594"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "French polynesia",
+        "iso_code": "SGP",
+        "name": "法属波利尼西亚",
+        "pinyin": "fsblnxy",
+        "short": "PF",
+        "tel": "689"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "French Southern Territories",
+        "iso_code": "SGP",
+        "name": "法属南部领地",
+        "pinyin": "fsnbld",
+        "short": "TF",
+        "tel": "262"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Gabon",
+        "iso_code": "GAB",
+        "name": "加蓬",
+        "pinyin": "jp",
+        "short": "GA",
+        "tel": "241"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Gambia",
+        "iso_code": "GMB",
+        "name": "冈比亚",
+        "pinyin": "gby",
+        "short": "GM",
+        "tel": "220"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Georgia",
+        "iso_code": "GEO",
+        "name": "格鲁吉亚",
+        "pinyin": "gljy",
+        "short": "GE",
+        "tel": "995"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Germany",
+        "iso_code": "DEU",
+        "name": "德国",
+        "pinyin": "dg",
+        "short": "DE",
+        "tel": "49"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Ghana",
+        "iso_code": "GHA",
+        "name": "加纳",
+        "pinyin": "jn",
+        "short": "GH",
+        "tel": "233"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Gibraltar",
+        "iso_code": "DEU",
+        "name": "直布罗陀",
+        "pinyin": "zblt",
+        "short": "GI",
+        "tel": "350"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Greece",
+        "iso_code": "GRC",
+        "name": "希腊",
+        "pinyin": "xl",
+        "short": "GR",
+        "tel": "30"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Greenland",
+        "iso_code": "USA",
+        "name": "格陵兰",
+        "pinyin": "gll",
+        "short": "GL",
+        "tel": "299"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Grenada",
+        "iso_code": "GRD",
+        "name": "格林纳达",
+        "pinyin": "glnd",
+        "short": "GD",
+        "tel": "1473"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Guadeloupe",
+        "iso_code": "MAF",
+        "name": "瓜德罗普",
+        "pinyin": "gdlp",
+        "short": "GP",
+        "tel": "590"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Guam",
+        "iso_code": "SGP",
+        "name": "关岛",
+        "pinyin": "gd",
+        "short": "GU",
+        "tel": "1671"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Guatemala",
+        "iso_code": "GTM",
+        "name": "危地马拉",
+        "pinyin": "wdml",
+        "short": "GT",
+        "tel": "502"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Guernsey",
+        "iso_code": "DEU",
+        "name": "根西岛",
+        "pinyin": "gxd",
+        "short": "GG",
+        "tel": "447781"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Guinea",
+        "iso_code": "GIN",
+        "name": "几内亚",
+        "pinyin": "jny",
+        "short": "GN",
+        "tel": "224"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Guinea-Bissau",
+        "iso_code": "GNB",
+        "name": "几内亚比绍",
+        "pinyin": "jnybs",
+        "short": "GW",
+        "tel": "245"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Guyana",
+        "iso_code": "GUY",
+        "name": "圭亚那",
+        "pinyin": "gyn",
+        "short": "GY",
+        "tel": "592"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Haiti",
+        "iso_code": "USA",
+        "name": "海地",
+        "pinyin": "hd",
+        "short": "HT",
+        "tel": "509"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Honduras",
+        "iso_code": "HND",
+        "name": "洪都拉斯",
+        "pinyin": "hdls",
+        "short": "HN",
+        "tel": "504"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Hong Kong（China）",
+        "iso_code": "HKG",
+        "name": "中国香港特别行政区",
+        "pinyin": "zgxgtbhzq",
+        "short": "HK",
+        "tel": "852"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Hungary",
+        "iso_code": "HUN",
+        "name": "匈牙利",
+        "pinyin": "xyl",
+        "short": "HU",
+        "tel": "36"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Iceland",
+        "iso_code": "DEU",
+        "name": "冰岛",
+        "pinyin": "bd",
+        "short": "IS",
+        "tel": "354"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "India",
+        "iso_code": "IND",
+        "name": "印度",
+        "pinyin": "yd",
+        "short": "IN",
+        "tel": "91"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Indonesia",
+        "iso_code": "IDN",
+        "name": "印度尼西亚",
+        "pinyin": "ydnxy",
+        "short": "ID",
+        "tel": "62"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Iraq",
+        "iso_code": "IRQ",
+        "name": "伊拉克",
+        "pinyin": "ylk",
+        "short": "IQ",
+        "tel": "964"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Ireland",
+        "iso_code": "IRL",
+        "name": "爱尔兰",
+        "pinyin": "ael",
+        "short": "IE",
+        "tel": "353"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Isle of Man",
+        "iso_code": "DEU",
+        "name": "马恩岛",
+        "pinyin": "med",
+        "short": "IM",
+        "tel": "447624"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Israel",
+        "iso_code": "ISR",
+        "name": "以色列",
+        "pinyin": "ysl",
+        "short": "IL",
+        "tel": "972"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Italy",
+        "iso_code": "ITA",
+        "name": "意大利",
+        "pinyin": "ydl",
+        "short": "IT",
+        "tel": "39"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Ivory Coast (Côte d\u0027Ivoire)",
+        "iso_code": "CIV",
+        "name": "科特迪瓦",
+        "pinyin": "ktdw",
+        "short": "CI",
+        "tel": "225"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Jamaica",
+        "iso_code": "JAM",
+        "name": "牙买加",
+        "pinyin": "ymj",
+        "short": "JM",
+        "tel": "1876"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Japan",
+        "iso_code": "JPN",
+        "name": "日本",
+        "pinyin": "rb",
+        "short": "JP",
+        "tel": "81"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Jersey",
+        "iso_code": "DEU",
+        "name": "泽西岛",
+        "pinyin": "zxd",
+        "short": "JE",
+        "tel": "441534"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Jordan",
+        "iso_code": "JOR",
+        "name": "约旦",
+        "pinyin": "yd",
+        "short": "JO",
+        "tel": "962"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Kenya",
+        "iso_code": "KEN",
+        "name": "肯尼亚",
+        "pinyin": "kny",
+        "short": "KE",
+        "tel": "254"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Kiribati",
+        "iso_code": "SGP",
+        "name": "基里巴斯",
+        "pinyin": "jlbs",
+        "short": "KI",
+        "tel": "686"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Kosovo",
+        "iso_code": "XK",
+        "name": "科索沃",
+        "pinyin": "ksw",
+        "short": "XK",
+        "tel": "383"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Kuwait",
+        "iso_code": "KWT",
+        "name": "科威特",
+        "pinyin": "kwt",
+        "short": "KW",
+        "tel": "965"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Kyrgyzstan",
+        "iso_code": "KGZ",
+        "name": "吉尔吉斯斯坦",
+        "pinyin": "jejsst",
+        "short": "KG",
+        "tel": "996"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Laos",
+        "iso_code": "LAO",
+        "name": "老挝",
+        "pinyin": "lz",
+        "short": "LA",
+        "tel": "856"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Latvia",
+        "iso_code": "LVA",
+        "name": "拉脱维亚",
+        "pinyin": "ltwy",
+        "short": "LV",
+        "tel": "371"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Lebanon",
+        "iso_code": "LBN",
+        "name": "黎巴嫩",
+        "pinyin": "lbn",
+        "short": "LB",
+        "tel": "961"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Lesotho",
+        "iso_code": "LSO",
+        "name": "莱索托",
+        "pinyin": "lst",
+        "short": "LS",
+        "tel": "266"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Liberia",
+        "iso_code": "LBR",
+        "name": "利比里亚",
+        "pinyin": "lbly",
+        "short": "LR",
+        "tel": "231"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Libya",
+        "iso_code": "LBY",
+        "name": "利比亚",
+        "pinyin": "lby",
+        "short": "LY",
+        "tel": "218"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Liechtenstein",
+        "iso_code": "DEU",
+        "name": "列支敦士登",
+        "pinyin": "lzdsd",
+        "short": "LI",
+        "tel": "423"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Lithuania",
+        "iso_code": "LTU",
+        "name": "立陶宛",
+        "pinyin": "ltw",
+        "short": "LT",
+        "tel": "370"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Luxembourg",
+        "iso_code": "LUX",
+        "name": "卢森堡",
+        "pinyin": "lsb",
+        "short": "LU",
+        "tel": "352"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Macau (China)",
+        "iso_code": "MAC",
+        "name": "中国澳门特别行政区",
+        "pinyin": "zgamtbhzq",
+        "short": "MO",
+        "tel": "853"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Madagascar",
+        "iso_code": "MDG",
+        "name": "马达加斯加",
+        "pinyin": "mdjsj",
+        "short": "MG",
+        "tel": "261"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Malawi",
+        "iso_code": "MWI",
+        "name": "马拉维",
+        "pinyin": "mlw",
+        "short": "MW",
+        "tel": "265"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Malaysia",
+        "iso_code": "MYS",
+        "name": "马来西亚",
+        "pinyin": "mlxy",
+        "short": "MY",
+        "tel": "60"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Maldives",
+        "iso_code": "MDV",
+        "name": "马尔代夫",
+        "pinyin": "medf",
+        "short": "MV",
+        "tel": "960"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Mali",
+        "iso_code": "MLI",
+        "name": "马里",
+        "pinyin": "ml",
+        "short": "ML",
+        "tel": "223"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Malta",
+        "iso_code": "MLT",
+        "name": "马耳他",
+        "pinyin": "met",
+        "short": "MT",
+        "tel": "356"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Marshall islands",
+        "iso_code": "SGP",
+        "name": "马绍尔群岛",
+        "pinyin": "mseqd",
+        "short": "MH",
+        "tel": "692"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Martinique",
+        "iso_code": "USA",
+        "name": "马提尼克",
+        "pinyin": "mtnk",
+        "short": "MQ",
+        "tel": "596"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Mauritania",
+        "iso_code": "MRT",
+        "name": "毛里塔尼亚",
+        "pinyin": "mltny",
+        "short": "MR",
+        "tel": "222"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Mauritius",
+        "iso_code": "MUS",
+        "name": "毛里求斯",
+        "pinyin": "mlqs",
+        "short": "MU",
+        "tel": "230"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Mayotte",
+        "iso_code": "SGP",
+        "name": "马约特",
+        "pinyin": "myt",
+        "short": "YT",
+        "tel": "262639"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Mexico",
+        "iso_code": "MEX",
+        "name": "墨西哥",
+        "pinyin": "mxg",
+        "short": "MX",
+        "tel": "52"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Micronesia",
+        "iso_code": "SGP",
+        "name": "密克罗尼西亚",
+        "pinyin": "mklnxy",
+        "short": "FM",
+        "tel": "691"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Moldova",
+        "iso_code": "MDA",
+        "name": "摩尔多瓦",
+        "pinyin": "medw",
+        "short": "MD",
+        "tel": "373"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Monaco",
+        "iso_code": "DEU",
+        "name": "摩纳哥",
+        "pinyin": "mng",
+        "short": "MC",
+        "tel": "377"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Mongolia",
+        "iso_code": "MNG",
+        "name": "蒙古",
+        "pinyin": "mg",
+        "short": "MN",
+        "tel": "976"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Montenegro",
+        "iso_code": "MNE",
+        "name": "黑山",
+        "pinyin": "hs",
+        "short": "ME",
+        "tel": "382"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Montserrat",
+        "iso_code": "USA",
+        "name": "蒙特塞拉特",
+        "pinyin": "mtslt",
+        "short": "MS",
+        "tel": "1664"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Morocco",
+        "iso_code": "MAR",
+        "name": "摩洛哥",
+        "pinyin": "mlg",
+        "short": "MA",
+        "tel": "212"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Mozambique",
+        "iso_code": "MOZ",
+        "name": "莫桑比克",
+        "pinyin": "msbk",
+        "short": "MZ",
+        "tel": "258"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Myanmar (Burma)",
+        "iso_code": "MMR",
+        "name": "缅甸",
+        "pinyin": "md",
+        "short": "MM",
+        "tel": "95"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Namibia",
+        "iso_code": "NAM",
+        "name": "纳米比亚",
+        "pinyin": "nmby",
+        "short": "NA",
+        "tel": "264"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Nauru",
+        "iso_code": "SGP",
+        "name": "瑙鲁",
+        "pinyin": "nl",
+        "short": "NR",
+        "tel": "674"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Nepal",
+        "iso_code": "SGP",
+        "name": "尼泊尔",
+        "pinyin": "nbe",
+        "short": "NP",
+        "tel": "977"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Netherlands",
+        "iso_code": "NLD",
+        "name": "荷兰",
+        "pinyin": "hl",
+        "short": "NL",
+        "tel": "31"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "New Caledonia",
+        "iso_code": "SGP",
+        "name": "新喀里多尼亚",
+        "pinyin": "xkldny",
+        "short": "NC",
+        "tel": "687"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "New Zealand",
+        "iso_code": "NZL",
+        "name": "新西兰",
+        "pinyin": "xxl",
+        "short": "NZ",
+        "tel": "64"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Nicaragua",
+        "iso_code": "NIC",
+        "name": "尼加拉瓜",
+        "pinyin": "njlg",
+        "short": "NI",
+        "tel": "505"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Niger",
+        "iso_code": "NER",
+        "name": "尼日尔",
+        "pinyin": "nre",
+        "short": "NE",
+        "tel": "227"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Nigeria",
+        "iso_code": "NGA",
+        "name": "尼日利亚",
+        "pinyin": "nrly",
+        "short": "NG",
+        "tel": "234"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Niue",
+        "iso_code": "SGP",
+        "name": "纽埃",
+        "pinyin": "na",
+        "short": "NU",
+        "tel": "683"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Norfolk Island",
+        "iso_code": "SGP",
+        "name": "诺福克岛",
+        "pinyin": "nfkd",
+        "short": "NF",
+        "tel": "6723"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "North Macedonia",
+        "iso_code": "MKD",
+        "name": "马其顿",
+        "pinyin": "mqd",
+        "short": "MK",
+        "tel": "389"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Northern Mariana Islands",
+        "iso_code": "SGP",
+        "name": "北马里亚纳群岛",
+        "pinyin": "bmlynqd",
+        "short": "MP",
+        "tel": "1670"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Norway",
+        "iso_code": "NOR",
+        "name": "挪威",
+        "pinyin": "nw",
+        "short": "NO",
+        "tel": "47"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Oman",
+        "iso_code": "OMN",
+        "name": "阿曼",
+        "pinyin": "am",
+        "short": "OM",
+        "tel": "968"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Pakistan",
+        "iso_code": "PAK",
+        "name": "巴基斯坦",
+        "pinyin": "bjst",
+        "short": "PK",
+        "tel": "92"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Palau",
+        "iso_code": "SGP",
+        "name": "帕劳",
+        "pinyin": "pl",
+        "short": "PW",
+        "tel": "680"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Palestinian Territories",
+        "iso_code": "PSE",
+        "name": "巴勒斯坦",
+        "pinyin": "blst",
+        "short": "PS",
+        "tel": "970"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Panama",
+        "iso_code": "PAN",
+        "name": "巴拿马",
+        "pinyin": "bnm",
+        "short": "PA",
+        "tel": "507"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Papua New Guinea",
+        "iso_code": "PNG",
+        "name": "巴布亚新几内亚",
+        "pinyin": "bbyxjny",
+        "short": "PG",
+        "tel": "675"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Paraguay",
+        "iso_code": "USA",
+        "name": "巴拉圭",
+        "pinyin": "blg",
+        "short": "PY",
+        "tel": "595"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Peru",
+        "iso_code": "PER",
+        "name": "秘鲁",
+        "pinyin": "ml",
+        "short": "PE",
+        "tel": "51"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Philippines",
+        "iso_code": "PHL",
+        "name": "菲律宾",
+        "pinyin": "flb",
+        "short": "PH",
+        "tel": "63"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Pitcairn Islands",
+        "iso_code": "NZL",
+        "name": "皮特凯恩群岛",
+        "pinyin": "ptkeqd",
+        "short": "PN",
+        "tel": "64"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Poland",
+        "iso_code": "POL",
+        "name": "波兰",
+        "pinyin": "bl",
+        "short": "PL",
+        "tel": "48"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Portugal",
+        "iso_code": "PRT",
+        "name": "葡萄牙",
+        "pinyin": "pty",
+        "short": "PT",
+        "tel": "351"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Puerto Rico",
+        "iso_code": "USA",
+        "name": "波多黎各",
+        "pinyin": "bdlg",
+        "short": "PR",
+        "tel": "1939"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Qatar",
+        "iso_code": "QAT",
+        "name": "卡塔尔",
+        "pinyin": "kte",
+        "short": "QA",
+        "tel": "974"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Romania",
+        "iso_code": "ROU",
+        "name": "罗马尼亚",
+        "pinyin": "lmny",
+        "short": "RO",
+        "tel": "40"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Rwanda",
+        "iso_code": "RWA",
+        "name": "卢旺达",
+        "pinyin": "lwd",
+        "short": "RW",
+        "tel": "250"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Réunion",
+        "iso_code": "SGP",
+        "name": "留尼汪",
+        "pinyin": "lnw",
+        "short": "RE",
+        "tel": "262"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Saint Barthélemy",
+        "iso_code": "MAF",
+        "name": "圣巴泰勒米",
+        "pinyin": "sbtlm",
+        "short": "BL",
+        "tel": "590"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Saint Helena",
+        "iso_code": "SGP",
+        "name": "圣赫勒拿",
+        "pinyin": "shln",
+        "short": "SH",
+        "tel": "290"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Saint Kitts and Nevis",
+        "iso_code": "USA",
+        "name": "圣基茨和尼维斯",
+        "pinyin": "sjchnws",
+        "short": "KN",
+        "tel": "1869"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Saint Lucia",
+        "iso_code": "USA",
+        "name": "圣卢西亚",
+        "pinyin": "slxy",
+        "short": "LC",
+        "tel": "1758"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Saint Martin (France)",
+        "iso_code": "MAF",
+        "name": "法属圣马丁",
+        "pinyin": "fssmd",
+        "short": "MF",
+        "tel": "590"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Saint Pierre and Miquelon",
+        "iso_code": "USA",
+        "name": "圣皮埃尔和密克隆群岛",
+        "pinyin": "spaehmklqd",
+        "short": "PM",
+        "tel": "508"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Saint Vincent and The Grenadines",
+        "iso_code": "VCT",
+        "name": "圣文森特和格林纳丁斯",
+        "pinyin": "swsthglnds",
+        "short": "VC",
+        "tel": "1784"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Samoa",
+        "iso_code": "SGP",
+        "name": "萨摩亚",
+        "pinyin": "smy",
+        "short": "WS",
+        "tel": "685"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "San Marino",
+        "iso_code": "DEU",
+        "name": "圣马力诺",
+        "pinyin": "smln",
+        "short": "SM",
+        "tel": "378"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Saudi Arabia",
+        "iso_code": "SAU",
+        "name": "沙特阿拉伯",
+        "pinyin": "stalb",
+        "short": "SA",
+        "tel": "966"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Senegal",
+        "iso_code": "SEN",
+        "name": "塞内加尔",
+        "pinyin": "snje",
+        "short": "SN",
+        "tel": "221"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Serbia",
+        "iso_code": "SRB",
+        "name": "塞尔维亚",
+        "pinyin": "sewy",
+        "short": "RS",
+        "tel": "381"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Seychelles",
+        "iso_code": "SYC",
+        "name": "塞舌尔",
+        "pinyin": "sse",
+        "short": "SC",
+        "tel": "248"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Sierra Leone",
+        "iso_code": "SLE",
+        "name": "塞拉利昂",
+        "pinyin": "slla",
+        "short": "SL",
+        "tel": "232"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Singapore",
+        "iso_code": "SGP",
+        "name": "新加坡",
+        "pinyin": "xjp",
+        "short": "SG",
+        "tel": "65"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Slovakia",
+        "iso_code": "SVK",
+        "name": "斯洛伐克",
+        "pinyin": "slfk",
+        "short": "SK",
+        "tel": "421"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Slovenia",
+        "iso_code": "SVN",
+        "name": "斯洛文尼亚",
+        "pinyin": "slwny",
+        "short": "SI",
+        "tel": "386"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Solomon Islands",
+        "iso_code": "SGP",
+        "name": "所罗门群岛",
+        "pinyin": "slmqd",
+        "short": "SB",
+        "tel": "677"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Somalia",
+        "iso_code": "SOM",
+        "name": "索马里",
+        "pinyin": "sml",
+        "short": "SO",
+        "tel": "252"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "South Africa",
+        "iso_code": "ZAF",
+        "name": "南非",
+        "pinyin": "nf",
+        "short": "ZA",
+        "tel": "27"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "South Georgia and the South Sandwich Islands",
+        "iso_code": "USA",
+        "name": "南乔治亚和南桑威奇群岛",
+        "pinyin": "nqzyhnswqqd",
+        "short": "GS",
+        "tel": "500"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "South Korea",
+        "iso_code": "KOR",
+        "name": "韩国",
+        "pinyin": "hg",
+        "short": "KR",
+        "tel": "82"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "South Sudan",
+        "iso_code": "SGP",
+        "name": "南苏丹",
+        "pinyin": "nsd",
+        "short": "SS",
+        "tel": "211"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Spain",
+        "iso_code": "ESP",
+        "name": "西班牙",
+        "pinyin": "xby",
+        "short": "ES",
+        "tel": "34"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Sri Lanka",
+        "iso_code": "LKA",
+        "name": "斯里兰卡",
+        "pinyin": "sllk",
+        "short": "LK",
+        "tel": "94"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Sudan",
+        "iso_code": "SGP",
+        "name": "苏丹",
+        "pinyin": "sd",
+        "short": "SD",
+        "tel": "249"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Suriname",
+        "iso_code": "SUR",
+        "name": "苏里南",
+        "pinyin": "sln",
+        "short": "SR",
+        "tel": "597"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Svalbard and Jan Mayen",
+        "iso_code": "DEU",
+        "name": "斯瓦尔巴和扬马延",
+        "pinyin": "swebhymy",
+        "short": "SJ",
+        "tel": "4779"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Swaziland",
+        "iso_code": "SWZ",
+        "name": "斯威士兰",
+        "pinyin": "swsl",
+        "short": "SZ",
+        "tel": "268"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Sweden",
+        "iso_code": "SWE",
+        "name": "瑞典",
+        "pinyin": "rd",
+        "short": "SE",
+        "tel": "46"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Switzerland",
+        "iso_code": "CHE",
+        "name": "瑞士",
+        "pinyin": "rs",
+        "short": "CH",
+        "tel": "41"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "São Tomé and Príncipe",
+        "iso_code": "SGP",
+        "name": "圣多美和普林西比",
+        "pinyin": "sdmhplxb",
+        "short": "ST",
+        "tel": "239"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Taiwan (China)",
+        "iso_code": "TWN",
+        "name": "中国台湾",
+        "pinyin": "zgtw",
+        "short": "TW",
+        "tel": "886"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tajikistan",
+        "iso_code": "TJK",
+        "name": "塔吉克斯坦",
+        "pinyin": "tjkst",
+        "short": "TJ",
+        "tel": "992"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tanzania",
+        "iso_code": "TZA",
+        "name": "坦桑尼亚",
+        "pinyin": "tsny",
+        "short": "TZ",
+        "tel": "255"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Thailand",
+        "iso_code": "THA",
+        "name": "泰国",
+        "pinyin": "tg",
+        "short": "TH",
+        "tel": "66"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Togo",
+        "iso_code": "TGO",
+        "name": "多哥",
+        "pinyin": "dg",
+        "short": "TG",
+        "tel": "228"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tokelau",
+        "iso_code": "SGP",
+        "name": "托克劳",
+        "pinyin": "tkl",
+        "short": "TK",
+        "tel": "690"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tonga",
+        "iso_code": "SGP",
+        "name": "汤加",
+        "pinyin": "tj",
+        "short": "TO",
+        "tel": "676"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Trinidad and Tobago",
+        "iso_code": "TTO",
+        "name": "特立尼达和多巴哥",
+        "pinyin": "tlndhdbg",
+        "short": "TT",
+        "tel": "1868"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tristan da Cunha",
+        "iso_code": "SGP",
+        "name": "特里斯坦-达库尼亚群岛",
+        "pinyin": "tlstdknyqd",
+        "short": "TA",
+        "tel": "290"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tunisia",
+        "iso_code": "TUN",
+        "name": "突尼斯",
+        "pinyin": "tns",
+        "short": "TN",
+        "tel": "216"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Turkey",
+        "iso_code": "TUR",
+        "name": "土耳其",
+        "pinyin": "teq",
+        "short": "TR",
+        "tel": "90"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Turkmenistan",
+        "iso_code": "TKM",
+        "name": "土库曼斯坦",
+        "pinyin": "tkmst",
+        "short": "TM",
+        "tel": "993"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Turks and Caicos Islands",
+        "iso_code": "USA",
+        "name": "特克斯和凯科斯群岛",
+        "pinyin": "tkshkksqd",
+        "short": "TC",
+        "tel": "1649"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Tuvalu",
+        "iso_code": "SGP",
+        "name": "图瓦卢",
+        "pinyin": "twl",
+        "short": "TV",
+        "tel": "688"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Uganda",
+        "iso_code": "UGA",
+        "name": "乌干达",
+        "pinyin": "wgd",
+        "short": "UG",
+        "tel": "256"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Ukraine",
+        "iso_code": "UKR",
+        "name": "乌克兰",
+        "pinyin": "wkl",
+        "short": "UA",
+        "tel": "380"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "United Arab Emirates",
+        "iso_code": "ARE",
+        "name": "阿拉伯联合酋长国",
+        "pinyin": "alblhqcg",
+        "short": "AE",
+        "tel": "971"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "United Kingdom",
+        "iso_code": "GBR",
+        "name": "英国",
+        "pinyin": "yg",
+        "short": "GB",
+        "tel": "44"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "United States",
+        "iso_code": "USA",
+        "name": "美国",
+        "pinyin": "mg",
+        "short": "US",
+        "tel": "1"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "United States Minor Outlying Islands",
+        "iso_code": "USA",
+        "name": "美国本土外小岛屿",
+        "pinyin": "mgbtwxdy",
+        "short": "UM",
+        "tel": "1"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Uruguay",
+        "iso_code": "URY",
+        "name": "乌拉圭",
+        "pinyin": "wlg",
+        "short": "UY",
+        "tel": "598"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "US Virgin Islands",
+        "iso_code": "USA",
+        "name": "美属维尔京群岛",
+        "pinyin": "mswejqd",
+        "short": "VI",
+        "tel": "1340"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Vanuatu",
+        "iso_code": "SGP",
+        "name": "瓦努阿图",
+        "pinyin": "wnat",
+        "short": "VU",
+        "tel": "678"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Vatican",
+        "iso_code": "DEU",
+        "name": "梵蒂冈",
+        "pinyin": "fdg",
+        "short": "VA",
+        "tel": "3906"
+    },
+    {
+        "domain": "us.iot.mova-tech.com",
+        "domain_abbreviation": "US",
+        "en": "Venezuela",
+        "iso_code": "VEN",
+        "name": "委内瑞拉",
+        "pinyin": "wnrl",
+        "short": "VE",
+        "tel": "58"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Vietnam",
+        "iso_code": "VNM",
+        "name": "越南",
+        "pinyin": "yn",
+        "short": "VN",
+        "tel": "84"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Wallis and Futuna",
+        "iso_code": "SGP",
+        "name": "瓦利斯和富图纳",
+        "pinyin": "wlshftn",
+        "short": "WF",
+        "tel": "681"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Western Sahara",
+        "iso_code": "MAR",
+        "name": "西撒哈拉",
+        "pinyin": "xshl",
+        "short": "EH",
+        "tel": "212"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Yemen",
+        "iso_code": "YEM",
+        "name": "也门",
+        "pinyin": "ym",
+        "short": "YE",
+        "tel": "967"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Zambia",
+        "iso_code": "ZMB",
+        "name": "赞比亚",
+        "pinyin": "zby",
+        "short": "ZM",
+        "tel": "260"
+    },
+    {
+        "domain": "sg.iot.mova-tech.com",
+        "domain_abbreviation": "SG",
+        "en": "Zimbabwe",
+        "iso_code": "ZWE",
+        "name": "津巴布韦",
+        "pinyin": "jbbw",
+        "short": "ZW",
+        "tel": "263"
+    },
+    {
+        "domain": "eu.iot.mova-tech.com",
+        "domain_abbreviation": "DE",
+        "en": "Åland Islands",
+        "iso_code": "DEU",
+        "name": "奥兰群岛",
+        "pinyin": "alqd",
+        "short": "AX",
+        "tel": "35818"
+    }
+]

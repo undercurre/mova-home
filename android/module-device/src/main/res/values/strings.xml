@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="share_from">Shared by %s</string>
+    <string name="device_share">Device Sharing</string>
+    <string name="message_setting_share">Shared</string>
+    <string name="accept">Accept</string>
+    <string name="text_no_device_to_share">You do not have devices to share.</string>
+    <string name="text_no_device_from_others">No sharing device yet.</string>
+    <string name="shared">Shared</string>
+    <string name="not_share">To be shared</string>
+    <string name="my_feedback_device">My devices</string>
+    <string name="text_add_user_to_share">Add Contacts</string>
+    <string name="device_share_user_list">Your device has NOT yet been shared to anyone.</string>
+    <string name="already_accept">Accepted</string>
+    <string name="waiting_receive">Pending</string>
+    <string name="text_share_permissions">Permissions</string>
+    <string name="text_share_permissions_description">Your friends can share your device after you enable the permissions.</string>
+    <string name="share_input_id">Mobile number/email/MOVA ID</string>
+    <string name="share_recent_contact">Recents</string>
+    <string name="invalid_account_to_retry">Account not registered. Please enter a new one.</string>
+
+    <string name="share_device_over_times">Failed to share for exceeded number of the device sharing.</string>
+    <string name="share_wait_deal">Device sharing invitation has been sent, waiting for checking by the other party.</string>
+    <string name="share_already_share">Device sharing accepted</string>
+    <string name="share_device_not_exist">No device available</string>
+    <string name="share_reject_with_yourself">Unable to share with yourself</string>
+    <string name="Toast_DeviceShare_UserOutOfService">Sorry! Unable to share your device to the selected account due to the server limit to different regions.</string>
+    <string name="share_device_to_user_error">Failed to share</string>
+    <string name="share_device_success">Shared</string>
+    <string name="share">Share</string>
+    <string name="text_permission_update">Change Permissions</string>
+    <string name="text_permission_has_updated">Permissions Changed</string>
+    <string name="text_permission_update_confirm_msg">Are you sure you want to save the current operation?</string>
+    <string name="save">Save</string>
+    <string name="know">OK</string>
+    <string name="text_permission_enable">Enabled</string>
+    <string name="text_permission_disable">Not Enabled</string>
+    <string name="cancel_receive">Delete</string>
+    <string name="device_share_from">%s share with you %s</string>
+    <string name="delete_success">Deleted</string>
+    <string name="delete_failed">Failed to delete</string>
+    <string name="cancel_share">Cancel</string>
+    <string name="text_be_shared_permission_desc">Please ask your contacts for permission change.</string>
+</resources>

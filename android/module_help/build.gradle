@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.dreame.smartlife.help'
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        viewBinding {
+            enabled = true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(':module_base')
+
+    implementation "cn.therouter:router:$therouter_version"
+    kapt "cn.therouter:apt:$therouter_version"
+
+    implementation 'com.thoughtbot:expandablerecyclerview:1.4'
+    implementation "zendesk.messaging:messaging-android:2.13.0"
+    implementation  'com.sobot.chat:sobotsdk_x:4.2.1'
+//    implementation 'com.sobot.chat:sobotsupport-glidev4:3.1'
+    api 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+}

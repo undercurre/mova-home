@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_device_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:lineHeight="20dp"
+    android:text="@string/text_mower_pair_desc_1"
+    android:textColor="@color/common_textMain"
+    android:textSize="@dimen/common_textNormal" />

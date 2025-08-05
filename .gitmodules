@@ -1,0 +1,7 @@
+[submodule "ios"]
+	path = ios
+	url = https://git.dreame.tech/smarthome_app/mova-group/mova-ios.git
+[submodule "android"]
+	path = android
+	url = https://git.dreame.tech/mova-group/mova-android.git
+

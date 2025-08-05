@@ -1,0 +1,133 @@
+<resources>
+
+    <string name="enter_mobile">请输入手机号</string>
+    <string name="input_verify_code">请输入验证码</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="user_privacy">隐私政策</string>
+    <string name="text_signIn_or_signUp">登录/注册</string>
+    <string name="text_other_login_methods">其他登录方式</string>
+    <string name="text_signIn_create_account_tip">未注册过的手机号验证后将自动创建账号</string>
+    <string name="send_sms_code">获取验证码</string>
+    <string name="send_sms_code_error">验证码发送失败</string>
+    <string name="send_sms_too_frequent">验证码发送请求太频繁，请稍候…</string>
+    <string name="send_sms_too_much">验证码获取次数达到上限，请两小时后重新获取</string>
+    <string name="sms_code_invalid_expired">验证码无效或过期</string>
+    <string name="sms_code_invalid">请输入正确的验证码</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_success">登录成功</string>
+    <string name="user_not_exist">用户不存在</string>
+    <string name="user_password_not_match">请确认密码输入是否正确</string>
+    <string name="login_request_too_much">请求过于频繁，请稍后重试</string>
+    <string name="password_error_exceeded_the_maximum">密码输入错误次数已达上限，账号已锁定，请稍后再试，或者尝试找回密码。</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="mail_error">请输入正确的邮箱格式</string>
+    <string name="pwd_invalid">@string/pwd_error</string>
+    <string name="pwd_error">密码格式错误</string>
+    <string name="send_success">发送成功</string>
+    <string name="phone_not_registered">用户不存在</string>
+    <string name="reset_password_success">密码重置成功，立即登录？</string>
+    <string name="reset_original_password_duplicate">新旧密码相同，密码修改失败</string>
+    <string name="account_has_registered">手机号已注册，是否立即登录</string>
+    <string name="Toast_3rdPartyBundle_NoWeChat_Tip">检测到系统未安装微信 App, 无法进行微信登录授权操作，请先安装微信 App。</string>
+    <string name="Toast_3rdPartyBundle_BundleProcess_TimeOut_Tip">操作超时，绑定失败，请重新发起授权。</string>
+    <string name="terms_uncheck">请勾选同意《用户协议》及《隐私政策》</string>
+    <string name="get_sms_code">请先获取验证码</string>
+    <string name="login_user_hint">请输入手机号/邮箱/MOVA ID</string>
+    <string name="enter_pwd">请输入密码</string>
+    <string name="register">注册</string>
+    <string name="forgot_pwd">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="text_new_password_tips">密码至少8位数，需包含大写字母、小写字母、数字及特殊符号中两种以上的格式</string>
+    <string name="reg_by_mail">使用邮箱注册</string>
+    <string name="mail_address">电子邮件地址</string>
+    <string name="please_set_your_pwd">请设置您的密码</string>
+    <string name="please_input_mobile">请输入手机号</string>
+    <string name="Input_3rdPartyBundle_Account">手机号/邮箱</string>
+    <string name="Text_3rdPartyBundle_BundlePage_Title">绑定账号</string>
+    <string name="Text_3rdPartyBundle_CreateDreameBundled_Now">立即绑定</string>
+    <string name="text_retrieve_password">重置密码</string>
+    <string name="use_phone_reset_password">使用手机号重置</string>
+    <string name="next">下一步</string>
+    <string name="use_email_reset_password">使用电子邮箱重置</string>
+    <string name="enter_new_pwd">请输入新密码</string>
+    <string name="confirm_new_pwd">请再次输入新密码</string>
+    <string name="bind">绑定</string>
+
+    <string name="text_account_unregister">该账号未注册，立即注册？</string>
+    <string name="confirm">确认</string>
+
+
+    <string name="bind_signin_phone_code">为了您账号的安全以及方便售后服务支持，请绑定您的手机账号。</string>
+    <string name="bind_signin_phone_code_or_email">为了您账号的安全以及方便售后服务支持，请绑定您的手机账号或邮箱账号。</string>
+
+    <string name="Toast_3rdPartyBundle_Unbundle">请确认是否要解除绑定%s？</string>
+    <string name="Toast_3rdPartyBundle_DoubleBundle">该%s已经绑定 MOVAhome 账号%s！继续当前绑定操作，原账号%s 信息可能会清空，请确认是否继续。</string>
+    <string name="Toast_3rdPartyBundle_ResultFailed">绑定失败</string>
+    <string name="Toast_3rdPartyBundle_ResultSuccess">绑定成功</string>
+
+    <string name="share_weixin">微信</string>
+    <string name="Text_3rdPartyBundle_LinkPage_DoubleBundle_Tip">当前 MOVAhome 用户已绑定另一个%s账号，继续操作，原%s账号绑定将失效 。请确认是否要用当前这个%s账号建立新的绑定。</string>
+    <string name="text_bind_skip">暂不绑定</string>
+    <string name="already_have_account">已有账号？</string>
+    <string name="login_now">立即登录</string>
+    <string name="reg_now">立即注册</string>
+    <string name="reg_by_phone">使用手机号注册</string>
+
+    <string name="pwd_different">两次新密码输入不一致，请重新输入</string> <!-- 两次新密码输入不一致，请重新输入 -->
+
+    <string name="reset_input_original_password">请输入原密码</string>
+
+    <string name="input_psw_empty_cant">原密码不能为空</string>
+    <string name="input_new_password_empty">新密码不能为空</string>
+    <string name="input_confirm_password_empty">确认密码不能为空</string>
+    <string name="set_password">设置密码</string>
+    <string name="reset_password">修改密码</string>
+    <string name="reset_original_password_error">原始密码错误，请重新输入</string>
+    <string name="reset_original_password_too_much">请求过于频繁，请稍后重试</string>
+    <string name="pwd_modify_success">密码修改完成，请重新登录</string>
+    <string name="text_signIn_input_email_phone">请输入邮箱/手机号</string>
+
+<!--    <string name="reset_psw">重置密码</string>-->
+    <string name="mine_phone_number">手机号</string>
+    <string name="phone_has_register">该手机号码已绑定其他账号，请确认后重新输入</string>
+    <string name="can_not_change_original_phone">该手机号与当前手机号相同</string>
+    <string name="change_phone_has_registered">用户已存在</string>
+    <string name="not_allow_unbind_phone">账号至少绑定手机号或邮箱中的一种</string>
+    <string name="set_new_phone">更换手机号</string>
+    <string name="current_phone">当前手机号: %s</string>
+
+    <string name="text_mine_phone_bind_cover">该手机号已绑定其他账号，确定与原账号解绑，重新绑定到当前账号？</string>
+    <string name="text_mine_phone_email_cover">该邮箱已绑定其他账号，确定与原账号解绑，重新绑定到当前账号？</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="bind_failure">绑定失败</string>
+    <string name="text_error_phone_format">请输入正确的手机号</string>
+    <string name="email_too_long">邮箱长度不能超过45个字符</string>
+    <string name="setting_success">设置成功</string>
+    <string name="setting_failure">设置失败</string>
+    <string name="please_input_email">请输入邮箱</string>
+
+    <string name="text_already_read_agree">我已阅读并同意</string>
+    <string name="text_login_agree_2">《用户协议》及《隐私政策》</string>
+    <string name="text_login_agree">我已阅读并同意《用户协议》及《隐私政策》</string>
+
+    <string name="text_error_toomuch">验证码获取次数已达上限</string>
+    <string name="reset_success">修改成功</string>
+    <string name="continue_bind">继续绑定</string>
+
+    <string name="unbind_success">解绑成功</string>
+    <string name="unbind_failed">解绑失败</string>
+    <string name="dialog_delete_current_phone">是否确认删除当前手机号</string>
+    <string name="dialog_delete_current_email">确认删除当前邮箱？</string>
+    <string name="confirm_unbind">确认解绑</string>
+
+    <string name="mine_email">邮箱</string>
+    <string name="change_email">更换邮箱</string>
+    <string name="email_code_not_verify">邮箱验证码未验证</string>
+    <string name="send_email_code_error">邮箱验证码发送失败</string>
+    <string name="change_email_has_registered">该邮箱已绑定其他账号，请确认后重新输入</string>
+    <string name="can_not_change_original_email">该邮箱与当前邮箱地址相同</string>
+    <string name="current_email">当前邮箱: %s</string>
+    <string name="unbind_email_password_error">请确认密码输入是否正确</string>
+    <string name="not_allow_unbind_email">至少绑定手机号或邮箱中的一种</string>
+</resources>

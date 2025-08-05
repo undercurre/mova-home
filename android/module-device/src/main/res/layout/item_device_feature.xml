@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/common_shape_white_r12"
+    android:gravity="center"
+    android:minHeight="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_feature_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/common_textMain"
+        android:textColorHighlight="@android:color/transparent"
+        android:textSize="@dimen/common_textLarge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cb_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" />
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_status"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:height="24dp"
+        android:background="@drawable/common_selector_switch_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_feature_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

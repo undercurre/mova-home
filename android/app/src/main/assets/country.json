@@ -1,0 +1,2234 @@
+[
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Afghanistan",
+    "name": "阿富汗",
+    "pinyin": "afh",
+    "short": "AF",
+    "tel": "93"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Albania",
+    "name": "阿尔巴尼亚",
+    "pinyin": "aebny",
+    "short": "AL",
+    "tel": "355"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Algeria",
+    "name": "阿尔及利亚",
+    "pinyin": "aejly",
+    "short": "DZ",
+    "tel": "213"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "American Samoa",
+    "name": "美属萨摩亚",
+    "pinyin": "mssmy",
+    "short": "AS",
+    "tel": "1684"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Andorra",
+    "name": "安道尔",
+    "pinyin": "ade",
+    "short": "AD",
+    "tel": "376"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Angola",
+    "name": "安哥拉",
+    "pinyin": "agl",
+    "short": "AO",
+    "tel": "244"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Anguilla",
+    "name": "安圭拉",
+    "pinyin": "agl",
+    "short": "AI",
+    "tel": "1264"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Antigua and Barbuda",
+    "name": "安提瓜和巴布达",
+    "pinyin": "atghbbd",
+    "short": "AG",
+    "tel": "1268"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Argentina",
+    "name": "阿根廷",
+    "pinyin": "agt",
+    "short": "AR",
+    "tel": "54"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Armenia",
+    "name": "亚美尼亚",
+    "pinyin": "ymny",
+    "short": "AM",
+    "tel": "374"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Aruba",
+    "name": "阿鲁巴",
+    "pinyin": "alb",
+    "short": "AW",
+    "tel": "297"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Ascension Island",
+    "name": "阿森松岛",
+    "pinyin": "assd",
+    "short": "AC",
+    "tel": "247"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Australia",
+    "name": "澳大利亚",
+    "pinyin": "adly",
+    "short": "AU",
+    "tel": "61"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Austria",
+    "name": "奥地利",
+    "pinyin": "adl",
+    "short": "AT",
+    "tel": "43"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Azerbaijan",
+    "name": "阿塞拜疆",
+    "pinyin": "asbj",
+    "short": "AZ",
+    "tel": "994"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Bahamas",
+    "name": "巴哈马",
+    "pinyin": "bhm",
+    "short": "BS",
+    "tel": "1242"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Bahrain",
+    "name": "巴林",
+    "pinyin": "bl",
+    "short": "BH",
+    "tel": "973"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Bangladesh",
+    "name": "孟加拉国",
+    "pinyin": "mjlg",
+    "short": "BD",
+    "tel": "880"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Barbados",
+    "name": "巴巴多斯",
+    "pinyin": "bbds",
+    "short": "BB",
+    "tel": "1246"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Belarus",
+    "name": "白俄罗斯",
+    "pinyin": "bels",
+    "short": "BY",
+    "tel": "375"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Belgium",
+    "name": "比利时",
+    "pinyin": "bls",
+    "short": "BE",
+    "tel": "32"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Belize",
+    "name": "伯利兹",
+    "pinyin": "blz",
+    "short": "BZ",
+    "tel": "501"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Benin",
+    "name": "贝宁",
+    "pinyin": "bn",
+    "short": "BJ",
+    "tel": "229"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Bermuda",
+    "name": "百慕大",
+    "pinyin": "bmd",
+    "short": "BM",
+    "tel": "1441"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Bhutan",
+    "name": "不丹",
+    "pinyin": "bd",
+    "short": "BT",
+    "tel": "975"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Bolivia",
+    "name": "玻利维亚",
+    "pinyin": "blwy",
+    "short": "BO",
+    "tel": "591"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Bosnia and Herzegovina",
+    "name": "波黑",
+    "pinyin": "bh",
+    "short": "BA",
+    "tel": "387"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Botswana",
+    "name": "博茨瓦纳",
+    "pinyin": "bcwn",
+    "short": "BW",
+    "tel": "267"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Bouvet Island",
+    "name": "布韦岛",
+    "pinyin": "bwd",
+    "short": "BV",
+    "tel": "47"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Brazil",
+    "name": "巴西",
+    "pinyin": "bx",
+    "short": "BR",
+    "tel": "55"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "British Indian Ocean Territory",
+    "name": "英属印度洋领地",
+    "pinyin": "ysydyld",
+    "short": "IO",
+    "tel": "246"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "British Virgin Islands",
+    "name": "英属维尔京群岛",
+    "pinyin": "yswejqd",
+    "short": "VG",
+    "tel": "1284"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Brunei Darussalam",
+    "name": "文莱",
+    "pinyin": "wl",
+    "short": "BN",
+    "tel": "673"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Bulgaria",
+    "name": "保加利亚",
+    "pinyin": "bjly",
+    "short": "BG",
+    "tel": "359"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Burkina Faso",
+    "name": "布基纳法索",
+    "pinyin": "bjnfs",
+    "short": "BF",
+    "tel": "226"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Burundi",
+    "name": "布隆迪",
+    "pinyin": "bld",
+    "short": "BI",
+    "tel": "257"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Cambodia",
+    "name": "柬埔寨",
+    "pinyin": "jpz",
+    "short": "KH",
+    "tel": "855"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Cameroon",
+    "name": "喀麦隆",
+    "pinyin": "kml",
+    "short": "CM",
+    "tel": "237"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Canada",
+    "name": "加拿大",
+    "pinyin": "jnd",
+    "short": "CA",
+    "tel": "1"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Canary Islands",
+    "name": "加那利群岛",
+    "pinyin": "jnlqd",
+    "short": "IC",
+    "tel": "34"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Cape Verde",
+    "name": "佛得角",
+    "pinyin": "fdj",
+    "short": "CV",
+    "tel": "238"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Caribbean Netherlands",
+    "name": "荷兰加勒比区",
+    "pinyin": "hljlbq",
+    "short": "BQ",
+    "tel": "599"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Cayman Islands",
+    "name": "开曼群岛",
+    "pinyin": "kmqd",
+    "short": "KY",
+    "tel": "1345"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Central African Republic",
+    "name": "中非共和国",
+    "pinyin": "zfghg",
+    "short": "CF",
+    "tel": "236"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Ceuta and Melilla",
+    "name": "休达及梅利利亚",
+    "pinyin": "xdjmlly",
+    "short": "EA",
+    "tel": "34"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Chad",
+    "name": "乍得",
+    "pinyin": "zd",
+    "short": "TD",
+    "tel": "235"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Chile",
+    "name": "智利",
+    "pinyin": "zl",
+    "short": "CL",
+    "tel": "56"
+  },
+  {
+    "domain": "cn.iot.mova-tech.com",
+    "domainAliFy": "CN",
+    "en": "Chinese mainland",
+    "name": "中国大陆",
+    "pinyin": "zg",
+    "short": "CN",
+    "tel": "86"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Christmas Island",
+    "name": "圣诞岛",
+    "pinyin": "sdd",
+    "short": "CX",
+    "tel": "6189164"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Cocos (Keeling) Islands",
+    "name": "科科斯（基林）群岛",
+    "pinyin": "kks（jl）qd",
+    "short": "CC",
+    "tel": "6189162"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Colombia",
+    "name": "哥伦比亚",
+    "pinyin": "glby",
+    "short": "CO",
+    "tel": "57"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Comoros",
+    "name": "科摩罗",
+    "pinyin": "kml",
+    "short": "KM",
+    "tel": "269"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Congo - Brazzaville",
+    "name": "刚果（布）",
+    "pinyin": "gg（b）",
+    "short": "CG",
+    "tel": "242"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Congo - Kinshasa",
+    "name": "刚果（金）",
+    "pinyin": "gg（j）",
+    "short": "CD",
+    "tel": "243"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Cook Islands",
+    "name": "库克群岛",
+    "pinyin": "kkqd",
+    "short": "CK",
+    "tel": "682"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Costa Rica",
+    "name": "哥斯达黎加",
+    "pinyin": "gsdlj",
+    "short": "CR",
+    "tel": "506"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Croatia",
+    "name": "克罗地亚",
+    "pinyin": "kldy",
+    "short": "HR",
+    "tel": "385"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Curaçao",
+    "name": "库拉索",
+    "pinyin": "kls",
+    "short": "CW",
+    "tel": "5999"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Cyprus",
+    "name": "塞浦路斯",
+    "pinyin": "spls",
+    "short": "CY",
+    "tel": "357"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Czech Republic",
+    "name": "捷克",
+    "pinyin": "jk",
+    "short": "CZ",
+    "tel": "420"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Denmark",
+    "name": "丹麦",
+    "pinyin": "dm",
+    "short": "DK",
+    "tel": "45"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Diego Garcia",
+    "name": "迪戈加西亚岛",
+    "pinyin": "dgjxyd",
+    "short": "DG",
+    "tel": "246"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Djibouti",
+    "name": "吉布提",
+    "pinyin": "jbt",
+    "short": "DJ",
+    "tel": "253"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Dominica",
+    "name": "多米尼克",
+    "pinyin": "dmnk",
+    "short": "DM",
+    "tel": "1767"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Dominican Republic",
+    "name": "多米尼加共和国",
+    "pinyin": "dmnjghg",
+    "short": "DO",
+    "tel": "1809"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "East Timor (Timor-Leste)",
+    "name": "东帝汶",
+    "pinyin": "ddw",
+    "short": "TL",
+    "tel": "670"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Ecuador",
+    "name": "厄瓜多尔",
+    "pinyin": "egde",
+    "short": "EC",
+    "tel": "593"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Egypt",
+    "name": "埃及",
+    "pinyin": "aj",
+    "short": "EG",
+    "tel": "20"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "El Salvador",
+    "name": "萨尔瓦多",
+    "pinyin": "sewd",
+    "short": "SV",
+    "tel": "503"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Equatorial Guinea",
+    "name": "赤道几内亚",
+    "pinyin": "cdjny",
+    "short": "GQ",
+    "tel": "240"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Eritrea",
+    "name": "厄立特里亚",
+    "pinyin": "eltly",
+    "short": "ER",
+    "tel": "291"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Estonia",
+    "name": "爱沙尼亚",
+    "pinyin": "asny",
+    "short": "EE",
+    "tel": "372"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Ethiopia",
+    "name": "埃塞俄比亚",
+    "pinyin": "aseby",
+    "short": "ET",
+    "tel": "251"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Falkland Islands",
+    "name": "福克兰群岛",
+    "pinyin": "fklqd",
+    "short": "FK",
+    "tel": "500"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Faroe Islands",
+    "name": "法罗群岛",
+    "pinyin": "flqd",
+    "short": "FO",
+    "tel": "298"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Fiji",
+    "name": "斐济",
+    "pinyin": "fj",
+    "short": "FJ",
+    "tel": "679"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Finland",
+    "name": "芬兰",
+    "pinyin": "fl",
+    "short": "FI",
+    "tel": "358"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "France",
+    "name": "法国",
+    "pinyin": "fg",
+    "short": "FR",
+    "tel": "33"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "French Guiana",
+    "name": "法属圭亚那",
+    "pinyin": "fsgyn",
+    "short": "GF",
+    "tel": "594"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "French polynesia",
+    "name": "法属波利尼西亚",
+    "pinyin": "fsblnxy",
+    "short": "PF",
+    "tel": "689"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "French Southern Territories",
+    "name": "法属南部领地",
+    "pinyin": "fsnbld",
+    "short": "TF",
+    "tel": "262"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Gabon",
+    "name": "加蓬",
+    "pinyin": "jp",
+    "short": "GA",
+    "tel": "241"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Gambia",
+    "name": "冈比亚",
+    "pinyin": "gby",
+    "short": "GM",
+    "tel": "220"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Georgia",
+    "name": "格鲁吉亚",
+    "pinyin": "gljy",
+    "short": "GE",
+    "tel": "995"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Germany",
+    "name": "德国",
+    "pinyin": "dg",
+    "short": "DE",
+    "tel": "49"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Ghana",
+    "name": "加纳",
+    "pinyin": "jn",
+    "short": "GH",
+    "tel": "233"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Gibraltar",
+    "name": "直布罗陀",
+    "pinyin": "zblt",
+    "short": "GI",
+    "tel": "350"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Greece",
+    "name": "希腊",
+    "pinyin": "xl",
+    "short": "GR",
+    "tel": "30"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Greenland",
+    "name": "格陵兰",
+    "pinyin": "gll",
+    "short": "GL",
+    "tel": "299"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Grenada",
+    "name": "格林纳达",
+    "pinyin": "glnd",
+    "short": "GD",
+    "tel": "1473"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Guadeloupe",
+    "name": "瓜德罗普",
+    "pinyin": "gdlp",
+    "short": "GP",
+    "tel": "590"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Guam",
+    "name": "关岛",
+    "pinyin": "gd",
+    "short": "GU",
+    "tel": "1671"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Guatemala",
+    "name": "危地马拉",
+    "pinyin": "wdml",
+    "short": "GT",
+    "tel": "502"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Guernsey",
+    "name": "根西岛",
+    "pinyin": "gxd",
+    "short": "GG",
+    "tel": "447781"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Guinea",
+    "name": "几内亚",
+    "pinyin": "jny",
+    "short": "GN",
+    "tel": "224"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Guinea-Bissau",
+    "name": "几内亚比绍",
+    "pinyin": "jnybs",
+    "short": "GW",
+    "tel": "245"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Guyana",
+    "name": "圭亚那",
+    "pinyin": "gyn",
+    "short": "GY",
+    "tel": "592"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Haiti",
+    "name": "海地",
+    "pinyin": "hd",
+    "short": "HT",
+    "tel": "509"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Honduras",
+    "name": "洪都拉斯",
+    "pinyin": "hdls",
+    "short": "HN",
+    "tel": "504"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Hong Kong（China）",
+    "name": "中国香港特别行政区",
+    "pinyin": "zgxgtbhzq",
+    "short": "HK",
+    "tel": "852"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Hungary",
+    "name": "匈牙利",
+    "pinyin": "xyl",
+    "short": "HU",
+    "tel": "36"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Iceland",
+    "name": "冰岛",
+    "pinyin": "bd",
+    "short": "IS",
+    "tel": "354"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "India",
+    "name": "印度",
+    "pinyin": "yd",
+    "short": "IN",
+    "tel": "91"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Indonesia",
+    "name": "印度尼西亚",
+    "pinyin": "ydnxy",
+    "short": "ID",
+    "tel": "62"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Iraq",
+    "name": "伊拉克",
+    "pinyin": "ylk",
+    "short": "IQ",
+    "tel": "964"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Ireland",
+    "name": "爱尔兰",
+    "pinyin": "ael",
+    "short": "IE",
+    "tel": "353"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Isle of Man",
+    "name": "马恩岛",
+    "pinyin": "med",
+    "short": "IM",
+    "tel": "447624"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Israel",
+    "name": "以色列",
+    "pinyin": "ysl",
+    "short": "IL",
+    "tel": "972"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Italy",
+    "name": "意大利",
+    "pinyin": "ydl",
+    "short": "IT",
+    "tel": "39"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Ivory Coast (Côte d\u0027Ivoire)",
+    "name": "科特迪瓦",
+    "pinyin": "ktdw",
+    "short": "CI",
+    "tel": "225"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Jamaica",
+    "name": "牙买加",
+    "pinyin": "ymj",
+    "short": "JM",
+    "tel": "1876"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Japan",
+    "name": "日本",
+    "pinyin": "rb",
+    "short": "JP",
+    "tel": "81"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Jersey",
+    "name": "泽西岛",
+    "pinyin": "zxd",
+    "short": "JE",
+    "tel": "441534"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Jordan",
+    "name": "约旦",
+    "pinyin": "yd",
+    "short": "JO",
+    "tel": "962"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Kazakhstan",
+    "name": "哈萨克斯坦",
+    "pinyin": "hskst",
+    "short": "KZ",
+    "tel": "77"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Kenya",
+    "name": "肯尼亚",
+    "pinyin": "kny",
+    "short": "KE",
+    "tel": "254"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Kiribati",
+    "name": "基里巴斯",
+    "pinyin": "jlbs",
+    "short": "KI",
+    "tel": "686"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Kosovo",
+    "name": "科索沃",
+    "pinyin": "ksw",
+    "short": "XK",
+    "tel": "383"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Kuwait",
+    "name": "科威特",
+    "pinyin": "kwt",
+    "short": "KW",
+    "tel": "965"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Kyrgyzstan",
+    "name": "吉尔吉斯斯坦",
+    "pinyin": "jejsst",
+    "short": "KG",
+    "tel": "996"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Laos",
+    "name": "老挝",
+    "pinyin": "lz",
+    "short": "LA",
+    "tel": "856"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Latvia",
+    "name": "拉脱维亚",
+    "pinyin": "ltwy",
+    "short": "LV",
+    "tel": "371"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Lebanon",
+    "name": "黎巴嫩",
+    "pinyin": "lbn",
+    "short": "LB",
+    "tel": "961"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Lesotho",
+    "name": "莱索托",
+    "pinyin": "lst",
+    "short": "LS",
+    "tel": "266"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Liberia",
+    "name": "利比里亚",
+    "pinyin": "lbly",
+    "short": "LR",
+    "tel": "231"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Libya",
+    "name": "利比亚",
+    "pinyin": "lby",
+    "short": "LY",
+    "tel": "218"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Liechtenstein",
+    "name": "列支敦士登",
+    "pinyin": "lzdsd",
+    "short": "LI",
+    "tel": "423"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Lithuania",
+    "name": "立陶宛",
+    "pinyin": "ltw",
+    "short": "LT",
+    "tel": "370"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Luxembourg",
+    "name": "卢森堡",
+    "pinyin": "lsb",
+    "short": "LU",
+    "tel": "352"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Macau (China)",
+    "name": "中国澳门特别行政区",
+    "pinyin": "zgamtbhzq",
+    "short": "MO",
+    "tel": "853"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Madagascar",
+    "name": "马达加斯加",
+    "pinyin": "mdjsj",
+    "short": "MG",
+    "tel": "261"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Malawi",
+    "name": "马拉维",
+    "pinyin": "mlw",
+    "short": "MW",
+    "tel": "265"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Malaysia",
+    "name": "马来西亚",
+    "pinyin": "mlxy",
+    "short": "MY",
+    "tel": "60"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Maldives",
+    "name": "马尔代夫",
+    "pinyin": "medf",
+    "short": "MV",
+    "tel": "960"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Mali",
+    "name": "马里",
+    "pinyin": "ml",
+    "short": "ML",
+    "tel": "223"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Malta",
+    "name": "马耳他",
+    "pinyin": "met",
+    "short": "MT",
+    "tel": "356"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Marshall islands",
+    "name": "马绍尔群岛",
+    "pinyin": "mseqd",
+    "short": "MH",
+    "tel": "692"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Martinique",
+    "name": "马提尼克",
+    "pinyin": "mtnk",
+    "short": "MQ",
+    "tel": "596"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Mauritania",
+    "name": "毛里塔尼亚",
+    "pinyin": "mltny",
+    "short": "MR",
+    "tel": "222"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Mauritius",
+    "name": "毛里求斯",
+    "pinyin": "mlqs",
+    "short": "MU",
+    "tel": "230"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Mayotte",
+    "name": "马约特",
+    "pinyin": "myt",
+    "short": "YT",
+    "tel": "262639"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Mexico",
+    "name": "墨西哥",
+    "pinyin": "mxg",
+    "short": "MX",
+    "tel": "52"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Micronesia",
+    "name": "密克罗尼西亚",
+    "pinyin": "mklnxy",
+    "short": "FM",
+    "tel": "691"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Moldova",
+    "name": "摩尔多瓦",
+    "pinyin": "medw",
+    "short": "MD",
+    "tel": "373"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Monaco",
+    "name": "摩纳哥",
+    "pinyin": "mng",
+    "short": "MC",
+    "tel": "377"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Mongolia",
+    "name": "蒙古",
+    "pinyin": "mg",
+    "short": "MN",
+    "tel": "976"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Montenegro",
+    "name": "黑山",
+    "pinyin": "hs",
+    "short": "ME",
+    "tel": "382"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Montserrat",
+    "name": "蒙特塞拉特",
+    "pinyin": "mtslt",
+    "short": "MS",
+    "tel": "1664"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Morocco",
+    "name": "摩洛哥",
+    "pinyin": "mlg",
+    "short": "MA",
+    "tel": "212"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Mozambique",
+    "name": "莫桑比克",
+    "pinyin": "msbk",
+    "short": "MZ",
+    "tel": "258"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Myanmar (Burma)",
+    "name": "缅甸",
+    "pinyin": "md",
+    "short": "MM",
+    "tel": "95"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Namibia",
+    "name": "纳米比亚",
+    "pinyin": "nmby",
+    "short": "NA",
+    "tel": "264"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Nauru",
+    "name": "瑙鲁",
+    "pinyin": "nl",
+    "short": "NR",
+    "tel": "674"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Nepal",
+    "name": "尼泊尔",
+    "pinyin": "nbe",
+    "short": "NP",
+    "tel": "977"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Netherlands",
+    "name": "荷兰",
+    "pinyin": "hl",
+    "short": "NL",
+    "tel": "31"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "New Caledonia",
+    "name": "新喀里多尼亚",
+    "pinyin": "xkldny",
+    "short": "NC",
+    "tel": "687"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "New Zealand",
+    "name": "新西兰",
+    "pinyin": "xxl",
+    "short": "NZ",
+    "tel": "64"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Nicaragua",
+    "name": "尼加拉瓜",
+    "pinyin": "njlg",
+    "short": "NI",
+    "tel": "505"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Niger",
+    "name": "尼日尔",
+    "pinyin": "nre",
+    "short": "NE",
+    "tel": "227"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Nigeria",
+    "name": "尼日利亚",
+    "pinyin": "nrly",
+    "short": "NG",
+    "tel": "234"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Niue",
+    "name": "纽埃",
+    "pinyin": "na",
+    "short": "NU",
+    "tel": "683"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Norfolk Island",
+    "name": "诺福克岛",
+    "pinyin": "nfkd",
+    "short": "NF",
+    "tel": "6723"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "North Macedonia",
+    "name": "马其顿",
+    "pinyin": "mqd",
+    "short": "MK",
+    "tel": "389"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Northern Mariana Islands",
+    "name": "北马里亚纳群岛",
+    "pinyin": "bmlynqd",
+    "short": "MP",
+    "tel": "1670"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Norway",
+    "name": "挪威",
+    "pinyin": "nw",
+    "short": "NO",
+    "tel": "47"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Oman",
+    "name": "阿曼",
+    "pinyin": "am",
+    "short": "OM",
+    "tel": "968"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Pakistan",
+    "name": "巴基斯坦",
+    "pinyin": "bjst",
+    "short": "PK",
+    "tel": "92"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Palau",
+    "name": "帕劳",
+    "pinyin": "pl",
+    "short": "PW",
+    "tel": "680"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Palestinian Territories",
+    "name": "巴勒斯坦",
+    "pinyin": "blst",
+    "short": "PS",
+    "tel": "970"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Panama",
+    "name": "巴拿马",
+    "pinyin": "bnm",
+    "short": "PA",
+    "tel": "507"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Papua New Guinea",
+    "name": "巴布亚新几内亚",
+    "pinyin": "bbyxjny",
+    "short": "PG",
+    "tel": "675"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Paraguay",
+    "name": "巴拉圭",
+    "pinyin": "blg",
+    "short": "PY",
+    "tel": "595"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Peru",
+    "name": "秘鲁",
+    "pinyin": "ml",
+    "short": "PE",
+    "tel": "51"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Philippines",
+    "name": "菲律宾",
+    "pinyin": "flb",
+    "short": "PH",
+    "tel": "63"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Pitcairn Islands",
+    "name": "皮特凯恩群岛",
+    "pinyin": "ptkeqd",
+    "short": "PN",
+    "tel": "64"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Poland",
+    "name": "波兰",
+    "pinyin": "bl",
+    "short": "PL",
+    "tel": "48"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Portugal",
+    "name": "葡萄牙",
+    "pinyin": "pty",
+    "short": "PT",
+    "tel": "351"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Puerto Rico",
+    "name": "波多黎各",
+    "pinyin": "bdlg",
+    "short": "PR",
+    "tel": "1939"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Qatar",
+    "name": "卡塔尔",
+    "pinyin": "kte",
+    "short": "QA",
+    "tel": "974"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Romania",
+    "name": "罗马尼亚",
+    "pinyin": "lmny",
+    "short": "RO",
+    "tel": "40"
+  },
+  {
+    "domain": "ru.iot.mova-tech.com",
+    "domainAliFy": "RU",
+    "en": "Russia",
+    "name": "俄罗斯",
+    "pinyin": "els",
+    "short": "RU",
+    "tel": "7"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Rwanda",
+    "name": "卢旺达",
+    "pinyin": "lwd",
+    "short": "RW",
+    "tel": "250"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Réunion",
+    "name": "留尼汪",
+    "pinyin": "lnw",
+    "short": "RE",
+    "tel": "262"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Saint Barthélemy",
+    "name": "圣巴泰勒米",
+    "pinyin": "sbtlm",
+    "short": "BL",
+    "tel": "590"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Saint Helena",
+    "name": "圣赫勒拿",
+    "pinyin": "shln",
+    "short": "SH",
+    "tel": "290"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Saint Kitts and Nevis",
+    "name": "圣基茨和尼维斯",
+    "pinyin": "sjchnws",
+    "short": "KN",
+    "tel": "1869"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Saint Lucia",
+    "name": "圣卢西亚",
+    "pinyin": "slxy",
+    "short": "LC",
+    "tel": "1758"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Saint Martin (France)",
+    "name": "法属圣马丁",
+    "pinyin": "fssmd",
+    "short": "MF",
+    "tel": "590"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Saint Pierre and Miquelon",
+    "name": "圣皮埃尔和密克隆群岛",
+    "pinyin": "spaehmklqd",
+    "short": "PM",
+    "tel": "508"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Saint Vincent and The Grenadines",
+    "name": "圣文森特和格林纳丁斯",
+    "pinyin": "swsthglnds",
+    "short": "VC",
+    "tel": "1784"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Samoa",
+    "name": "萨摩亚",
+    "pinyin": "smy",
+    "short": "WS",
+    "tel": "685"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "San Marino",
+    "name": "圣马力诺",
+    "pinyin": "smln",
+    "short": "SM",
+    "tel": "378"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Saudi Arabia",
+    "name": "沙特阿拉伯",
+    "pinyin": "stalb",
+    "short": "SA",
+    "tel": "966"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Senegal",
+    "name": "塞内加尔",
+    "pinyin": "snje",
+    "short": "SN",
+    "tel": "221"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Serbia",
+    "name": "塞尔维亚",
+    "pinyin": "sewy",
+    "short": "RS",
+    "tel": "381"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Seychelles",
+    "name": "塞舌尔",
+    "pinyin": "sse",
+    "short": "SC",
+    "tel": "248"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Sierra Leone",
+    "name": "塞拉利昂",
+    "pinyin": "slla",
+    "short": "SL",
+    "tel": "232"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Singapore",
+    "name": "新加坡",
+    "pinyin": "xjp",
+    "short": "SG",
+    "tel": "65"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Slovakia",
+    "name": "斯洛伐克",
+    "pinyin": "slfk",
+    "short": "SK",
+    "tel": "421"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Slovenia",
+    "name": "斯洛文尼亚",
+    "pinyin": "slwny",
+    "short": "SI",
+    "tel": "386"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Solomon Islands",
+    "name": "所罗门群岛",
+    "pinyin": "slmqd",
+    "short": "SB",
+    "tel": "677"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Somalia",
+    "name": "索马里",
+    "pinyin": "sml",
+    "short": "SO",
+    "tel": "252"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "South Africa",
+    "name": "南非",
+    "pinyin": "nf",
+    "short": "ZA",
+    "tel": "27"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "South Georgia and the South Sandwich Islands",
+    "name": "南乔治亚和南桑威奇群岛",
+    "pinyin": "nqzyhnswqqd",
+    "short": "GS",
+    "tel": "500"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "South Korea",
+    "name": "韩国",
+    "pinyin": "hg",
+    "short": "KR",
+    "tel": "82"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "South Sudan",
+    "name": "南苏丹",
+    "pinyin": "nsd",
+    "short": "SS",
+    "tel": "211"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Spain",
+    "name": "西班牙",
+    "pinyin": "xby",
+    "short": "ES",
+    "tel": "34"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Sri Lanka",
+    "name": "斯里兰卡",
+    "pinyin": "sllk",
+    "short": "LK",
+    "tel": "94"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Sudan",
+    "name": "苏丹",
+    "pinyin": "sd",
+    "short": "SD",
+    "tel": "249"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Suriname",
+    "name": "苏里南",
+    "pinyin": "sln",
+    "short": "SR",
+    "tel": "597"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Svalbard and Jan Mayen",
+    "name": "斯瓦尔巴和扬马延",
+    "pinyin": "swebhymy",
+    "short": "SJ",
+    "tel": "4779"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Swaziland",
+    "name": "斯威士兰",
+    "pinyin": "swsl",
+    "short": "SZ",
+    "tel": "268"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Sweden",
+    "name": "瑞典",
+    "pinyin": "rd",
+    "short": "SE",
+    "tel": "46"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Switzerland",
+    "name": "瑞士",
+    "pinyin": "rs",
+    "short": "CH",
+    "tel": "41"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "São Tomé and Príncipe",
+    "name": "圣多美和普林西比",
+    "pinyin": "sdmhplxb",
+    "short": "ST",
+    "tel": "239"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Taiwan (China)",
+    "name": "中国台湾",
+    "pinyin": "zgtw",
+    "short": "TW",
+    "tel": "886"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tajikistan",
+    "name": "塔吉克斯坦",
+    "pinyin": "tjkst",
+    "short": "TJ",
+    "tel": "992"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tanzania",
+    "name": "坦桑尼亚",
+    "pinyin": "tsny",
+    "short": "TZ",
+    "tel": "255"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Thailand",
+    "name": "泰国",
+    "pinyin": "tg",
+    "short": "TH",
+    "tel": "66"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Togo",
+    "name": "多哥",
+    "pinyin": "dg",
+    "short": "TG",
+    "tel": "228"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tokelau",
+    "name": "托克劳",
+    "pinyin": "tkl",
+    "short": "TK",
+    "tel": "690"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tonga",
+    "name": "汤加",
+    "pinyin": "tj",
+    "short": "TO",
+    "tel": "676"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Trinidad and Tobago",
+    "name": "特立尼达和多巴哥",
+    "pinyin": "tlndhdbg",
+    "short": "TT",
+    "tel": "1868"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tristan da Cunha",
+    "name": "特里斯坦-达库尼亚群岛",
+    "pinyin": "tlstdknyqd",
+    "short": "TA",
+    "tel": "290"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tunisia",
+    "name": "突尼斯",
+    "pinyin": "tns",
+    "short": "TN",
+    "tel": "216"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Turkey",
+    "name": "土耳其",
+    "pinyin": "teq",
+    "short": "TR",
+    "tel": "90"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Turkmenistan",
+    "name": "土库曼斯坦",
+    "pinyin": "tkmst",
+    "short": "TM",
+    "tel": "993"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Turks and Caicos Islands",
+    "name": "特克斯和凯科斯群岛",
+    "pinyin": "tkshkksqd",
+    "short": "TC",
+    "tel": "1649"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Tuvalu",
+    "name": "图瓦卢",
+    "pinyin": "twl",
+    "short": "TV",
+    "tel": "688"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Uganda",
+    "name": "乌干达",
+    "pinyin": "wgd",
+    "short": "UG",
+    "tel": "256"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Ukraine",
+    "name": "乌克兰",
+    "pinyin": "wkl",
+    "short": "UA",
+    "tel": "380"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "United Arab Emirates",
+    "name": "阿拉伯联合酋长国",
+    "pinyin": "alblhqcg",
+    "short": "AE",
+    "tel": "971"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "United Kingdom",
+    "name": "英国",
+    "pinyin": "yg",
+    "short": "GB",
+    "tel": "44"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "United States",
+    "name": "美国",
+    "pinyin": "mg",
+    "short": "US",
+    "tel": "1"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "United States Minor Outlying Islands",
+    "name": "美国本土外小岛屿",
+    "pinyin": "mgbtwxdy",
+    "short": "UM",
+    "tel": "1"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Uruguay",
+    "name": "乌拉圭",
+    "pinyin": "wlg",
+    "short": "UY",
+    "tel": "598"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "US Virgin Islands",
+    "name": "美属维尔京群岛",
+    "pinyin": "mswejqd",
+    "short": "VI",
+    "tel": "1340"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Uzbekistan",
+    "name": "乌兹别克斯坦",
+    "pinyin": "wzbkst",
+    "short": "UZ",
+    "tel": "998"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Vanuatu",
+    "name": "瓦努阿图",
+    "pinyin": "wnat",
+    "short": "VU",
+    "tel": "678"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Vatican",
+    "name": "梵蒂冈",
+    "pinyin": "fdg",
+    "short": "VA",
+    "tel": "3906"
+  },
+  {
+    "domain": "us.iot.mova-tech.com",
+    "domainAliFy": "US",
+    "en": "Venezuela",
+    "name": "委内瑞拉",
+    "pinyin": "wnrl",
+    "short": "VE",
+    "tel": "58"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Vietnam",
+    "name": "越南",
+    "pinyin": "yn",
+    "short": "VN",
+    "tel": "84"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Wallis and Futuna",
+    "name": "瓦利斯和富图纳",
+    "pinyin": "wlshftn",
+    "short": "WF",
+    "tel": "681"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Western Sahara",
+    "name": "西撒哈拉",
+    "pinyin": "xshl",
+    "short": "EH",
+    "tel": "212"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Yemen",
+    "name": "也门",
+    "pinyin": "ym",
+    "short": "YE",
+    "tel": "967"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Zambia",
+    "name": "赞比亚",
+    "pinyin": "zby",
+    "short": "ZM",
+    "tel": "260"
+  },
+  {
+    "domain": "sg.iot.mova-tech.com",
+    "domainAliFy": "SG",
+    "en": "Zimbabwe",
+    "name": "津巴布韦",
+    "pinyin": "jbbw",
+    "short": "ZW",
+    "tel": "263"
+  },
+  {
+    "domain": "eu.iot.mova-tech.com",
+    "domainAliFy": "DE",
+    "en": "Åland Islands",
+    "name": "奥兰群岛",
+    "pinyin": "alqd",
+    "short": "AX",
+    "tel": "35818"
+  }
+]

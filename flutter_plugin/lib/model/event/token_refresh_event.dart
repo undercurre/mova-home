@@ -1,0 +1,4 @@
+class TokenRefreshEvent {}
+
+class TokenInvalidEvent {}
+

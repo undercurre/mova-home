@@ -1,0 +1,10 @@
+CODEOWNERS  @sunzhibin
+
+[配网模块][1]
+flutter_plugin/lib/ui/page/pair_network/     @pengchao @sunzhibin @libolin @genghuiyu @panyongfei @tanghaibo @housaibang
+
+[首页模块][1]
+flutter_plugin/lib/ui/page/home/             @pengchao @sunzhibin @libolin @genghuiyu @panyongfei @tanghaibo @housaibang
+
+[核心消息模块][1]
+flutter_plugin/lib/common/                   @pengchao @sunzhibin @libolin @genghuiyu @panyongfei @tanghaibo @housaibang

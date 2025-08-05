@@ -1,0 +1,27 @@
+//App版本管理
+def versions = [:]
+//  ######################### APP版本号规则定义 ###############################
+//
+// 最终APP的versionCode规则： 2177 标识(1位) + abi标识(1位 "armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4) + appVersionCode(6位 01038100)
+// 例如old：13020012（2177 + armeabi-v7a + 10381）
+// 例如new：102001200（2177 + armeabi-v7a + 10381）
+//
+// versionName  规则 major + minor + point [00.00.00 各2位]
+// versionCode  规则 根据versionName取 010381 转 int 则为：10381 [总6位]
+// 注：在build.gradle 中会动态修改补全版本号
+//
+//  ######################### APP版本号规则定义 ###############################
+
+versions.appVersionCode = 10100003 // 1 01 00 001
+//versionName
+versions.appVersionName = '1.1.0.3'
+//插件最后支持的App版本
+versions.pluginAppVersion = '148'
+versions.mallVersion = '4'
+// 国内包 和 googlePlay包
+versions.channel = 'cn'
+// 分包标识，默认true, 无特殊要求不需手动修改
+versions.splitsEnable = true
+versions.logEnable = false
+
+ext.versions = versions

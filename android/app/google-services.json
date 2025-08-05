@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "354210209092",
+    "project_id": "movahome-133b1",
+    "storage_bucket": "movahome-133b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354210209092:android:884d943175eb4eb6680b11",
+        "android_client_info": {
+          "package_name": "com.dreame.movahome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354210209092-k9dd6ika7vqd1bdj25tuomtb8ij8ll0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dreame.movahome",
+            "certificate_hash": "40f5d06d88d5d79d32f5d36c4c85dce6287a4437"
+          }
+        },
+        {
+          "client_id": "354210209092-kvvjaamgemhoo8ivj7an25d6tts661qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVrTBWdJJ_3tWADALuibJxIojLQNQ6hi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354210209092-kvvjaamgemhoo8ivj7an25d6tts661qa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "354210209092-tbsc5ti626dbvt7cb18cd9cqr16v0foo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mova.smarthome",
+                "app_store_id": "6499421624"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

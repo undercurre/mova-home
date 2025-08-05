@@ -1,0 +1,167 @@
+[
+  {
+    "displayLang": "简体中文",
+    "langTag": "zh",
+    "country": "CN"
+  },
+  {
+    "displayLang": "English",
+    "langTag": "en",
+    "country": "US"
+  },
+  {
+    "displayLang": "繁體中文(台灣)",
+    "langTag": "zh-TW",
+    "country": "TW"
+  },
+  {
+    "displayLang": "繁體中文(香港)",
+    "langTag": "zh-HK",
+    "country": "HK"
+  },
+  {
+    "displayLang": "español",
+    "langTag": "es",
+    "country": "ES"
+  },
+  {
+    "displayLang": "русский",
+    "langTag": "ru",
+    "country": "RU"
+  },
+  {
+    "displayLang": "한국어",
+    "langTag": "ko",
+    "country": "KR"
+  },
+  {
+    "displayLang": "italiano",
+    "langTag": "it",
+    "country": "IT"
+  },
+  {
+    "displayLang": "français",
+    "langTag": "fr",
+    "country": "FR"
+  },
+  {
+    "displayLang": "Deutsch",
+    "langTag": "de",
+    "country": "DE"
+  },
+  {
+    "displayLang": "Bahasa Indonesia",
+    "langTag": "id",
+    "country": "ID"
+  },
+  {
+    "displayLang": "polski",
+    "langTag": "pl",
+    "country": "PL"
+  },
+  {
+    "displayLang": "Tiếng Việt",
+    "langTag": "vi",
+    "country": "VN"
+  },
+  {
+    "displayLang": "日本語",
+    "langTag": "ja",
+    "country": "JP"
+  },
+  {
+    "displayLang": "ไทย",
+    "langTag": "th",
+    "country": "TH"
+  },
+  {
+    "displayLang": "Türkçe",
+    "langTag": "tr",
+    "country": "TR"
+  },
+  {
+    "displayLang": "Українська Мова",
+    "langTag": "uk",
+    "country": "UA"
+  },
+  {
+    "displayLang": "Nederlands",
+    "langTag": "nl",
+    "country": "NL"
+  },
+  {
+    "displayLang": "português",
+    "langTag": "pt",
+    "country": "BR"
+  },
+  {
+    "displayLang": "Norsk",
+    "langTag": "nb",
+    "country": "NO"
+  },
+  {
+    "displayLang": "Svenska",
+    "langTag": "sv",
+    "country": "SE"
+  },
+  {
+    "displayLang": "Dansk",
+    "langTag": "da",
+    "country": "DK"
+  },
+  {
+    "displayLang": "Bahasa Melayu",
+    "langTag": "ms",
+    "country": "MY"
+  },
+  {
+    "displayLang": "العربية",
+    "langTag": "ar",
+    "country": "SA"
+  },
+  {
+    "displayLang": "עברית",
+    "langTag": "he",
+    "country": "HE"
+  },
+  {
+    "displayLang": "Suomi",
+    "langTag": "fi",
+    "country": "FI"
+  },
+  {
+    "displayLang": "čeština",
+    "langTag": "cs",
+    "country": "CZ"
+  },
+  {
+    "displayLang": "slovenčina",
+    "langTag": "sk",
+    "country": "SK"
+  },
+  {
+    "displayLang": "magyar",
+    "langTag": "hu",
+    "country": "HU"
+  },
+  {
+    "displayLang": "română",
+    "langTag": "ro",
+    "country": "RO"
+  },
+  {
+    "displayLang": "latviešu valoda",
+    "langTag": "lv",
+    "country": "LV"
+  },
+  {
+    "displayLang": "slovenščina",
+    "langTag": "sl",
+    "country": "SI"
+  },
+  {
+    "displayLang": "lietuvių kalba",
+    "langTag": "lt",
+    "country": "LT"
+  }
+]

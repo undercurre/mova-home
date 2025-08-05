@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="52dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/common_textMain"
+                android:textSize="@dimen/common_textLarge"
+                tool:text="+86" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_blue_arrow_down" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:background="#EDEDED"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:paddingHorizontal="3dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/common_textMain"
+            android:textColorHint="@color/common_textSecond"
+            android:textCursorDrawable="@drawable/shape_input_cursor_color"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/common_textLarge"
+
+            tool:text="手机号" />
+
+        <LinearLayout
+            android:id="@+id/ll_verif_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@id/tv_verif_code"
+                android:background="#EDEDED"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_verif_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="center"
+                android:maxWidth="100dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/common_text_brand"
+                android:textSize="@dimen/common_textNormal"
+                android:textStyle="bold"
+                tool:text="获取验证码" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/icon_input_clear"
+            tool:visibility="gone" />
+
+        <CheckedTextView
+            android:id="@+id/cb_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_edit_password_hide"
+            android:checked="true"
+            tool:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D8D8D8"
+        android:visibility="visible" />
+</LinearLayout>

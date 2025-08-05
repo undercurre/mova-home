@@ -1,0 +1,112 @@
+{
+    "appButtomRule_mova": {
+            "tabList": [
+                {
+                    "path": "pages/newShop/newShop",
+                    "badge": {
+                        "bgColor": "FFFFFFFF",
+                        "dot": false,
+                        "text": "",
+                        "textColor": "FFFFFFFF"
+                    },
+                    "index": 0,
+                    "tabType": "mall",
+                    "style": {
+                        "normal": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mall.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mall_dark.png",
+                            "text": "商城",
+                            "textColor": "FF121212"
+                        },
+                        "lottie": "",
+                        "selected": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mall_checked.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mall_dark_checked.png",
+                            "text": "商城",
+                            "textColor": "FF121212"
+                        }
+                    }
+                },
+                {
+                    "path": "",
+                    "badge": {
+                        "bgColor": "FFFFFFFF",
+                        "dot": false,
+                        "text": "",
+                        "textColor": "FFFFFFFF"
+                    },
+                    "index": 1,
+                    "tabType": "mall",
+                    "style": {
+                        "normal": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_find.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_find_dark.png",
+                            "text": "发现",
+                            "textColor": "FF121212"
+                        },
+                        "lottie": "",
+                        "selected": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_find_checked.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_find_dark_checked.png",
+                            "text": "发现",
+                            "textColor": "FF121212"
+                        }
+                    }
+                },
+                {
+                    "path": "",
+                    "badge": {
+                        "bgColor": "",
+                        "dot": false,
+                        "icon": "",
+                        "text": "",
+                        "textColor": ""
+                    },
+                    "index": 2,
+                    "tabType": "device",
+                    "style": {
+                        "normal": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_home.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_home_dark.png",
+                            "text": "设备",
+                            "textColor": "FF121212"
+                        },
+                        "lottie": "",
+                        "selected": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_home_checked.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_home_dark_checked.png",
+                            "text": "设备",
+                            "textColor": "FF121212"
+                        }
+                    }
+                },
+                {
+                    "path": "",
+                    "badge": {
+                        "bgColor": "",
+                        "dot": false,
+                        "text": "",
+                        "textColor": ""
+                    },
+                    "index": 3,
+                    "tabType": "mine",
+                    "style": {
+                        "normal": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mine.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mine_dark.png",
+                            "text": "我的",
+                            "textColor": "FF121212"
+                        },
+                        "lottie": "",
+                        "selected": {
+                            "icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mine_checked.png",
+                            "dark_icon": "https://dreame-cn.oss-cn-shanghai.aliyuncs.com/public/app/resource/mova/tab_mine_dark_checked.png",
+                            "text": "我的",
+                            "textColor": "FF121212"
+                        }
+                    }
+                }
+            ],
+            "defaultIndex": 0
+        }
+}

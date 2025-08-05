@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_dialogBg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent">
+
+
+        <FrameLayout
+            android:id="@+id/fl_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/common_shape_white_top_r8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/icon_dialog_cancel"
+            app:layout_constraintEnd_toEndOf="@id/fl_bg"
+            app:layout_constraintTop_toTopOf="@id/fl_bg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_device_icon"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:singleLine="true"
+            android:text="Dreame Bot S10 "
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textSizeLarge4"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_device_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:maxLines="2"
+            android:textColor="@color/common_textGray"
+            android:text="哈哈哈邀请你共享DreameS10哈哈哈邀请你共享DreameS10哈哈哈邀请你共享DreameS10哈哈哈邀请你共享DreameS10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_device_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_reject"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_goneMarginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:text="已接收"
+            android:textColor="#55E53C"
+            android:textSize="@dimen/common_textLarge"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_accept"
+            app:layout_constraintTop_toBottomOf="@id/tv_message_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_accept"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:text="已接收"
+            android:textColor="#55E53C"
+            android:textSize="@dimen/common_textLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_reject"
+            app:layout_constraintStart_toEndOf="@id/tv_reject" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

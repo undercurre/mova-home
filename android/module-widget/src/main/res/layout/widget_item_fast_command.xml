@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/ll_item_fast_command"
+    style="@style/Widget.MyTest.AppWidget.ItemView"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.AppWidget.AppWidgetItemView">
+
+    <TextView
+        android:id="@id/tv_fast_command"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="16dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|start"
+        android:textAlignment="viewStart"
+        android:text=""
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/common_text_main"
+        android:textSize="@dimen/common_textNormal"
+        android:textStyle="bold"
+        tools:text="全局清洁" />
+
+    <ImageView
+        android:id="@id/iv_fast_command"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/icon_start_clean_fast" />
+
+
+</LinearLayout>

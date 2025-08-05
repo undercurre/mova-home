@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_text_main"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/common_color_white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="产品名称" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/video_call_invite"
+        android:textColor="@color/common_color_white"
+        android:textSize="@dimen/common_textLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <ImageView
+        android:id="@+id/iv_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_call_negative"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/reject"
+        android:textColor="@color/common_color_white"
+        android:textSize="@dimen/common_textNormal"
+        app:layout_constraintEnd_toEndOf="@id/iv_negative"
+        app:layout_constraintStart_toStartOf="@id/iv_negative"
+        app:layout_constraintTop_toBottomOf="@id/iv_negative" />
+
+    <ImageView
+        android:id="@+id/iv_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_call_positive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/video_call_accept"
+        android:textColor="@color/common_color_white"
+        android:textSize="@dimen/common_textNormal"
+        app:layout_constraintEnd_toEndOf="@id/iv_positive"
+        app:layout_constraintStart_toStartOf="@id/iv_positive"
+        app:layout_constraintTop_toBottomOf="@id/iv_positive" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

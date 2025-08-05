@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_email_service">服务邮箱</string>
+    <string name="online_server">在线客服</string>
+    <string name="text_product_suggestion">产品建议</string>
+    <string name="text_contact_us">联系我们</string>
+</resources>

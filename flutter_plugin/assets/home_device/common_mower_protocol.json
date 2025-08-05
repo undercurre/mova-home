@@ -1,0 +1,33 @@
+{
+    "keyDefine": {
+        "2.1": {
+            "zh": {
+                "1": "割草中",
+                "2": "待机中",
+                "3": "暂停",
+                "4": "暂停",
+                "5": "正在回充",
+                "6": "正在充电",
+                "11": "正在建图",
+                "13": "充电完成",
+                "14": "正在升级",
+                "15": "电池高温，暂缓充电",
+                "16": "电池低温，暂缓充电"
+            },
+            "en": {
+                "1": "Working",
+                "2": "Standby",
+                "3": "Working",
+                "4": "Paused",
+                "5": "Returning Charge",
+                "6": "Charging",
+                "11": "Mapping",
+                "13": "Charging Completed",
+                "14": "Upgrading",
+                "15": "High battery temperature. Charging suspended",
+                "16": "Low battery temperature. Charging suspended"
+            }
+        }
+    },
+    "ver": -1
+}

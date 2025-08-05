@@ -1,0 +1,3 @@
+function test(aaa){
+     console.log(aaa);
+}

@@ -1,0 +1,27 @@
+{
+    "keyDefine": {
+        "2.1": {
+            "zh": {
+                "1": "空闲",
+                "2": "出粮中",
+                "3": "已出粮",
+                "4": "卡粮",
+                "5": "堵粮",
+                "6": "余粮不足",
+                "7": "电池电量低",
+                "8": "食盆异常"
+            },
+            "en": {
+                "1": "idle",
+                "2": "Out of Grain",
+                "3": "Grain has been released",
+                "4": "Card grain",
+                "5": "Blocked grain",
+                "6": "Insufficient surplus grain",
+                "7": "Low battery",
+                "8": "Abnormal food bowl"
+            }
+        }
+    },
+    "ver": -1
+}

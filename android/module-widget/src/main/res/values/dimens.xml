@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="largeMaxWidth" type="dimen">290dp</item>
+    <item name="largeMaxHeight" type="dimen">290dp</item>
+
+    <item name="mediumMaxWidth" type="dimen">290dp</item>
+    <item name="mediumMaxHeight" type="dimen">110dp</item>
+
+    <item name="smallMaxWidth" type="dimen">150dp</item>
+    <item name="smallMaxHeight" type="dimen">110dp</item>
+
+    <item name="smallFillWidth" type="dimen">155dp</item>
+    <item name="smallFillHeight" type="dimen">155dp</item>
+
+    <item name="mediumFillWidth" type="dimen">330dp</item>
+    <item name="mediumFillHeight" type="dimen">155dp</item>
+
+    <item name="largeFillWidth" type="dimen">345dp</item>
+    <item name="largeFillHeight" type="dimen">345dp</item>
+
+
+</resources>

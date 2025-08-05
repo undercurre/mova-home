@@ -1,0 +1,546 @@
+apply plugin: "com.android.application"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+
+apply plugin: 'com.huawei.agconnect'
+apply plugin: 'com.hihonor.mcs.asplugin'
+/* 👇👇👇👇 应用 Booster 插件 👇👇👇👇 */
+apply plugin: 'com.didiglobal.booster'
+apply plugin: 'therouter'
+
+// ********************************************
+// *
+// *  根据执行命令判断是 gp / cn 依赖google插件
+// *
+// ********************************************
+
+/*********************************
+ * 读取 local.properties 文件的配置*
+ * # 本地编译                     *
+ * isLocalAssemble=true          *
+ * # 本地编译并调试                *
+ * isLocalAssembleDebug=true     *
+ * *******************************
+ **/
+def isLocalAssemble = false
+def isLocalAssembleDebug = false
+try {
+    def properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    isLocalAssemble = properties.getProperty('isLocalAssemble', 'false').toBoolean()
+    isLocalAssembleDebug = properties.getProperty('isLocalAssembleDebug', 'false').toBoolean()
+} catch (Exception exception) {
+//    exception.printStackTrace()
+}
+println "---------- 本地编译  isLocalAssemble: ${isLocalAssemble} ,isLocalAssembleDebug: ${isLocalAssembleDebug}-------- "
+def execTasks = gradle.startParameter.taskNames
+def isDebugTask = execTasks.isEmpty() || execTasks.find { it.contains("CnDebug") || it.contains("GpDebug") } != null
+def isGpTask = execTasks.isEmpty() || execTasks.find { it.contains("GpDebug") } != null
+println "---------- 命令行执行任务 -------- Tasks: ${execTasks.toListString()}  ------- isDebugTask: $isDebugTask"
+
+// 配置本地编译，加快编译速度, 默认：false
+if (!isLocalAssemble || !isDebugTask) {
+    println "---------- 命令行执行任务 -------- apply plugins:[arouter,countly,google-services,crashlytics] ----------- "
+    apply plugin: 'com.dreame.countly.plugin'
+    apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.google.firebase.crashlytics'
+} else if (isGpTask) {
+    // gp 需要插件
+    apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.google.firebase.crashlytics'
+}
+if (isLocalAssembleDebug) {
+//    apply plugin: 'com.bytedance.rhea-trace'
+//    apply from: "../module_debug/matrix.gradle"
+}
+
+
+project.afterEvaluate { project ->
+    project.tasks.getByName("mergeGpReleaseNativeLibs").doLast {
+        println "---------- delete so  mergeGpReleaseNativeLibs -------- "
+        deleteOtherSo("gpRelease")
+    }
+    project.tasks.getByName("mergeGpDebugNativeLibs").doLast {
+        println "---------- delete so  mergeGpReleaseNativeLibs -------- "
+        deleteOtherSo("gpDebug")
+    }
+    project.tasks.getByName("mergeGpUatNativeLibs").doLast {
+        println "---------- delete so  mergeGpUatNativeLibs -------- "
+        deleteOtherSo("gpUat")
+    }
+}
+
+def deleteOtherSo(type) {
+    String typepath = "$type${File.separator}out${File.separator}lib"
+    File soPath = new File("${project.buildDir.path}${File.separator}intermediates${File.separator}merged_native_libs${File.separator}${typepath}")
+    println "---------- delete so  ${soPath.path}"
+    def files = soPath.listFiles()
+    if (files != null && files.length != 0) {
+        for (File file : files) {
+            if (file.name == "armeabi-v7a" || file.name == "arm64-v8a") {
+                continue
+            }
+            println "---------- delete so  ${file.path}"
+            file.deleteDir()
+        }
+    }
+}
+
+import com.android.build.OutputFile
+
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+
+/**
+ * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
+ * and bundleReleaseJsAndAssets).
+ * These basically call `react-native bundle` with the correct arguments during the Android build
+ * cycle. By default, bundleDebugJsAndAssets is skipped, as in debug/dev mode we prefer to load the
+ * bundle directly from the development server. Below you can see all the possible configurations
+ * and their defaults. If you decide to add a configuration block, make sure to add it before the
+ * `apply from: "../../node_modules/react-native/react.gradle"` line.
+ *
+ * project.ext.react = [
+ *   // the name of the generated asset file containing your JS bundle
+ *   bundleAssetName: "index.android.bundle",
+ *
+ *   // the entry file for bundle generation. If none specified and
+ *   // "index.android.js" exists, it will be used. Otherwise "index.js" is
+ *   // default. Can be overridden with ENTRY_FILE environment variable.
+ *   entryFile: "index.android.js",
+ *
+ *   // https://reactnative.dev/docs/performance#enable-the-ram-format
+ *   bundleCommand: "ram-bundle",
+ *
+ *   // whether to bundle JS and assets in debug mode
+ *   bundleInDebug: false,
+ *
+ *   // whether to bundle JS and assets in release mode
+ *   bundleInRelease: true,
+ *
+ *   // whether to bundle JS and assets in another build variant (if configured).
+ *   // See http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Build-Variants
+ *   // The configuration property can be in the following formats
+ *   //         'bundleIn${productFlavor}${buildType}'
+ *   //         'bundleIn${buildType}'
+ *   // bundleInFreeDebug: true,
+ *   // bundleInPaidRelease: true,
+ *   // bundleInBeta: true,
+ *
+ *   // whether to disable dev mode in custom build variants (by default only disabled in release)
+ *   // for example: to disable dev mode in the staging build type (if configured)
+ *   devDisabledInStaging: true,
+ *   // The configuration property can be in the following formats
+ *   //         'devDisabledIn${productFlavor}${buildType}'
+ *   //         'devDisabledIn${buildType}'
+ *
+ *   // the root of your project, i.e. where "package.json" lives
+ *   root: "../../",
+ *
+ *   // where to put the JS bundle asset in debug mode
+ *   jsBundleDirDebug: "$buildDir/intermediates/assets/debug",
+ *
+ *   // where to put the JS bundle asset in release mode
+ *   jsBundleDirRelease: "$buildDir/intermediates/assets/release",
+ *
+ *   // where to put drawable resources / React Native assets, e.g. the ones you use via
+ *   // require('./image.png')), in debug mode
+ *   resourcesDirDebug: "$buildDir/intermediates/res/merged/debug",
+ *
+ *   // where to put drawable resources / React Native assets, e.g. the ones you use via
+ *   // require('./image.png')), in release mode
+ *   resourcesDirRelease: "$buildDir/intermediates/res/merged/release",
+ *
+ *   // by default the gradle tasks are skipped if none of the JS files or assets change; this means
+ *   // that we don't look at files in android/ or ios/ to determine whether the tasks are up to
+ *   // date; if you have any other folders that you want to ignore for performance reasons (gradle
+ *   // indexes the entire tree), add them here. Alternatively, if you have JS files in android/
+ *   // for example, you might want to remove it from here.
+ *   inputExcludes: ["android/**", "ios/**"],
+ *
+ *   // override which node gets called and with what additional arguments
+ *   nodeExecutableAndArgs: ["node"],
+ *
+ *   // supply additional arguments to the packager
+ *   extraPackagerArgs: []
+ * ]
+ */
+
+project.ext.react = [
+        enableHermes: false,  // clean and rebuild if changing
+]
+
+apply from: "../../node_modules/react-native/react.gradle"
+
+/**
+ * Set this to true to create two separate APKs instead of one:
+ *   - An APK that only works on ARM devices
+ *   - An APK that only works on x86 devices
+ * The advantage is the size of the APK is reduced by about 4MB.
+ * Upload all the APKs to the Play Store and people will download
+ * the correct one based on the CPU architecture of their device.
+ */
+def enableSeparateBuildPerCPUArchitecture = versions.splitsEnable
+
+/**
+ * Run Proguard to shrink the Java bytecode in release builds.
+ */
+def enableProguardInReleaseBuilds = true
+
+/**
+ * The preferred build flavor of JavaScriptCore.
+ *
+ * For example, to use the international variant, you can use:
+ * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
+ *
+ * The international variant includes ICU i18n library and necessary data
+ * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
+ * give correct results when using with locales other than en-US.  Note that
+ * this variant is about 6MiB larger per architecture than default.
+ */
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+/**
+ * Whether to enable the Hermes VM.
+ *
+ * This should be set on project.ext.react and mirrored here.  If it is not set
+ * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
+ * and the benefits of using Hermes will therefore be sharply reduced.
+ */
+def enableHermes = project.ext.react.get("enableHermes", true);
+println("enableHermes: " + enableHermes)
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.dreame.movahome"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        // App发版本，更新Version.gradle
+        versionCode versions.appVersionCode
+        versionName versions.appVersionName
+        multiDexEnabled true
+
+        //使用renderscript 兼容包
+        renderscriptTargetApi rootProject.ext.minSdkVersion
+        renderscriptSupportModeEnabled true
+
+        manifestPlaceholders = [qqappid: "1112121026"]
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+    splits {
+        abi {
+            reset()
+            enable enableSeparateBuildPerCPUArchitecture
+            universalApk false  // If true, also generate a universal APK
+            include "armeabi-v7a", "arm64-v8a" //, "x86", "x86_64"
+            exclude "x86", "x86_64", "armeabi"
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('../keystores/debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        release {
+            storeFile file('../keystores/keystore_release.keystore')
+            storePassword 'dreame8888'
+            keyAlias 'dreame'
+            keyPassword 'dreame8888'
+        }
+    }
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+            excludes += ['**/libjsc.so', '**/libhermes-executor-debug.so', '**/libhermes-executor-release.so', '**/libhermes-inspector.so']
+            pickFirsts += ['lib/*/libc++_shared.so', 'lib/*/libijkplayer.so', 'lib/*/libijksdl.so', 'lib/*/libijkffmpeg.so']
+        }
+        resources {
+            excludes += ['META-INF/*.kotlin_module']
+        }
+    }
+    // 解决资源重复问题
+    buildTypes {
+        debug {
+            debuggable true
+            versionNameSuffix "-debug"
+            signingConfig signingConfigs.release
+        }
+
+        uat {
+            debuggable true
+            versionNameSuffix "-uat"
+            signingConfig signingConfigs.release
+            matchingFallbacks = ["debug", "release"]
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+
+        env_test {
+            debuggable true
+            versionNameSuffix "-test"
+            minifyEnabled enableProguardInReleaseBuilds
+            signingConfig signingConfigs.debug
+            matchingFallbacks = ['release', "debug"]
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+
+        release {
+            // Caution! In production, you need to generate your own keystore file.
+            // see https://reactnative.dev/docs/signed-apk-android.
+            signingConfig signingConfigs.release
+            minifyEnabled enableProguardInReleaseBuilds
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    flavorDimensions "channel"
+    productFlavors {
+        //国内版本
+        cn {
+            dimension 'channel'
+//            ndk {
+//                abiFilters "armeabi-v7a"
+//            }
+            sourceSets.release {
+                manifest.srcFile './cn/AndroidManifest.xml'
+            }
+            sourceSets.debug {
+                manifest.srcFile './cn/AndroidManifest.xml'
+            }
+            sourceSets.uat {
+                manifest.srcFile './cn/AndroidManifest.xml'
+            }
+        }
+
+        //Google Play版本
+        gp {
+            dimension 'channel'
+        }
+
+        pluginDev {
+            dimension 'channel'
+        }
+    }
+
+
+    // applicationVariants are e.g. debug, release
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def abi = output.getFilter(OutputFile.ABI)
+            output.outputFileName = "MOVAhome-${variant.buildType.name}-v${variant.versionName}-${abi}-${getDateTime()}.apk"
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+    androidResources {
+        ignoreAssetsPattern '!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~'
+        additionalParameters '--auto-add-overlay'
+    }
+    lint {
+        abortOnError false
+    }
+    namespace 'com.dreame.smartlife'
+}
+repositories {
+
+}
+
+static def getDateTime() {
+    DateFormat df = new SimpleDateFormat("yyyyMMddHHmm");
+    return df.format(new Date())
+}
+
+dependencies {
+
+    implementation project(':react-native-community_netinfo')
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //androidx
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    //nreact-native
+    implementation 'common.android.dreame.sdk:react-native:0.61.5.0002'
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.0'
+//    implementation "com.facebook.react:react-native:+"  // From node_modules
+//    implementation 'common.android.dreame.sdk:qrcodecore-opencv:1.0.5.5-thread'
+
+
+    debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
+        exclude group: 'com.facebook.fbjni'
+    }
+    debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
+        exclude group: 'com.facebook.flipper'
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+    debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
+        exclude group: 'com.facebook.flipper'
+    }
+    if (enableHermes) {
+        def hermesPath = "../../node_modules/hermes-engine/android/";
+        debugImplementation files(hermesPath + "hermes-debug.aar")
+        uatImplementation files(hermesPath + "hermes-debug.aar")
+        env_testImplementation files(hermesPath + "hermes-debug.aar")
+        releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+        implementation jscFlavor
+    }
+    //butterknife-processor
+    kapt 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    // 替换成最新版本, 需要注意的是api
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+    implementation "cn.therouter:router:$therouter_version"
+    kapt "cn.therouter:apt:$therouter_version"
+
+    implementation 'com.github.jflavio1:WifiConnector:v1.7'
+//    implementation 'com.github.Blankeer:XAndroidSocket:1.0.0'
+
+    cnImplementation('common.android.dreame.sdk:umeng-push-library:1.1.20') {
+        exclude group: "common.android.thirdparty", module: "weibo-android-sdk"
+        exclude group: "io.github.sinaweibosdk", module: "core"
+        exclude group: "com.tencent.mm.opensdk", module: "wechat-sdk-android-without-mta"
+        exclude group: "com.umeng.umsdk", module: "utdid"
+        exclude group: "com.umeng.umsdk", module: "apm"
+        exclude group: "com.umeng.umsdk", module: "share-core"
+        exclude group: "com.umeng.umsdk", module: "share-board"
+        exclude group: "com.umeng.umsdk", module: "share-wx"
+        exclude group: "com.umeng.umsdk", module: "share-sina"
+        exclude group: "common.android.dreame.sdk", module: "common-push-library"
+    }
+    gpImplementation('common.android.dreame.sdk:gms-push-library:1.1.19') {
+        exclude group: "common.android.dreame.sdk", module: "common-push-library"
+    }
+    implementation 'common.android.dreame.sdk:common-push-library:1.2.5'
+    gpImplementation platform('com.google.firebase:firebase-bom:31.2.3')
+    gpImplementation 'com.google.firebase:firebase-installations-ktx'
+    gpImplementation 'com.google.firebase:firebase-analytics-ktx'
+    gpImplementation 'com.google.firebase:firebase-messaging-ktx'
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    gpImplementation 'com.google.firebase:firebase-crashlytics-ktx'
+    cnCompileOnly('com.google.android.gms:play-services-measurement-api:20.0.2')
+    pluginDevCompileOnly('com.google.android.gms:play-services-measurement-api:20.0.2')
+
+    // 本地项目依赖
+    implementation project(':module_base')
+    // 组件module
+    implementation project(':module-widget')
+    implementation project(':module_help')
+    implementation project(':module-account')
+    implementation project(path: ':module-feature:device_connect')
+    // flutter
+    implementation project(':flutter')
+
+    gpImplementation 'com.google.android.gms:play-services-auth:20.6.0'
+    // https://mvnrepository.com/artifact/com.google.android.gms/play-services-tasks
+    gpImplementation 'com.google.android.gms:play-services-tasks:18.0.2'
+
+    implementation 'com.facebook.android:facebook-login:latest.release'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android:+'
+
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.2.3'
+    // 检测工具
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
+//    implementation project(':module_debug')
+//    debugImplementation "com.bytedance.btrace:rhea-core:1.0.2"
+//    debugImplementation 'com.iqiyi.xcrash:xcrash-android-lib:3.1.0'
+//    debugImplementation 'com.github.bytedance:memory-leak-detector:0.1.8'
+
+    // Add v8-android - prebuilt libv8android.so into APK
+    implementation 'org.chromium:v8-android:+'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+
+    cnImplementation('common.android.dreame.sdk:share-sdk:2.1.2.2-mova') {
+        exclude group: "io.github.sinaweibosdk"
+        exclude group: "com.tencent.mm.opensdk"
+        exclude group: "com.github.bumptech.glide"
+    }
+    gpImplementation 'common.android.dreame.sdk:share-sdk:2.1.2.1-no'
+    // google play应用评分
+    implementation "com.google.android.play:review:2.0.1"
+    implementation "com.google.android.play:review-ktx:2.0.1"
+
+
+    pluginDevImplementation('common.android.dreame.sdk:umeng-push-library:1.1.20') {
+        exclude group: "common.android.thirdparty", module: "weibo-android-sdk"
+        exclude group: "io.github.sinaweibosdk", module: "core"
+        exclude group: "com.tencent.mm.opensdk", module: "wechat-sdk-android-without-mta"
+        exclude group: "com.umeng.umsdk", module: "utdid"
+        exclude group: "com.umeng.umsdk", module: "apm"
+        exclude group: "com.umeng.umsdk", module: "share-core"
+        exclude group: "com.umeng.umsdk", module: "share-board"
+        exclude group: "com.umeng.umsdk", module: "share-wx"
+        exclude group: "com.umeng.umsdk", module: "share-sina"
+        exclude group: "common.android.dreame.sdk", module: "common-push-library"
+    }
+    pluginDevImplementation('common.android.dreame.sdk:share-sdk:2.1.2.1') {
+        exclude group: "io.github.sinaweibosdk"
+        exclude group: "com.tencent.mm.opensdk"
+        exclude group: "com.github.bumptech.glide"
+    }
+}
+
+// Run this once to be able to run the application with BUCK
+// puts all compile dependencies into folder libs for BUCK to use
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.implementation
+    into 'libs'
+}
+
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+
+
+tasks.configureEach { task ->
+    if (task.name == 'mergeDebugNativeLibs') {
+        task.doFirst {
+            println("------------------- find so files start -------------------")
+            it.inputs.files.each { file ->
+                printDir(new File(file.absolutePath))
+            }
+            println("------------------- find so files end -------------------")
+        }
+    }
+}
+
+def printDir(File file) {
+    if (file != null) {
+        if (file.isDirectory()) {
+            file.listFiles().each {
+                printDir(it)
+            }
+        } else if (file.absolutePath.endsWith(".so")) {
+            println "find so file: $file.absolutePath"
+        }
+    }
+}

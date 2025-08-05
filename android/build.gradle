@@ -1,0 +1,107 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//apply plugin: 'therouter'
+buildscript {
+    apply from: 'version.gradle'
+    ext {
+        kotlin_version = '1.9.23'
+        kotlinVersion = kotlin_version
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+
+        agp_version = "7.2.2"
+        booster_version = "4.16.3"
+        therouter_version = "1.2.3-rc1"
+    }
+    repositories {
+        mavenLocal()
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://jfrog.dreame.tech/artifactory/iotApp-maven-release-local/' }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url 'https://developer.hihonor.com/repo' }
+        jcenter()
+        maven { url 'https://oss.sonatype.org/content/repositories/releases/' }
+    }
+    dependencies {
+        classpath('com.android.tools.build:gradle:7.2.2')
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath 'com.huawei.agconnect:agcp:1.9.1.301'
+        classpath "cn.therouter:plugin:$therouter_version"
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.4'
+        classpath 'common.android.dreame.countly:event-register:2.0.0'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+        classpath 'com.hihonor.mcs:asplugin:2.0.1.300'
+
+        /* 👇👇👇👇 引用 Booster Gradle 插件 👇👇👇👇 */
+        classpath "com.didiglobal.booster:booster-gradle-plugin:$booster_version"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        mavenCentral()
+        maven {
+            // prebuilt libv8android.so
+            url("$rootDir/../node_modules/v8-android/dist")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+        maven { url 'https://jfrog.dreame.tech/artifactory/iotApp-maven-release-local/' }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://repo1.maven.org/maven2/' } //友盟相关maven库
+        maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url 'https://developer.hihonor.com/repo' }
+        jcenter()
+        maven { url 'https://oss.sonatype.org/content/repositories/releases/' }
+        flatDir {
+            dirs 'libs'
+            dirs project(':react-native-dental-module').file('libs')
+        }
+    }
+    subprojects {
+        afterEvaluate {
+            if (project.hasProperty("android")) {
+                android {
+                    compileSdkVersion rootProject.ext.compileSdkVersion
+                    buildToolsVersion rootProject.ext.buildToolsVersion
+                }
+            }
+        }
+    }
+    configurations.configureEach {
+        resolutionStrategy {
+            dependencySubstitution {
+                substitute module('com.facebook.react:react-native:+') with module('common.android.dreame.sdk:react-native:0.61.5.0002')
+                substitute module('com.squareup.okhttp3:okhttp-urlconnection:3.12.1') with module('com.squareup.okhttp3:okhttp-urlconnection:4.9.1')
+
+                substitute module('androidx.core:core') with module('androidx.core:core:1.13.0')
+                substitute module('androidx.core:core-ktx') with module('androidx.core:core-ktx:1.13.0')
+                substitute module('androidx.annotation:annotation') with module('androidx.annotation:annotation:1.8.2')
+                substitute module('androidx.activity:activity') with module('androidx.activity:activity:1.8.0')
+                substitute module('androidx.activity:activity-ktx') with module('androidx.activity:activity-ktx:1.8.0')
+
+                substitute module('com.alibaba.ailabs.iot:multiendinonebridge') with module('com.alibaba.ailabs.iot:multiendinonebridge:1.0.0.24')
+                substitute module('androidx.appcompat:appcompat') with module('androidx.appcompat:appcompat:1.6.1')
+//                substitute module('org.jetbrains.kotlin:kotlin-stdlib-jdk8') with module('org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.21')
+//                substitute module('androidx.savedstate:savedstate') with module('androidx.savedstate:savedstate:1.2.0')
+//                substitute module('androidx.savedstate:savedstate-ktx') with module('androidx.savedstate:savedstate-ktx:1.2.0')
+            }
+        }
+    }
+}

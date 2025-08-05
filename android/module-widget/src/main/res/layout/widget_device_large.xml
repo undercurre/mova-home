@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppWidget.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingEnd="32dp"
+                android:text="追觅S10 Pro"
+                android:textColor="@color/common_text_main"
+                android:textSize="@dimen/common_textLarge"
+                android:textStyle="bold"
+                tools:text="追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10追觅S10" />
+
+            <ImageView
+                android:id="@id/iv_change_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/tv_device_name"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="5dp"
+                android:src="@drawable/icon_widget_change_device" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_device_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/standby"
+            android:textColor="@color/common_textGray"
+            android:textSize="@dimen/common_textSmall" />
+
+        <include
+            layout="@layout/layout_widget_clean_info"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageView
+            android:id="@id/iv_device"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/icon_robot_placeholder" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_widget_clean_status"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginBottom="4dp" />
+</LinearLayout>

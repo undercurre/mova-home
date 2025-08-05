@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        viewBinding {
+            enabled = true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    androidResources {
+        ignoreAssetsPattern '!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~'
+        additionalParameters '--auto-add-overlay'
+    }
+    namespace 'com.dreame.module.mall'
+
+
+}
+
+dependencies {
+    implementation project(':module_base')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.alibaba:arouter-api:1.5.2'
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
+//    api('common.android.dreame.sdk:uniapp-sdk:1.0.5')
+    compileOnly('common.android.dreame.sdk:share-sdk:2.1.2.2-mova'){
+        exclude group: "io.github.sinaweibosdk"
+        exclude group: "com.tencent.mm.opensdk"
+        exclude group: "com.github.bumptech.glide"
+    }
+}

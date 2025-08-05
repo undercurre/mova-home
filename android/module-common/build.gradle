@@ -1,0 +1,297 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-parcelize'
+}
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+
+def isDebugType = false
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11"
+                arguments "-DANDROID_STL=c++_static",
+                        "-DANDROID_PLATFORM=android-15",
+                        "-DANDROID_TOOLCHAIN=clang",
+                        "-DANDROID_STL_FORCE_FEATURES=OFF",
+                        "-DANDROID_ARM_NEON=TRUE"
+                abiFilters "arm64-v8a", "armeabi-v7a"
+            }
+        }
+
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a"
+        }
+        viewBinding {
+            enabled = true
+        }
+
+
+    }
+    // 插件最高的支持的App版本，默认随App升级，后台配置插件版本，
+    def PLUGIN_APP_VERSION = versions.pluginAppVersion
+    def MALL_VERSION = versions.mallVersion
+
+    buildTypes {
+        debug {
+            isDebugType = true
+            minifyEnabled false
+            buildConfigField("String", "API_BASE_URL", '"https://cn.iot.mova-tech.com:13267"')
+//            buildConfigField("String", "API_BASE_URL", '"https://cn-uat.iot.mova-tech.com"')
+//            buildConfigField("String", "API_BASE_URL", '"http://cn-dev.iot.mova-tech.com:30080/"')
+            buildConfigField("String", "UPGRADE_API_URL", '"https://cdn.cnbj2.fds.api.mi-img.com/dreame-public/prod/appversion/android/"')
+            buildConfigField("int", "PLUGIN_APP_VERSION", "$PLUGIN_APP_VERSION")
+            buildConfigField("int", "MALL_VERSION", "$MALL_VERSION")
+            buildConfigField("boolean", "LOG_ENABLE", "true")
+            buildConfigField("String", "BUGLY_APP_ID", "$BUGLY_APP_ID_DEBUG")
+            buildConfigField("String", "GOOGLE_reCAPTCHA", "$GOOGLE_reCAPTCHA")
+            buildConfigField("int", "APP_VERSION_CODE", "$versions.appVersionCode")
+        }
+
+        env_test {
+            minifyEnabled false
+            buildConfigField("String", "API_BASE_URL", '"http://cn-test.iot.mova-tech.com"')
+            buildConfigField("String", "UPGRADE_API_URL", '"https://cdn.cnbj2.fds.api.mi-img.com/dreame-public/uat/appversion/android/"')
+            matchingFallbacks = ['release', "debug"]
+            buildConfigField("int", "PLUGIN_APP_VERSION", "$PLUGIN_APP_VERSION")
+            buildConfigField("int", "MALL_VERSION", "$MALL_VERSION")
+            buildConfigField("boolean", "LOG_ENABLE", "true")
+            buildConfigField("String", "BUGLY_APP_ID", "$BUGLY_APP_ID_DEBUG")
+            buildConfigField("String", "GOOGLE_reCAPTCHA", "$GOOGLE_reCAPTCHA")
+            buildConfigField("int", "APP_VERSION_CODE", "$versions.appVersionCode")
+        }
+
+        uat {
+            minifyEnabled false
+            buildConfigField("String", "API_BASE_URL", '"https://cn-uat.iot.mova-tech.com"')
+            buildConfigField("String", "UPGRADE_API_URL", '"https://cdn.cnbj2.fds.api.mi-img.com/dreame-public/uat/appversion/android/"')
+            matchingFallbacks = ["debug", "release"]
+            buildConfigField("int", "PLUGIN_APP_VERSION", "$PLUGIN_APP_VERSION")
+            buildConfigField("int", "MALL_VERSION", "$MALL_VERSION")
+            buildConfigField("boolean", "LOG_ENABLE", "true")
+            buildConfigField("String", "BUGLY_APP_ID", "$BUGLY_APP_ID_DEBUG")
+            buildConfigField("String", "GOOGLE_reCAPTCHA", "$GOOGLE_reCAPTCHA")
+            buildConfigField("int", "APP_VERSION_CODE", "$versions.appVersionCode")
+        }
+
+        release {
+            minifyEnabled true
+            buildConfigField("String", "API_BASE_URL", '"https://cn.iot.mova-tech.com:13267"')
+            buildConfigField("String", "UPGRADE_API_URL", '"https://cdn.cnbj2.fds.api.mi-img.com/dreame-public/prod/appversion/android/"')
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("int", "PLUGIN_APP_VERSION", "$PLUGIN_APP_VERSION")
+            buildConfigField("int", "MALL_VERSION", "$MALL_VERSION")
+            buildConfigField("boolean", "LOG_ENABLE", "$versions.logEnable")
+            buildConfigField("String", "BUGLY_APP_ID", "$BUGLY_APP_ID_RELEASE")
+            buildConfigField("String", "GOOGLE_reCAPTCHA", "$GOOGLE_reCAPTCHA")
+            buildConfigField("int", "APP_VERSION_CODE", "$versions.appVersionCode")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+//    externalNativeBuild {
+//        cmake {
+//            path "./src/main/cpp/CMakeLists.txt"
+//        }
+//    }
+    repositories {
+        maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+    }
+    namespace 'android.dreame.module'
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    api 'com.google.android.material:material:1.12.0'
+    api 'androidx.work:work-runtime-ktx:2.9.0'
+    api 'androidx.work:work-multiprocess:2.9.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+//    api 'androidx.navigation:navigation-fragment:2.2.0'
+//    api 'androidx.navigation:navigation-ui:2.2.0'
+
+    api "androidx.core:core-ktx:1.12.0"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    api 'androidx.concurrent:concurrent-futures-ktx:1.1.0'
+    // common res
+    api project(':module_res')
+    // common Arouter service
+    api project(':module_service')
+    //gson
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //rn
+    api project(':react-native-webview')
+    api project(':react-native-image-picker')
+    api project(":react-native-orientation")
+    api project(":react-native-svg")
+    api project(":react-native-community_netinfo")
+    api project(":react-native-community_blur")
+    api project(":react-native-community_viewpager")
+
+    api project(':react-native-agora')
+    api project(':react-native-linear-gradient')
+    api project(':react-native-audio-record')
+    api project(':react-native-dental-module')
+
+
+//    implementation project(':flutter')
+    implementation project(':dreame_flutter_base_event_tracker')
+    implementation project(':dreame_flutter_plugin_tx_video')
+    implementation project(':dreame_flutter_plugin_open_setting')
+//    implementation project(':flutter_rn_bridge')
+
+    //muti
+    api 'androidx.multidex:multidex:2.0.1'
+    //glide
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+    //refresh
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+    //toast https://github.com/getActivity/ToastUtils
+    api 'com.github.getActivity:Toaster:12.5'
+    //okhttp-logging-interceptor
+    api("com.squareup.okhttp3:logging-interceptor:4.9.1")
+    api("com.squareup.okhttp3:okhttp-urlconnection:4.9.1")
+    //mqtt
+//    api 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
+    //v8
+//    implementation 'com.eclipsesource.j2v8:j2v8:6.2.1'
+    //recyclerview
+    api 'androidx.recyclerview:recyclerview:1.3.2'
+    //basequick adapter
+    api "io.github.cymchad:BaseRecyclerViewAdapterHelper:3.0.14"
+    //eventbus
+    api 'org.greenrobot:eventbus:3.3.1'
+    //butterknife
+    api 'com.jakewharton:butterknife:10.2.1'
+    //lifecycle
+    api 'androidx.lifecycle:lifecycle-livedata:2.6.2'
+    api 'androidx.lifecycle:lifecycle-viewmodel:2.6.2'
+    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+//    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    api 'androidx.lifecycle:lifecycle-process:2.6.2'
+
+    //savedstate
+    api "androidx.savedstate:savedstate-ktx:1.2.1"
+
+    //rxjava
+    api 'io.reactivex.rxjava2:rxjava:2.2.21'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //xxPermission
+    api 'com.github.getActivity:XXPermissions:18.5'
+    //phoneNumberUtils
+    api 'io.michaelrocks:libphonenumber-android:8.12.13'
+    //luban 压缩
+    api 'top.zibin:Luban:1.1.8'
+    // mmkv
+    api 'com.tencent:mmkv-static:1.2.14'
+    // popupWindow
+    api 'io.github.razerdp:BasePopup:3.2.1'
+    // android utils
+    api 'com.blankj:utilcodex:1.31.1'
+
+    // rn support gif
+    implementation 'com.facebook.fresco:animated-gif:2.6.0'
+    implementation 'com.facebook.fresco:fresco:2.6.0'
+    // rn soloader
+    implementation 'com.facebook.soloader:soloader:0.10.4'
+
+    //lottie动画
+    api 'com.airbnb.android:lottie:4.1.0'
+
+    // mars xlog
+    api 'com.tencent.mars:mars-xlog:1.2.6'
+
+    api 'com.github.chrisbanes:PhotoView:2.3.0'
+    api 'com.github.yalantis:ucrop:2.2.8'
+    api 'com.zhihu.android:matisse:1.0.1'
+    api 'com.google.android.exoplayer:exoplayer:2.18.0'
+
+    // dreame maven
+    // 添加aar依赖包，参数签名放入so中，debug版打印日志，取消调试进程占用，1.1.0加上日志打印至java层
+    api 'common.android.dreame.sdk:hack-library:1.3.0.2-mova'
+    api 'common.android.dreame.sdk:net-library:1.0.4'
+    api 'common.android.dreame.sdk:alify-sdk:1.3.7'
+    implementation 'common.android.dreame.sdk:js-executor:1.0.4.1'
+    implementation 'common.android.dreame.sdk:biometric-sdk:1.0.2'
+//    implementation('common.android.dreame.sdk:amap-sdk:1.0.7') {
+//        exclude(group: 'androidx.core', module: 'core-ktx')
+//    }
+    // countly
+    api 'common.android.dreame.countly:sdk:2.0.0'
+    compileOnly('common.android.dreame.sdk:share-sdk:2.1.2.1') {
+        exclude group: "io.github.sinaweibosdk"
+        exclude group: "com.tencent.mm.opensdk"
+        exclude group: "com.github.bumptech.glide"
+    }
+    implementation 'io.github.sinaweibosdk:core:13.10.4@aar'
+
+    implementation 'org.aspectj:aspectjrt:1.9.7'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+
+    implementation 'com.kunminx.arch:unpeek-livedata:7.2.0-beta1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //圆形图片
+    api 'de.hdodenhof:circleimageview:3.1.0'
+    //Zendesk SDK
+    implementation group: 'com.zendesk', name: 'support-providers', version: '5.1.2'
+
+    implementation "androidx.room:room-runtime:2.6.1"
+    implementation "androidx.room:room-ktx:2.6.1"
+    annotationProcessor "androidx.room:room-compiler:2.6.1"
+    kapt "androidx.room:room-compiler:2.6.1"
+    implementation "androidx.room:room-rxjava2:2.6.1"
+
+    kapt "cn.therouter:apt:$therouter_version"
+    implementation "cn.therouter:router:$therouter_version"
+    api 'com.github.DSAppTeam:Anchors:v1.1.7'
+
+    api "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation "common.android.dreame.sdk:agora-raw-data:1.0.0@aar"
+    implementation 'com.google.android.recaptcha:recaptcha:18.4.0'
+    implementation 'com.google.guava:guava:24.0-jre'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android:+'
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.2.3'
+    implementation 'com.wang.avi:library:2.1.3'
+
+//    implementation project(':dreame_flutter_base_burial_point')
+//    implementation 'no.nordicsemi.android.kotlin.ble:client:1.1.0'
+
+//    implementation 'no.nordicsemi.android:ble-ktx:2.9.0-beta03'
+    //反射调试神器：https://github.com/tiann/FreeReflection
+//    implementation 'com.github.tiann:FreeReflection:3.2.2'
+
+    //    implementation 'no.nordicsemi.android:ble:2.9.0'
+    // 只是兼容了不规范的蓝牙，开启广播时，不能开的问题
+    implementation 'common.android.dreame.sdk:ble:2.9.0.1'
+    implementation 'no.nordicsemi.android.support.v18:scanner:1.6.0'
+
+
+}

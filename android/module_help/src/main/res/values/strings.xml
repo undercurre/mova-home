@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_chooose_email">Choose Email</string>
+    <string name="Help_CustomerCare_NoEmailClient_Toast">No local mail App is detected. Please press and hold the email address to copy it, and mail us for customer service.</string>
+</resources>

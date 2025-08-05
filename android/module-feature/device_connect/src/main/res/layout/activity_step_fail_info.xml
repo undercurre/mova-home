@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.dreame.module.view.CommonTitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/causes_network_config"
+        app:titleShowPosition="center"
+        tools:layout_height="44dp"
+        tools:title="Causas de fallas en la configuración de la red" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/tv_fail_reason"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        tools:listitem="@layout/item_step_fail_info" />
+
+    <TextView
+        android:id="@+id/tv_fail_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:text="@string/searching_no_devices_contact_customer_service"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textSecond"
+        android:textSize="@dimen/common_textNormal"
+        app:layout_constraintBottom_toTopOf="@id/btn_retry"
+        app:layout_constraintEnd_toEndOf="@id/btn_retry"
+        app:layout_constraintStart_toStartOf="@id/btn_retry" />
+
+    <TextView
+        android:id="@+id/btn_retry"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/retry"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

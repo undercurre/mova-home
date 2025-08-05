@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_height="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:padding="15dp"
+            android:src="@drawable/icon_back_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="54dp"
+            android:gravity="center"
+            android:text="@string/widget_linked_device"
+            android:textAlignment="gravity"
+            android:textColor="@color/common_textMain"
+            android:textSize="@dimen/common_textLarge" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlEnableLoadMore="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="44dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_appwidget_device_select" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_link_tips"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/widget_linked_tips"
+        android:textAlignment="gravity"
+        android:textColor="@color/common_textSecond"
+        android:textSize="@dimen/common_textNormal"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_bind"
+        style="@style/common_style_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="48dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/widget_linked_confirm"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textSize="@dimen/common_textLarge" />
+</LinearLayout>

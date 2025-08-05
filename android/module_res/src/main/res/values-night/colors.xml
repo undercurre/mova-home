@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  颜色名后数字为不透明度百分比  -->
+    <!--    https://mastergo.com/file/153224716536341?page_id=1%3A0&shareId=153224716536341&devMode=true-->
+    <!--    https://mastergo.com/file/151869082265920?page_id=3%3A27747&shareId=151869082265920&devMode=true-->
+    <color name="common_btnText">@color/common_brandAccent</color>
+    <color name="common_btnTextDisable">#FF553D32</color>
+    <color name="common_text_second">#8D8D8D</color>
+    <color name="common_text_brand">@color/common_brandPrimary</color>
+
+    <!--金色渐变 一级按钮背景-->
+    <color name="common_brandGradientStart">#ffF7EAC1</color> <!--金色渐变-->
+    <color name="common_brandGradientEnd">#ffD7BC9C</color><!--金色渐变-->
+    <!--灰色渐变 次级按钮背景-->
+    <color name="common_grayGradientStart">#ffEBEBEB</color> <!--灰色渐变-->
+    <color name="common_grayGradientEnd">#ffE4E2E2</color><!--灰色渐变-->
+    <!--黑色渐变 页面背景色-->
+    <color name="common_bgGradientStart">#ff333333</color> <!--灰色渐变-->
+    <color name="common_bgGradientEnd">#ff1A1A1A</color><!--灰色渐变-->
+
+    <color name="common_brandPrimary">#ffC69E6D</color><!--品牌金色-->
+    <color name="common_brandAccent">#ff855640</color><!--重点金 一级按钮文字-->
+    <color name="common_brandAccent2">#FFC69E6D</color><!--重点金 黑色底色上反转-->
+    <color name="common_brandTertiary">#F1E8DA</color><!--浅金色-->
+    <color name="common_textMain">#ffF4F4F4</color> <!--炭黑 默认字体-->
+    <color name="common_bgWhite">#ff353535</color>  <!--纯白-->
+    <color name="common_textWhite">#ff353535</color> <!--纯白-->
+    <color name="common_Gray1">#FFF4F4F4</color> <!--灰色1 背景-->
+    <color name="common_Gray2">@color/common_textGray</color> <!--灰色2-->
+    <color name="common_textGray">#8D8D8D</color> <!--灰色3-->
+    <color name="common_textBgGray">#ff404040</color> <!--灰色3-->
+    <color name="common_bgMask">#80353535</color> <!--白色-->
+    <color name="common_BgGray1">#404040</color> <!--灰色1 背景-->
+    <!--    配网进度颜色-->
+    <color name="common_textLoading">@color/common_textGray</color>
+    <color name="common_textSuccess">@color/common_Gray1</color>
+
+    <color name="common_color_blue">#3370FF</color>
+    <!--   全小写格式, 颜色不会反色-->
+    <color name="common_text_main">#353535</color> <!--炭黑 默认字体-->
+    <color name="common_color_white">#FFFFFF</color>
+    <color name="common_layoutBg">#262626</color>
+
+    <color name="common_textMainMedium">@color/common_textMain</color>
+    <color name="common_textNormal">@color/common_textMain</color>
+    <color name="common_textSecond">@color/common_Gray2</color>
+    <color name="common_textDisable">@color/common_textGray</color>
+
+    <color name="common_fillDark">@color/common_Gray2</color>
+
+    <color name="common_divider">#404040</color>
+    <color name="common_link">#ff3370FF</color><!--共享相关-->
+
+    <color name="common_green1">#ff55AB29</color><!--正常确认-->
+    <color name="common_warn1">#FFB50A</color><!--中级警告/拖地禁区-->
+    <color name="common_red1">#ffFF5252</color> <!--高级警告/禁区-->
+</resources>

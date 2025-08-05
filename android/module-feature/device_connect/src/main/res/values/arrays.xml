@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="network_config_error_step2">
+        <item>@string/network_config_error_location</item>
+        <item>@string/network_config_error_localnetwork</item>
+        <item>@string/network_config_error_update</item>
+        <item>@string/text_poor_wifi</item>
+    </string-array>
+
+    <string-array name="network_config_error_step3">
+        <item>@string/network_config_error_wifi</item>
+        <item>@string/network_config_error_wifipwd</item>
+        <item>@string/network_config_error_character</item>
+        <item>@string/network_config_error_mac</item>
+        <item>@string/network_config_error_vpn</item>
+        <item>@string/network_config_error_auth</item>
+        <item>@string/network_config_error_wifiname</item>
+        <item>@string/network_config_error_network_unreachable</item>
+        <item>@string/text_poor_wifi</item>
+    </string-array>
+
+    <string-array name="ble_bind_error_has_own">
+        <item>@string/text_mower_pair_solution_desc_1</item>
+        <item>@string/text_mower_pair_solution_desc_2</item>
+        <item>@string/text_mower_pair_solution_desc_3</item>
+        <item>@string/text_mower_pair_solution_desc_4</item>
+        <item>@string/text_mower_pair_solution_desc_5</item>
+        <item>@string/text_mower_pair_solution_desc_6</item>
+        <item>@string/text_mower_pair_solution_desc_7</item>
+    </string-array>
+    <string-array name="network_config_error_step_mower">
+        <item>@string/text_mower_pair_solution_desc_1</item>
+        <item>@string/text_mower_pair_solution_desc_2</item>
+        <item>@string/text_mower_pair_solution_desc_3</item>
+        <item>@string/text_mower_pair_solution_desc_4</item>
+        <item>@string/text_mower_pair_solution_desc_5</item>
+    </string-array>
+
+    <!--      prepare -->
+    <string-array name="prepare_connect_mower">
+        <item>@string/text_mower_pair_desc_1</item>
+        <item>@string/text_mower_pair_desc_2</item>
+        <item>@string/text_mower_pair_desc_3</item>
+        <item>@string/text_mower_pair_desc_4</item>
+        <item>@string/text_mower_pair_desc_5</item>
+        <item>@string/text_mower_pair_desc_6</item>
+    </string-array>
+
+    <string-array name="prepare_connect">
+        <item>@string/connect_prepare_tip_1</item>
+        <item>@string/connect_prepare_tip_2</item>
+        <item>@string/connect_prepare_tip_3</item>
+        <item>@string/connect_prepare_tip_4</item>
+    </string-array>
+
+</resources>
